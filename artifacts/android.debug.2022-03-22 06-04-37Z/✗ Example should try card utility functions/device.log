@@ -1,0 +1,177 @@
+--------- beginning of main
+03-22 11:34:52.045   678  1050 I DetoxWSClient: Sending out action 'invokeResult' (ID #1)
+03-22 11:34:52.045   678  1050 I DetoxDispatcher: Done with action 'invoke'
+03-22 11:34:52.055   678  1057 D DetoxWSClient: Received action 'invoke' (ID #2, params={"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["Razorpay Initialized"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]})
+03-22 11:34:52.056   678  1050 I DetoxDispatcher: Handling action 'invoke' (ID #2)...
+03-22 11:34:52.057   678  1050 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForText, [Razorpay Initialized]
+03-22 11:34:52.057   678  1050 D Detox   : class androidx.test.espresso.Espresso, onView, [(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Razorpay Initialized" and view has effective visibility <VISIBLE>)]
+03-22 11:34:52.058   678  1050 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForSufficientlyVisible, [75]
+03-22 11:34:52.059   678  1050 D Detox   : class com.wix.detox.espresso.DetoxAssertion, assertMatcher, [androidx.test.espresso.ViewInteraction@6defbb5, (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)]
+03-22 11:34:52.065   678   678 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)}' assertion on view (an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Razorpay Initialized" and view has effective visibility <VISIBLE>)
+03-22 11:34:52.066   678  1050 I DetoxWSClient: Sending out action 'invokeResult' (ID #2)
+03-22 11:34:52.067   678  1050 I DetoxDispatcher: Done with action 'invoke'
+03-22 11:34:52.172   678  1057 D DetoxWSClient: Received action 'invoke' (ID #3, params={"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["cards"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]})
+03-22 11:34:52.175   678  1050 I DetoxDispatcher: Handling action 'invoke' (ID #3)...
+03-22 11:34:52.175   678  1050 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForTestId, [cards]
+03-22 11:34:52.176   678  1050 D Detox   : class androidx.test.espresso.Espresso, onView, [(view.getTag() is "cards" and view has effective visibility <VISIBLE>)]
+03-22 11:34:52.177   678  1050 D Detox   : class com.wix.detox.espresso.DetoxViewActions, click, []
+03-22 11:34:52.177   678  1050 D Detox   : class com.wix.detox.espresso.EspressoDetox, perform, [androidx.test.espresso.ViewInteraction@a0824a, com.wix.detox.espresso.action.RNClickAction@b4635bb]
+03-22 11:34:52.404   678   678 I ViewInteraction: Performing 'com.wix.detox.espresso.action.detoxsingletap@6509e31 click' action on view (view.getTag() is "cards" and view has effective visibility <VISIBLE>)
+--------- beginning of system
+03-22 11:34:52.408   678   678 I ViewRootImpl: ViewRoot's Touch Event : ACTION_DOWN
+03-22 11:34:52.436   678   678 I ViewRootImpl: ViewRoot's Touch Event : ACTION_UP
+03-22 11:34:52.745   678   678 I Detox   : AnimatedModule is busy.
+03-22 11:34:52.751   678   678 I Detox   : AnimatedModule is busy.
+03-22 11:34:52.768   678   678 I Detox   : AnimatedModule is busy.
+03-22 11:34:52.785   678   678 I Detox   : AnimatedModule is busy.
+03-22 11:34:52.801   678   678 I Detox   : AnimatedModule is busy.
+03-22 11:34:52.898   678  1050 I DetoxWSClient: Sending out action 'invokeResult' (ID #3)
+03-22 11:34:52.899   678  1050 I DetoxDispatcher: Done with action 'invoke'
+03-22 11:34:52.910   678  1057 D DetoxWSClient: Received action 'invoke' (ID #4, params={"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["cardNumber"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"typeText","args":["4111111111111111"]}}]})
+03-22 11:34:52.910   678  1050 I DetoxDispatcher: Handling action 'invoke' (ID #4)...
+03-22 11:34:52.911   678  1050 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForTestId, [cardNumber]
+03-22 11:34:52.911   678  1050 D Detox   : class androidx.test.espresso.Espresso, onView, [(view.getTag() is "cardNumber" and view has effective visibility <VISIBLE>)]
+03-22 11:34:52.911   678  1050 D Detox   : class com.wix.detox.espresso.DetoxViewActions, typeText, [4111111111111111]
+03-22 11:34:52.913   678  1050 D Detox   : class com.wix.detox.espresso.EspressoDetox, perform, [androidx.test.espresso.ViewInteraction@2c5e927, com.wix.detox.espresso.action.DetoxTypeTextAction@67857d4]
+03-22 11:34:52.918   678   678 I ViewInteraction: Performing 'Click to focus & type text (4111111111111111)' action on view (view.getTag() is "cardNumber" and view has effective visibility <VISIBLE>)
+03-22 11:34:52.920   678   678 D Editor  : setInputTypeforClipTray(): 0
+03-22 11:34:52.924   678   678 I ViewRootImpl: ViewRoot's Touch Event : ACTION_DOWN
+03-22 11:34:52.954   678   678 I ViewRootImpl: ViewRoot's Touch Event : ACTION_UP
+03-22 11:34:52.956   678   678 I View    : PerformClick: com.facebook.react.views.textinput.ReactEditText{8dcdfae VFED..CL. ...p.... 13,380-1067,511 #6b}
+03-22 11:34:52.956   678   678 I View    : MotionEvent.ACTION_UP: mPrivateFlags: 16828464,   mHasPerformedLongPress: false,   mIgnoreNextUpEvent: false
+03-22 11:34:53.027   678   678 D Editor  : setInputTypeforClipTray(): 0
+03-22 11:34:53.035   678   678 W Editor  : updateCursorsPositions() : layout = hintLayout
+03-22 11:34:53.045   678   678 I AssistStructure: Flattened final assist data: 3908 bytes, containing 1 windows, 24 views
+03-22 11:34:53.336   678   678 D UiControllerImpl: Injecting string: "4111111111111111"
+03-22 11:34:53.348   678   678 I ViewRootImpl: ViewRoot's KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_4, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=2215823, downTime=2215822, deviceId=-1, source=0x101, displayId=-1 } to DecorView@7d46fed[MainActivity]
+03-22 11:34:53.463   678   678 I Detox   : UIManagerModule is busy
+03-22 11:34:53.481   678   678 I Detox   : UIManagerModule is busy
+03-22 11:34:53.491   678   678 I ViewRootImpl: ViewRoot's KeyEvent { action=ACTION_UP, keyCode=KEYCODE_4, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=2215940, downTime=2215822, deviceId=-1, source=0x101, displayId=-1 } to DecorView@7d46fed[MainActivity]
+03-22 11:34:53.498   678   678 I ViewRootImpl: ViewRoot's KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=2215980, downTime=2215822, deviceId=-1, source=0x101, displayId=-1 } to DecorView@7d46fed[MainActivity]
+03-22 11:34:53.552   678   678 I Detox   : UIManagerModule is busy
+03-22 11:34:53.565   678   678 I Detox   : UIManagerModule is busy
+03-22 11:34:53.584   678   678 I ViewRootImpl: ViewRoot's KeyEvent { action=ACTION_UP, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=2216014, downTime=2215822, deviceId=-1, source=0x101, displayId=-1 } to DecorView@7d46fed[MainActivity]
+03-22 11:34:53.593   678   678 I ViewRootImpl: ViewRoot's KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=2216074, downTime=2215822, deviceId=-1, source=0x101, displayId=-1 } to DecorView@7d46fed[MainActivity]
+03-22 11:34:53.650   678   678 I Detox   : UIManagerModule is busy
+03-22 11:34:53.675   678   678 I ViewRootImpl: ViewRoot's KeyEvent { action=ACTION_UP, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=2216101, downTime=2215822, deviceId=-1, source=0x101, displayId=-1 } to DecorView@7d46fed[MainActivity]
+03-22 11:34:53.688   678   678 I ViewRootImpl: ViewRoot's KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=2216168, downTime=2215822, deviceId=-1, source=0x101, displayId=-1 } to DecorView@7d46fed[MainActivity]
+03-22 11:34:53.749   678   678 I Detox   : UIManagerModule is busy
+03-22 11:34:53.778   678   678 I ViewRootImpl: ViewRoot's KeyEvent { action=ACTION_UP, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=2216196, downTime=2215822, deviceId=-1, source=0x101, displayId=-1 } to DecorView@7d46fed[MainActivity]
+03-22 11:34:53.786   678   678 I ViewRootImpl: ViewRoot's KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=2216267, downTime=2215822, deviceId=-1, source=0x101, displayId=-1 } to DecorView@7d46fed[MainActivity]
+03-22 11:34:53.844   678   678 I Detox   : UIManagerModule is busy
+03-22 11:34:53.866   678   678 I Detox   : UIManagerModule is busy
+03-22 11:34:53.873   678   678 I ViewRootImpl: ViewRoot's KeyEvent { action=ACTION_UP, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=2216288, downTime=2215822, deviceId=-1, source=0x101, displayId=-1 } to DecorView@7d46fed[MainActivity]
+03-22 11:34:53.892   678   678 I ViewRootImpl: ViewRoot's KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=2216363, downTime=2215822, deviceId=-1, source=0x101, displayId=-1 } to DecorView@7d46fed[MainActivity]
+03-22 11:34:53.953   678   678 I Detox   : UIManagerModule is busy
+03-22 11:34:53.960   678   678 I ViewRootImpl: ViewRoot's KeyEvent { action=ACTION_UP, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=2216412, downTime=2215822, deviceId=-1, source=0x101, displayId=-1 } to DecorView@7d46fed[MainActivity]
+03-22 11:34:53.967   678   678 I ViewRootImpl: ViewRoot's KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=2216448, downTime=2215822, deviceId=-1, source=0x101, displayId=-1 } to DecorView@7d46fed[MainActivity]
+03-22 11:34:54.014   678   678 I Detox   : UIManagerModule is busy
+03-22 11:34:54.029   678   678 I Detox   : UIManagerModule is busy
+03-22 11:34:54.043   678   678 I ViewRootImpl: ViewRoot's KeyEvent { action=ACTION_UP, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=2216474, downTime=2215822, deviceId=-1, source=0x101, displayId=-1 } to DecorView@7d46fed[MainActivity]
+03-22 11:34:54.050   678   678 I ViewRootImpl: ViewRoot's KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=2216531, downTime=2215822, deviceId=-1, source=0x101, displayId=-1 } to DecorView@7d46fed[MainActivity]
+03-22 11:34:54.086   678   678 I Detox   : UIManagerModule is busy
+03-22 11:34:54.109   678   678 I ViewRootImpl: ViewRoot's KeyEvent { action=ACTION_UP, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=2216554, downTime=2215822, deviceId=-1, source=0x101, displayId=-1 } to DecorView@7d46fed[MainActivity]
+03-22 11:34:54.117   678   678 I ViewRootImpl: ViewRoot's KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=2216599, downTime=2215822, deviceId=-1, source=0x101, displayId=-1 } to DecorView@7d46fed[MainActivity]
+03-22 11:34:54.100   678   678 I Detox   : UIManagerModule is busy
+03-22 11:34:54.148   678   678 I Detox   : UIManagerModule is busy
+03-22 11:34:54.175   678   678 I ViewRootImpl: ViewRoot's KeyEvent { action=ACTION_UP, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=2216621, downTime=2215822, deviceId=-1, source=0x101, displayId=-1 } to DecorView@7d46fed[MainActivity]
+03-22 11:34:54.183   678   678 I ViewRootImpl: ViewRoot's KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=2216663, downTime=2215822, deviceId=-1, source=0x101, displayId=-1 } to DecorView@7d46fed[MainActivity]
+03-22 11:34:54.166   678   678 I Detox   : UIManagerModule is busy
+03-22 11:34:54.213   678   678 I Detox   : UIManagerModule is busy
+03-22 11:34:54.241   678   678 I ViewRootImpl: ViewRoot's KeyEvent { action=ACTION_UP, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=2216684, downTime=2215822, deviceId=-1, source=0x101, displayId=-1 } to DecorView@7d46fed[MainActivity]
+03-22 11:34:54.229   678   678 I Detox   : UIManagerModule is busy
+03-22 11:34:54.249   678   678 I ViewRootImpl: ViewRoot's KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=2216729, downTime=2215822, deviceId=-1, source=0x101, displayId=-1 } to DecorView@7d46fed[MainActivity]
+03-22 11:34:54.282   678   678 I Detox   : UIManagerModule is busy
+03-22 11:34:54.297   678   678 I Detox   : UIManagerModule is busy
+03-22 11:34:54.308   678   678 I ViewRootImpl: ViewRoot's KeyEvent { action=ACTION_UP, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=2216746, downTime=2215822, deviceId=-1, source=0x101, displayId=-1 } to DecorView@7d46fed[MainActivity]
+03-22 11:34:54.316   678   678 I ViewRootImpl: ViewRoot's KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=2216796, downTime=2215822, deviceId=-1, source=0x101, displayId=-1 } to DecorView@7d46fed[MainActivity]
+03-22 11:34:54.365   678   678 I Detox   : UIManagerModule is busy
+03-22 11:34:54.375   678   678 I ViewRootImpl: ViewRoot's KeyEvent { action=ACTION_UP, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=2216822, downTime=2215822, deviceId=-1, source=0x101, displayId=-1 } to DecorView@7d46fed[MainActivity]
+03-22 11:34:54.382   678   678 I ViewRootImpl: ViewRoot's KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=2216863, downTime=2215822, deviceId=-1, source=0x101, displayId=-1 } to DecorView@7d46fed[MainActivity]
+03-22 11:34:54.425   678   678 I Detox   : UIManagerModule is busy
+03-22 11:34:54.446   678   678 I Detox   : UIManagerModule is busy
+03-22 11:34:54.458   678   678 I ViewRootImpl: ViewRoot's KeyEvent { action=ACTION_UP, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=2216884, downTime=2215822, deviceId=-1, source=0x101, displayId=-1 } to DecorView@7d46fed[MainActivity]
+03-22 11:34:54.466   678   678 I ViewRootImpl: ViewRoot's KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=2216946, downTime=2215822, deviceId=-1, source=0x101, displayId=-1 } to DecorView@7d46fed[MainActivity]
+03-22 11:34:54.501   678   678 I Detox   : UIManagerModule is busy
+03-22 11:34:54.516   678   678 I Detox   : UIManagerModule is busy
+03-22 11:34:54.525   678   678 I ViewRootImpl: ViewRoot's KeyEvent { action=ACTION_UP, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=2216968, downTime=2215822, deviceId=-1, source=0x101, displayId=-1 } to DecorView@7d46fed[MainActivity]
+03-22 11:34:54.530   678   678 I ViewRootImpl: ViewRoot's KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=2217013, downTime=2215822, deviceId=-1, source=0x101, displayId=-1 } to DecorView@7d46fed[MainActivity]
+03-22 11:34:54.582   678   678 I Detox   : UIManagerModule is busy
+03-22 11:34:54.599   678   678 I ViewRootImpl: ViewRoot's KeyEvent { action=ACTION_UP, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=2217031, downTime=2215822, deviceId=-1, source=0x101, displayId=-1 } to DecorView@7d46fed[MainActivity]
+03-22 11:34:54.606   678   678 I ViewRootImpl: ViewRoot's KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=2217087, downTime=2215822, deviceId=-1, source=0x101, displayId=-1 } to DecorView@7d46fed[MainActivity]
+03-22 11:34:54.646   678   678 I Detox   : UIManagerModule is busy
+03-22 11:34:54.670   678   678 I Detox   : UIManagerModule is busy
+03-22 11:34:54.675   678   678 I ViewRootImpl: ViewRoot's KeyEvent { action=ACTION_UP, keyCode=KEYCODE_1, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=2217116, downTime=2215822, deviceId=-1, source=0x101, displayId=-1 } to DecorView@7d46fed[MainActivity]
+03-22 11:34:54.678   678  1050 I DetoxWSClient: Sending out action 'invokeResult' (ID #4)
+03-22 11:34:54.678   678  1050 I DetoxDispatcher: Done with action 'invoke'
+03-22 11:34:54.687   678  1057 D DetoxWSClient: Received action 'invoke' (ID #5, params={"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["isCardValid"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]})
+03-22 11:34:54.687   678  1050 I DetoxDispatcher: Handling action 'invoke' (ID #5)...
+03-22 11:34:54.688   678  1050 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForTestId, [isCardValid]
+03-22 11:34:54.688   678  1050 D Detox   : class androidx.test.espresso.Espresso, onView, [(view.getTag() is "isCardValid" and view has effective visibility <VISIBLE>)]
+03-22 11:34:54.689   678  1050 D Detox   : class com.wix.detox.espresso.DetoxViewActions, click, []
+03-22 11:34:54.689   678  1050 D Detox   : class com.wix.detox.espresso.EspressoDetox, perform, [androidx.test.espresso.ViewInteraction@390c990, com.wix.detox.espresso.action.RNClickAction@76fe289]
+03-22 11:34:54.693   678   678 I ViewInteraction: Performing 'com.wix.detox.espresso.action.detoxsingletap@9f628e click' action on view (view.getTag() is "isCardValid" and view has effective visibility <VISIBLE>)
+03-22 11:34:54.697   678   678 I ViewRootImpl: ViewRoot's Touch Event : ACTION_DOWN
+03-22 11:34:54.759   678   678 I ViewRootImpl: ViewRoot's Touch Event : ACTION_UP
+03-22 11:34:55.145   678  1050 I DetoxWSClient: Sending out action 'invokeResult' (ID #5)
+03-22 11:34:55.146   678  1050 I DetoxDispatcher: Done with action 'invoke'
+03-22 11:34:55.156   678  1057 D DetoxWSClient: Received action 'invoke' (ID #6, params={"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["Card Validity : true"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]})
+03-22 11:34:55.156   678  1050 I DetoxDispatcher: Handling action 'invoke' (ID #6)...
+03-22 11:34:55.158   678  1050 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForText, [Card Validity : true]
+03-22 11:34:55.159   678  1050 D Detox   : class androidx.test.espresso.Espresso, onView, [(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Card Validity : true" and view has effective visibility <VISIBLE>)]
+03-22 11:34:55.160   678  1050 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForSufficientlyVisible, [75]
+03-22 11:34:55.160   678  1050 D Detox   : class com.wix.detox.espresso.DetoxAssertion, assertMatcher, [androidx.test.espresso.ViewInteraction@633199a, (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)]
+03-22 11:34:55.186   678   678 D Editor  : setInputTypeforClipTray(): 0
+03-22 11:34:55.190   678   678 D Editor  : setInputTypeforClipTray(): 0
+03-22 11:34:55.193   678   678 D Editor  : setInputTypeforClipTray(): 0
+03-22 11:34:55.195   678   678 D Editor  : setInputTypeforClipTray(): 0
+03-22 11:34:55.202   678   678 D Editor  : setInputTypeforClipTray(): 0
+03-22 11:34:55.207   678   678 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)}' assertion on view (an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Card Validity : true" and view has effective visibility <VISIBLE>)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: Test exception
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: java.lang.reflect.InvocationTargetException
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	at java.lang.reflect.Method.invoke(Native Method)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	at org.apache.commons.lang3.reflect.MethodUtils.invokeStaticMethod(MethodUtils.java:443)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	at org.apache.commons.lang3.reflect.MethodUtils.invokeStaticMethod(MethodUtils.java:405)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	at com.wix.invoke.types.ClassTarget.execute(ClassTarget.java:23)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	at com.wix.invoke.types.Target.invoke(Target.java:59)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	at com.wix.invoke.MethodInvocation.invoke(MethodInvocation.java:35)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	at com.wix.invoke.MethodInvocation.invoke(MethodInvocation.java:26)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	at com.wix.invoke.MethodInvocation.invoke(MethodInvocation.java:20)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	at com.wix.detox.adapters.server.InvokeActionHandler.handle(DetoxActionHandlers.kt:54)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	at com.wix.detox.adapters.server.ActionsExecutor$executeAction$$inlined$let$lambda$1.run(DetoxActionsDispatcher.kt:64)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	at android.os.Handler.handleCallback(Handler.java:938)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	at android.os.Looper.loop(Looper.java:223)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	at com.wix.detox.adapters.server.ActionsExecutor$1.run(DetoxActionsDispatcher.kt:50)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	at java.lang.Thread.run(Thread.java:923)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: Caused by: androidx.test.espresso.base.DefaultFailureHandler$AssertionFailedWithCauseError: '(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)' doesn't match the selected view.
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: Expected: (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers:      Got: was null
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	at dalvik.system.VMStack.getThreadStackTrace(Native Method)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	at java.lang.Thread.getStackTrace(Thread.java:1736)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	at androidx.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:12)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	at androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:7)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	at androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:5)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	at androidx.test.espresso.ViewInteraction.check(ViewInteraction.java:12)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	at com.wix.detox.espresso.DetoxAssertion.assertMatcher(DetoxAssertion.java:32)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	... 15 more
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: Caused by: junit.framework.AssertionFailedError: '(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)' doesn't match the selected view.
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: Expected: (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers:      Got: was null
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	at androidx.test.espresso.matcher.ViewMatchers.assertThat(ViewMatchers.java:16)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	at com.wix.detox.espresso.assertion.ViewAssertions$MatchesViewAssertion.check(ViewAssertions.java:52)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	at androidx.test.espresso.ViewInteraction$SingleExecutionViewAssertion.check(ViewInteraction.java:2)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:12)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:1)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	at android.os.Handler.handleCallback(Handler.java:938)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	at android.os.Looper.loop(Looper.java:223)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	at android.app.ActivityThread.main(ActivityThread.java:7868)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	at java.lang.reflect.Method.invoke(Native Method)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+03-22 11:34:55.209   678  1050 I DetoxActionHandlers: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:981)
+03-22 11:34:55.209   678  1050 I DetoxWSClient: Sending out action 'testFailed' (ID #6)
+03-22 11:34:55.210   678  1050 I DetoxDispatcher: Done with action 'invoke'

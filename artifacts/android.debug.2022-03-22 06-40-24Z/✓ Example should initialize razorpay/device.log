@@ -1,0 +1,50 @@
+--------- beginning of main
+03-22 17:40:34.058 13714 13714 D CompatibilityChangeReporter: Compat change id reported: 171228096; UID 10170; state: ENABLED
+03-22 17:40:34.060 13714 13714 W com.detoxsampl: Accessing hidden field Landroid/widget/ScrollView;->mScroller:Landroid/widget/OverScroller; (unsupported, reflection, allowed)
+03-22 17:40:34.100 13714 13714 I Detox   : Wait is over: app is now idle!
+03-22 17:40:34.100 13714 13780 I DetoxWSClient: Sending out action 'ready' (ID #-1000)
+03-22 17:40:34.101 13714 13780 I DetoxDispatcher: Done with action 'isReady'
+03-22 17:40:34.101 13714 13780 I DetoxDispatcher: Handling action 'loginSuccess' (ID #0)...
+03-22 17:40:34.102 13714 13780 I DetoxDispatcher: Done with action 'loginSuccess'
+03-22 17:40:34.102 13714 13780 I DetoxDispatcher: Handling action 'isReady' (ID #-1000)...
+03-22 17:40:34.113 13714 13714 I Detox   : Wait is over: app is now idle!
+03-22 17:40:34.114 13714 13780 I DetoxWSClient: Sending out action 'ready' (ID #-1000)
+03-22 17:40:34.117 13714 13780 I DetoxDispatcher: Done with action 'isReady'
+03-22 17:40:34.170 13714 13784 D DetoxWSClient: Received action 'invoke' (ID #1, params={"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["initRazorpay"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]})
+03-22 17:40:34.173 13714 13780 I DetoxDispatcher: Handling action 'invoke' (ID #1)...
+03-22 17:40:34.195 13714 13780 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForTestId, [initRazorpay]
+03-22 17:40:34.230 13714 13780 D Detox   : class androidx.test.espresso.Espresso, onView, [(view.getTag() is "initRazorpay" and view has effective visibility <VISIBLE>)]
+03-22 17:40:34.232 13714 13780 D Detox   : class com.wix.detox.espresso.DetoxViewActions, click, []
+03-22 17:40:34.235 13714 13780 W com.detoxsampl: Accessing hidden method Landroid/view/ViewConfiguration;->getDoubleTapMinTime()I (unsupported, reflection, allowed)
+03-22 17:40:34.245 13714 13780 D Detox   : class com.wix.detox.espresso.EspressoDetox, perform, [androidx.test.espresso.ViewInteraction@ea1c27, com.wix.detox.espresso.action.RNClickAction@56c0ed4]
+03-22 17:40:34.271 13714 13714 W com.detoxsampl: Accessing hidden method Landroid/view/WindowManagerGlobal;->getInstance()Landroid/view/WindowManagerGlobal; (unsupported, reflection, allowed)
+03-22 17:40:34.271 13714 13714 W com.detoxsampl: Accessing hidden field Landroid/view/WindowManagerGlobal;->mViews:Ljava/util/ArrayList; (unsupported, reflection, allowed)
+03-22 17:40:34.271 13714 13714 W com.detoxsampl: Accessing hidden field Landroid/view/WindowManagerGlobal;->mParams:Ljava/util/ArrayList; (unsupported, reflection, allowed)
+03-22 17:40:34.288 13714 13714 I ViewInteraction: Performing 'com.wix.detox.espresso.action.detoxsingletap@841b372 click' action on view (view.getTag() is "initRazorpay" and view has effective visibility <VISIBLE>)
+03-22 17:40:34.344 13714 13714 I Detox   : UIManagerModule is busy
+03-22 17:40:34.357 13714 13769 D EGL_emulation: app_time_stats: avg=350.74ms min=11.92ms max=876.55ms count=4
+03-22 17:40:34.363 13714 13782 I ReactNativeJS: clicked
+03-22 17:40:34.681 13714 13714 I Detox   : AnimatedModule is busy.
+03-22 17:40:34.685 13714 13714 I Detox   : AnimatedModule is busy.
+03-22 17:40:34.700 13714 13714 I Detox   : AnimatedModule is busy.
+03-22 17:40:34.711 13714 13714 I Detox   : AnimatedModule is busy.
+03-22 17:40:34.731 13714 13714 I Detox   : AnimatedModule is busy.
+03-22 17:40:34.747 13714 13714 I Detox   : AnimatedModule is busy.
+03-22 17:40:34.762 13714 13714 I Detox   : AnimatedModule is busy.
+03-22 17:40:34.780 13714 13714 I Detox   : AnimatedModule is busy.
+03-22 17:40:34.796 13714 13714 I Detox   : AnimatedModule is busy.
+03-22 17:40:34.812 13714 13714 I Detox   : AnimatedModule is busy.
+03-22 17:40:34.830 13714 13714 I Detox   : AnimatedModule is busy.
+03-22 17:40:34.844 13714 13714 I Detox   : AnimatedModule is busy.
+03-22 17:40:34.864 13714 13714 I Detox   : AnimatedModule is busy.
+03-22 17:40:35.282 13714 13780 I DetoxWSClient: Sending out action 'invokeResult' (ID #1)
+03-22 17:40:35.282 13714 13780 I DetoxDispatcher: Done with action 'invoke'
+03-22 17:40:35.291 13714 13784 D DetoxWSClient: Received action 'invoke' (ID #2, params={"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["Razorpay Initialized"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]})
+03-22 17:40:35.291 13714 13780 I DetoxDispatcher: Handling action 'invoke' (ID #2)...
+03-22 17:40:35.292 13714 13780 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForText, [Razorpay Initialized]
+03-22 17:40:35.295 13714 13780 D Detox   : class androidx.test.espresso.Espresso, onView, [(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Razorpay Initialized" and view has effective visibility <VISIBLE>)]
+03-22 17:40:35.295 13714 13780 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForSufficientlyVisible, [75]
+03-22 17:40:35.296 13714 13780 D Detox   : class com.wix.detox.espresso.DetoxAssertion, assertMatcher, [androidx.test.espresso.ViewInteraction@7f526bf, (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)]
+03-22 17:40:35.302 13714 13714 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)}' assertion on view (an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Razorpay Initialized" and view has effective visibility <VISIBLE>)
+03-22 17:40:35.304 13714 13780 I DetoxWSClient: Sending out action 'invokeResult' (ID #2)
+03-22 17:40:35.305 13714 13780 I DetoxDispatcher: Done with action 'invoke'

@@ -1,0 +1,121 @@
+--------- beginning of main
+03-22 11:28:41.887 21332 21461 I Detox   : Detox server connection details: url=ws://localhost:56487, sessionId=23eb174d-06eb-b9b4-d7f2-f4db8312aac2
+03-22 11:28:41.891 21332 22340 I DetoxDispatcher: Handling action '_init' (ID #0)...
+03-22 11:28:41.891 21332 22340 I Detox   : Connecting to server...
+03-22 11:28:41.891 21332 22340 I DetoxWSClient: At connectToServer
+03-22 11:28:41.903 21332 21332 D DetoxRNLoading: Got new RN-context directly and immediately
+03-22 11:28:41.905 21332 22340 I DetoxRNIdleRes: Setting up Espresso Idling Resources for React Native
+03-22 11:28:41.910 21332 21538 W com.detoxsampl: Accessing hidden method Landroid/os/MessageQueue;->next()Landroid/os/Message; (greylist, reflection, allowed)
+03-22 11:28:41.910 21332 21538 W com.detoxsampl: Accessing hidden field Landroid/os/MessageQueue;->mMessages:Landroid/os/Message; (greylist, reflection, allowed)
+03-22 11:28:41.910 21332 21538 W com.detoxsampl: Accessing hidden method Landroid/os/Message;->recycleUnchecked()V (greylist, reflection, allowed)
+03-22 11:28:41.912 21332 22344 D DetoxWSClient: At onOpen
+03-22 11:28:41.912 21332 22344 I DetoxWSClient: Sending out action 'login' (ID #0)
+03-22 11:28:41.913 21332 22344 I Detox   : Connected to server!
+03-22 11:28:41.917 21332 22344 D DetoxWSClient: Received action 'loginSuccess' (ID #0, params={"testerConnected":true,"appConnected":true})
+03-22 11:28:41.921 21332 22340 D AsyncStorageIR: Checking whether a custom IR for Async-Storage is required... (legacy=false)
+03-22 11:28:41.921 21332 22340 D DetoxRNHelpers: Native RN module resolution (class com.reactnativecommunity.asyncstorage.AsyncStorageModule): no such class
+03-22 11:28:41.921 21332 22340 D AsyncStorageIR: Checking whether a custom IR for Async-Storage is required... (legacy=true)
+03-22 11:28:41.922 21332 22340 D AsyncStorageIR: IR for Async-Storage is required! (legacy=true)
+03-22 11:28:41.925 21332 21332 D AsyncStorageIRLegacy: Async-storage is busy!
+03-22 11:28:41.930 21332 22340 I DetoxDispatcher: Done with action '_init'
+03-22 11:28:41.930 21332 22340 I DetoxDispatcher: Handling action 'isReady' (ID #-1000)...
+03-22 11:28:41.939 21332 21332 I Detox   : Wait is over: app is now idle!
+03-22 11:28:41.939 21332 22340 I DetoxWSClient: Sending out action 'ready' (ID #-1000)
+03-22 11:28:41.939 21332 22340 I DetoxDispatcher: Done with action 'isReady'
+03-22 11:28:41.939 21332 22340 I DetoxDispatcher: Handling action 'loginSuccess' (ID #0)...
+03-22 11:28:41.939 21332 22340 I DetoxDispatcher: Done with action 'loginSuccess'
+03-22 11:28:41.940 21332 22344 D DetoxWSClient: Received action 'isReady' (ID #-1000, params={})
+03-22 11:28:41.941 21332 22340 I DetoxDispatcher: Handling action 'isReady' (ID #-1000)...
+03-22 11:28:41.945 21332 21332 I Detox   : Wait is over: app is now idle!
+03-22 11:28:41.945 21332 22340 I DetoxWSClient: Sending out action 'ready' (ID #-1000)
+03-22 11:28:41.945 21332 22340 I DetoxDispatcher: Done with action 'isReady'
+03-22 11:28:42.051 21332 22344 D DetoxWSClient: Received action 'invoke' (ID #1, params={"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["initRazorpay"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]})
+03-22 11:28:42.053 21332 22340 I DetoxDispatcher: Handling action 'invoke' (ID #1)...
+03-22 11:28:42.063 21332 22340 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForTestId, [initRazorpay]
+03-22 11:28:42.069 21332 22340 D Detox   : class androidx.test.espresso.Espresso, onView, [(view.getTag() is "initRazorpay" and view has effective visibility <VISIBLE>)]
+03-22 11:28:42.069 21332 22340 D Detox   : class com.wix.detox.espresso.DetoxViewActions, click, []
+03-22 11:28:42.071 21332 22340 W com.detoxsampl: Accessing hidden method Landroid/view/ViewConfiguration;->getDoubleTapMinTime()I (greylist, reflection, allowed)
+03-22 11:28:42.073 21332 22340 D Detox   : class com.wix.detox.espresso.EspressoDetox, perform, [androidx.test.espresso.ViewInteraction@af1ce46, com.wix.detox.espresso.action.RNClickAction@5f25807]
+03-22 11:28:42.084 21332 21332 W RootViewPicker: No activity currently resumed - waiting: 10ms for one to appear.
+03-22 11:28:42.099 21332 21332 W RootViewPicker: No activity currently resumed - waiting: 50ms for one to appear.
+03-22 11:28:42.153 21332 21332 W RootViewPicker: No activity currently resumed - waiting: 100ms for one to appear.
+03-22 11:28:42.263 21332 21332 W RootViewPicker: No activity currently resumed - waiting: 500ms for one to appear.
+03-22 11:28:42.774 21332 21332 W RootViewPicker: No activity currently resumed - waiting: 2000ms for one to appear.
+03-22 11:28:43.660 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 100 iterations.
+03-22 11:28:44.526 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 200 iterations.
+03-22 11:28:44.778 21332 21332 W RootViewPicker: No activity currently resumed - waiting: 30000ms for one to appear.
+03-22 11:28:45.630 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 100 iterations.
+03-22 11:28:46.483 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 200 iterations.
+03-22 11:28:47.327 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 300 iterations.
+03-22 11:28:48.210 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 400 iterations.
+03-22 11:28:49.099 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 500 iterations.
+03-22 11:28:49.951 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 600 iterations.
+03-22 11:28:50.830 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 700 iterations.
+03-22 11:28:51.697 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 800 iterations.
+03-22 11:28:52.042 21332 22344 D DetoxWSClient: Received action 'currentStatus' (ID #2, params={})
+03-22 11:28:52.042 21332 22341 I DetoxDispatcher: Handling action 'currentStatus' (ID #2)...
+03-22 11:28:52.046 21332 22341 I DetoxWSClient: Sending out action 'currentStatusResult' (ID #2)
+03-22 11:28:52.046 21332 22341 I DetoxDispatcher: Done with action 'currentStatus'
+03-22 11:28:52.525 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 900 iterations.
+03-22 11:28:53.414 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 1000 iterations.
+03-22 11:28:54.277 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 1100 iterations.
+03-22 11:28:55.130 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 1200 iterations.
+03-22 11:28:56.006 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 1300 iterations.
+03-22 11:28:56.864 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 1400 iterations.
+03-22 11:28:57.748 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 1500 iterations.
+03-22 11:28:58.617 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 1600 iterations.
+03-22 11:28:59.478 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 1700 iterations.
+03-22 11:29:00.334 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 1800 iterations.
+03-22 11:29:01.180 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 1900 iterations.
+03-22 11:29:02.046 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 2000 iterations.
+03-22 11:29:02.063 21332 22344 D DetoxWSClient: Received action 'currentStatus' (ID #3, params={})
+03-22 11:29:02.063 21332 22341 I DetoxDispatcher: Handling action 'currentStatus' (ID #3)...
+03-22 11:29:02.066 21332 22341 I DetoxWSClient: Sending out action 'currentStatusResult' (ID #3)
+03-22 11:29:02.067 21332 22341 I DetoxDispatcher: Done with action 'currentStatus'
+03-22 11:29:02.891 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 2100 iterations.
+03-22 11:29:03.762 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 2200 iterations.
+03-22 11:29:04.629 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 2300 iterations.
+03-22 11:29:05.497 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 2400 iterations.
+03-22 11:29:06.363 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 2500 iterations.
+03-22 11:29:07.200 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 2600 iterations.
+03-22 11:29:08.063 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 2700 iterations.
+03-22 11:29:08.918 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 2800 iterations.
+03-22 11:29:09.809 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 2900 iterations.
+03-22 11:29:10.683 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 3000 iterations.
+03-22 11:29:11.561 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 3100 iterations.
+03-22 11:29:12.074 21332 22344 D DetoxWSClient: Received action 'currentStatus' (ID #4, params={})
+03-22 11:29:12.075 21332 22341 I DetoxDispatcher: Handling action 'currentStatus' (ID #4)...
+03-22 11:29:12.088 21332 22341 I DetoxWSClient: Sending out action 'currentStatusResult' (ID #4)
+03-22 11:29:12.090 21332 22341 I DetoxDispatcher: Done with action 'currentStatus'
+03-22 11:29:12.365 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 3200 iterations.
+03-22 11:29:13.209 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 3300 iterations.
+03-22 11:29:14.066 21332 21332 W UiControllerImpl: Waiting for: DELAY_HAS_PAST for 3400 iterations.
+03-22 11:29:14.790 21332 22340 I DetoxActionHandlers: Test exception
+03-22 11:29:14.790 21332 22340 I DetoxActionHandlers: java.lang.reflect.InvocationTargetException
+03-22 11:29:14.790 21332 22340 I DetoxActionHandlers: 	at java.lang.reflect.Method.invoke(Native Method)
+03-22 11:29:14.790 21332 22340 I DetoxActionHandlers: 	at org.apache.commons.lang3.reflect.MethodUtils.invokeStaticMethod(MethodUtils.java:443)
+03-22 11:29:14.790 21332 22340 I DetoxActionHandlers: 	at org.apache.commons.lang3.reflect.MethodUtils.invokeStaticMethod(MethodUtils.java:405)
+03-22 11:29:14.790 21332 22340 I DetoxActionHandlers: 	at com.wix.invoke.types.ClassTarget.execute(ClassTarget.java:23)
+03-22 11:29:14.790 21332 22340 I DetoxActionHandlers: 	at com.wix.invoke.types.Target.invoke(Target.java:59)
+03-22 11:29:14.790 21332 22340 I DetoxActionHandlers: 	at com.wix.invoke.MethodInvocation.invoke(MethodInvocation.java:35)
+03-22 11:29:14.790 21332 22340 I DetoxActionHandlers: 	at com.wix.invoke.MethodInvocation.invoke(MethodInvocation.java:26)
+03-22 11:29:14.790 21332 22340 I DetoxActionHandlers: 	at com.wix.invoke.MethodInvocation.invoke(MethodInvocation.java:20)
+03-22 11:29:14.790 21332 22340 I DetoxActionHandlers: 	at com.wix.detox.adapters.server.InvokeActionHandler.handle(DetoxActionHandlers.kt:54)
+03-22 11:29:14.790 21332 22340 I DetoxActionHandlers: 	at com.wix.detox.adapters.server.ActionsExecutor$executeAction$$inlined$let$lambda$1.run(DetoxActionsDispatcher.kt:64)
+03-22 11:29:14.790 21332 22340 I DetoxActionHandlers: 	at android.os.Handler.handleCallback(Handler.java:938)
+03-22 11:29:14.790 21332 22340 I DetoxActionHandlers: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+03-22 11:29:14.790 21332 22340 I DetoxActionHandlers: 	at android.os.Looper.loop(Looper.java:223)
+03-22 11:29:14.790 21332 22340 I DetoxActionHandlers: 	at com.wix.detox.adapters.server.ActionsExecutor$1.run(DetoxActionsDispatcher.kt:50)
+03-22 11:29:14.790 21332 22340 I DetoxActionHandlers: 	at java.lang.Thread.run(Thread.java:923)
+03-22 11:29:14.790 21332 22340 I DetoxActionHandlers: Caused by: androidx.test.espresso.NoActivityResumedException: No activities in stage RESUMED. Did you forget to launch the activity. (test.getActivity() or similar)?
+03-22 11:29:14.790 21332 22340 I DetoxActionHandlers: 	at dalvik.system.VMStack.getThreadStackTrace(Native Method)
+03-22 11:29:14.790 21332 22340 I DetoxActionHandlers: 	at java.lang.Thread.getStackTrace(Thread.java:1736)
+03-22 11:29:14.790 21332 22340 I DetoxActionHandlers: 	at androidx.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:12)
+03-22 11:29:14.790 21332 22340 I DetoxActionHandlers: 	at androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:7)
+03-22 11:29:14.790 21332 22340 I DetoxActionHandlers: 	at androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:8)
+03-22 11:29:14.790 21332 22340 I DetoxActionHandlers: 	at androidx.test.espresso.ViewInteraction.desugaredPerform(ViewInteraction.java:11)
+03-22 11:29:14.790 21332 22340 I DetoxActionHandlers: 	at androidx.test.espresso.ViewInteraction.perform(ViewInteraction.java:4)
+03-22 11:29:14.790 21332 22340 I DetoxActionHandlers: 	at com.wix.detox.espresso.EspressoDetox.perform(EspressoDetox.java:35)
+03-22 11:29:14.790 21332 22340 I DetoxActionHandlers: 	... 15 more
+03-22 11:29:14.791 21332 22340 I DetoxWSClient: Sending out action 'testFailed' (ID #1)
+03-22 11:29:14.792 21332 22340 I DetoxDispatcher: Done with action 'invoke'

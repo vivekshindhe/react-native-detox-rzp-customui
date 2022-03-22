@@ -1,0 +1,155 @@
+--------- beginning of main
+03-22 00:36:50.058  7557  8077 I ReactNativeJS: Running "DetoxSample" with {"rootTag":11}
+03-22 00:36:50.299  7557  7797 E unknown:ReactContextBaseJavaModule: Unhandled SoftException
+03-22 00:36:50.299  7557  7797 E unknown:ReactContextBaseJavaModule: java.lang.RuntimeException: Catalyst Instance has already disappeared: requested by WebSocketModule
+03-22 00:36:50.299  7557  7797 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.ReactContextBaseJavaModule.getReactApplicationContextIfActiveOrWarn(ReactContextBaseJavaModule.java:66)
+03-22 00:36:50.299  7557  7797 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.modules.websocket.WebSocketModule.sendEvent(WebSocketModule.java:62)
+03-22 00:36:50.299  7557  7797 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.modules.websocket.WebSocketModule.access$100(WebSocketModule.java:40)
+03-22 00:36:50.299  7557  7797 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.modules.websocket.WebSocketModule$1.onMessage(WebSocketModule.java:190)
+03-22 00:36:50.299  7557  7797 E unknown:ReactContextBaseJavaModule: 	at okhttp3.internal.ws.RealWebSocket.onReadMessage(RealWebSocket.kt:333)
+03-22 00:36:50.299  7557  7797 E unknown:ReactContextBaseJavaModule: 	at okhttp3.internal.ws.WebSocketReader.readMessageFrame(WebSocketReader.kt:245)
+03-22 00:36:50.299  7557  7797 E unknown:ReactContextBaseJavaModule: 	at okhttp3.internal.ws.WebSocketReader.processNextFrame(WebSocketReader.kt:106)
+03-22 00:36:50.299  7557  7797 E unknown:ReactContextBaseJavaModule: 	at okhttp3.internal.ws.RealWebSocket.loopReader(RealWebSocket.kt:293)
+03-22 00:36:50.299  7557  7797 E unknown:ReactContextBaseJavaModule: 	at okhttp3.internal.ws.RealWebSocket$connect$1.onResponse(RealWebSocket.kt:195)
+03-22 00:36:50.299  7557  7797 E unknown:ReactContextBaseJavaModule: 	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+03-22 00:36:50.299  7557  7797 E unknown:ReactContextBaseJavaModule: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+03-22 00:36:50.299  7557  7797 E unknown:ReactContextBaseJavaModule: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+03-22 00:36:50.299  7557  7797 E unknown:ReactContextBaseJavaModule: 	at java.lang.Thread.run(Thread.java:923)
+03-22 00:36:50.299  7557  7797 I chatty  : uid=10464(com.detoxsample) alhost:8081/... identical 1 line
+03-22 00:36:50.300  7557  7797 E unknown:ReactContextBaseJavaModule: Unhandled SoftException
+03-22 00:36:50.300  7557  7797 E unknown:ReactContextBaseJavaModule: java.lang.RuntimeException: Catalyst Instance has already disappeared: requested by WebSocketModule
+03-22 00:36:50.300  7557  7797 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.ReactContextBaseJavaModule.getReactApplicationContextIfActiveOrWarn(ReactContextBaseJavaModule.java:66)
+03-22 00:36:50.300  7557  7797 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.modules.websocket.WebSocketModule.sendEvent(WebSocketModule.java:62)
+03-22 00:36:50.300  7557  7797 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.modules.websocket.WebSocketModule.access$100(WebSocketModule.java:40)
+03-22 00:36:50.300  7557  7797 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.modules.websocket.WebSocketModule$1.onMessage(WebSocketModule.java:190)
+03-22 00:36:50.300  7557  7797 E unknown:ReactContextBaseJavaModule: 	at okhttp3.internal.ws.RealWebSocket.onReadMessage(RealWebSocket.kt:333)
+03-22 00:36:50.300  7557  7797 E unknown:ReactContextBaseJavaModule: 	at okhttp3.internal.ws.WebSocketReader.readMessageFrame(WebSocketReader.kt:245)
+03-22 00:36:50.300  7557  7797 E unknown:ReactContextBaseJavaModule: 	at okhttp3.internal.ws.WebSocketReader.processNextFrame(WebSocketReader.kt:106)
+03-22 00:36:50.300  7557  7797 E unknown:ReactContextBaseJavaModule: 	at okhttp3.internal.ws.RealWebSocket.loopReader(RealWebSocket.kt:293)
+03-22 00:36:50.300  7557  7797 E unknown:ReactContextBaseJavaModule: 	at okhttp3.internal.ws.RealWebSocket$connect$1.onResponse(RealWebSocket.kt:195)
+03-22 00:36:50.300  7557  7797 E unknown:ReactContextBaseJavaModule: 	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+03-22 00:36:50.300  7557  7797 E unknown:ReactContextBaseJavaModule: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+03-22 00:36:50.300  7557  7797 E unknown:ReactContextBaseJavaModule: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+03-22 00:36:50.300  7557  7797 E unknown:ReactContextBaseJavaModule: 	at java.lang.Thread.run(Thread.java:923)
+03-22 00:36:50.313  7557  7557 W com.detoxsampl: Accessing hidden method Landroid/view/WindowManagerGlobal;->getInstance()Landroid/view/WindowManagerGlobal; (greylist, reflection, allowed)
+03-22 00:36:50.313  7557  7557 W com.detoxsampl: Accessing hidden field Landroid/view/WindowManagerGlobal;->mViews:Ljava/util/ArrayList; (greylist, reflection, allowed)
+03-22 00:36:50.313  7557  7557 W com.detoxsampl: Accessing hidden field Landroid/view/WindowManagerGlobal;->mParams:Ljava/util/ArrayList; (greylist, reflection, allowed)
+03-22 00:36:50.316  7557  7557 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)}' assertion on view (an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Step One" and view has effective visibility <VISIBLE>)
+03-22 00:36:50.318  7557  8028 I DetoxWSClient: Sending out action 'invokeResult' (ID #1)
+03-22 00:36:50.319  7557  8028 I DetoxDispatcher: Done with action 'invoke'
+03-22 00:36:50.387  7557  8038 D DetoxWSClient: Received action 'reactNativeReload' (ID #-1000, params={})
+03-22 00:36:50.387  7557  8028 I DetoxDispatcher: Handling action 'reactNativeReload' (ID #-1000)...
+03-22 00:36:50.393  7557  8028 I DetoxRNExt: Reloading React Native
+03-22 00:36:50.428  7557  7557 I TouchFilterInputStageHelper: [needTouchEventFilter] Displayid : 0
+03-22 00:36:50.430  7557  7557 D HandGripFilter: getdisplaysize, x : 1080 y : 2340
+03-22 00:36:50.614  7557  7557 W unknown:ReactNative: Packager connection already open, nooping.
+03-22 00:36:50.615  7557  8078 E unknown:ReactContextBaseJavaModule: Unhandled SoftException
+03-22 00:36:50.615  7557  8078 E unknown:ReactContextBaseJavaModule: java.lang.RuntimeException: Catalyst Instance has already disappeared: requested by DeviceInfo
+03-22 00:36:50.615  7557  8078 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.ReactContextBaseJavaModule.getReactApplicationContextIfActiveOrWarn(ReactContextBaseJavaModule.java:66)
+03-22 00:36:50.615  7557  8078 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.modules.deviceinfo.DeviceInfoModule.invalidate(DeviceInfoModule.java:114)
+03-22 00:36:50.615  7557  8078 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.ModuleHolder.destroy(ModuleHolder.java:110)
+03-22 00:36:50.615  7557  8078 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.NativeModuleRegistry.notifyJSInstanceDestroy(NativeModuleRegistry.java:108)
+03-22 00:36:50.615  7557  8078 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.CatalystInstanceImpl$1.run(CatalystInstanceImpl.java:368)
+03-22 00:36:50.615  7557  8078 E unknown:ReactContextBaseJavaModule: 	at android.os.Handler.handleCallback(Handler.java:938)
+03-22 00:36:50.615  7557  8078 E unknown:ReactContextBaseJavaModule: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+03-22 00:36:50.615  7557  8078 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.queue.MessageQueueThreadHandler.dispatchMessage(MessageQueueThreadHandler.java:27)
+03-22 00:36:50.615  7557  8078 E unknown:ReactContextBaseJavaModule: 	at androidx.test.espresso.base.Interrogator.loopAndInterrogate(Interrogator.java:14)
+03-22 00:36:50.615  7557  8078 E unknown:ReactContextBaseJavaModule: 	at androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler$2.run(LooperIdlingResourceInterrogationHandler.java:3)
+03-22 00:36:50.615  7557  8078 E unknown:ReactContextBaseJavaModule: 	at android.os.Handler.handleCallback(Handler.java:938)
+03-22 00:36:50.615  7557  8078 E unknown:ReactContextBaseJavaModule: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+03-22 00:36:50.615  7557  8078 E unknown:ReactContextBaseJavaModule: 	at android.os.Looper.loop(Looper.java:223)
+03-22 00:36:50.615  7557  8078 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$4.run(MessageQueueThreadImpl.java:226)
+03-22 00:36:50.615  7557  8078 E unknown:ReactContextBaseJavaModule: 	at java.lang.Thread.run(Thread.java:923)
+03-22 00:36:50.615  7557  8078 E unknown:ReactContextBaseJavaModule: Unhandled SoftException
+03-22 00:36:50.615  7557  8078 E unknown:ReactContextBaseJavaModule: java.lang.RuntimeException: Catalyst Instance has already disappeared: requested by AppState
+03-22 00:36:50.615  7557  8078 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.ReactContextBaseJavaModule.getReactApplicationContextIfActiveOrWarn(ReactContextBaseJavaModule.java:66)
+03-22 00:36:50.615  7557  8078 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.modules.appstate.AppStateModule.invalidate(AppStateModule.java:127)
+03-22 00:36:50.615  7557  8078 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.ModuleHolder.destroy(ModuleHolder.java:110)
+03-22 00:36:50.615  7557  8078 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.NativeModuleRegistry.notifyJSInstanceDestroy(NativeModuleRegistry.java:108)
+03-22 00:36:50.615  7557  8078 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.CatalystInstanceImpl$1.run(CatalystInstanceImpl.java:368)
+03-22 00:36:50.615  7557  8078 E unknown:ReactContextBaseJavaModule: 	at android.os.Handler.handleCallback(Handler.java:938)
+03-22 00:36:50.615  7557  8078 E unknown:ReactContextBaseJavaModule: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+03-22 00:36:50.615  7557  8078 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.queue.MessageQueueThreadHandler.dispatchMessage(MessageQueueThreadHandler.java:27)
+03-22 00:36:50.615  7557  8078 E unknown:ReactContextBaseJavaModule: 	at androidx.test.espresso.base.Interrogator.loopAndInterrogate(Interrogator.java:14)
+03-22 00:36:50.615  7557  8078 E unknown:ReactContextBaseJavaModule: 	at androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler$2.run(LooperIdlingResourceInterrogationHandler.java:3)
+03-22 00:36:50.615  7557  8078 E unknown:ReactContextBaseJavaModule: 	at android.os.Handler.handleCallback(Handler.java:938)
+03-22 00:36:50.615  7557  8078 E unknown:ReactContextBaseJavaModule: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+03-22 00:36:50.615  7557  8078 E unknown:ReactContextBaseJavaModule: 	at android.os.Looper.loop(Looper.java:223)
+03-22 00:36:50.615  7557  8078 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$4.run(MessageQueueThreadImpl.java:226)
+03-22 00:36:50.615  7557  8078 E unknown:ReactContextBaseJavaModule: 	at java.lang.Thread.run(Thread.java:923)
+03-22 00:36:50.617  7557  8078 E unknown:ReactContextBaseJavaModule: Unhandled SoftException
+03-22 00:36:50.617  7557  8078 E unknown:ReactContextBaseJavaModule: java.lang.RuntimeException: Catalyst Instance has already disappeared: requested by NativeAnimatedModule
+03-22 00:36:50.617  7557  8078 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.ReactContextBaseJavaModule.getReactApplicationContextIfActiveOrWarn(ReactContextBaseJavaModule.java:66)
+03-22 00:36:50.617  7557  8078 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.animated.NativeAnimatedModule.invalidate(NativeAnimatedModule.java:897)
+03-22 00:36:50.617  7557  8078 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.ModuleHolder.destroy(ModuleHolder.java:110)
+03-22 00:36:50.617  7557  8078 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.NativeModuleRegistry.notifyJSInstanceDestroy(NativeModuleRegistry.java:108)
+03-22 00:36:50.617  7557  8078 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.CatalystInstanceImpl$1.run(CatalystInstanceImpl.java:368)
+03-22 00:36:50.617  7557  8078 E unknown:ReactContextBaseJavaModule: 	at android.os.Handler.handleCallback(Handler.java:938)
+03-22 00:36:50.617  7557  8078 E unknown:ReactContextBaseJavaModule: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+03-22 00:36:50.617  7557  8078 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.queue.MessageQueueThreadHandler.dispatchMessage(MessageQueueThreadHandler.java:27)
+03-22 00:36:50.617  7557  8078 E unknown:ReactContextBaseJavaModule: 	at androidx.test.espresso.base.Interrogator.loopAndInterrogate(Interrogator.java:14)
+03-22 00:36:50.617  7557  8078 E unknown:ReactContextBaseJavaModule: 	at androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler$2.run(LooperIdlingResourceInterrogationHandler.java:3)
+03-22 00:36:50.617  7557  8078 E unknown:ReactContextBaseJavaModule: 	at android.os.Handler.handleCallback(Handler.java:938)
+03-22 00:36:50.617  7557  8078 E unknown:ReactContextBaseJavaModule: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+03-22 00:36:50.617  7557  8078 E unknown:ReactContextBaseJavaModule: 	at android.os.Looper.loop(Looper.java:223)
+03-22 00:36:50.617  7557  8078 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$4.run(MessageQueueThreadImpl.java:226)
+03-22 00:36:50.617  7557  8078 E unknown:ReactContextBaseJavaModule: 	at java.lang.Thread.run(Thread.java:923)
+03-22 00:36:50.617  7557  8078 E unknown:ReactContextBaseJavaModule: Unhandled SoftException
+03-22 00:36:50.617  7557  8078 E unknown:ReactContextBaseJavaModule: java.lang.RuntimeException: Catalyst Instance has already disappeared: requested by FrescoModule
+03-22 00:36:50.617  7557  8078 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.ReactContextBaseJavaModule.getReactApplicationContextIfActiveOrWarn(ReactContextBaseJavaModule.java:66)
+03-22 00:36:50.617  7557  8078 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.modules.fresco.FrescoModule.invalidate(FrescoModule.java:202)
+03-22 00:36:50.617  7557  8078 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.ModuleHolder.destroy(ModuleHolder.java:110)
+03-22 00:36:50.617  7557  8078 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.NativeModuleRegistry.notifyJSInstanceDestroy(NativeModuleRegistry.java:108)
+03-22 00:36:50.617  7557  8078 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.CatalystInstanceImpl$1.run(CatalystInstanceImpl.java:368)
+03-22 00:36:50.617  7557  8078 E unknown:ReactContextBaseJavaModule: 	at android.os.Handler.handleCallback(Handler.java:938)
+03-22 00:36:50.617  7557  8078 E unknown:ReactContextBaseJavaModule: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+03-22 00:36:50.617  7557  8078 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.queue.MessageQueueThreadHandler.dispatchMessage(MessageQueueThreadHandler.java:27)
+03-22 00:36:50.617  7557  8078 E unknown:ReactContextBaseJavaModule: 	at androidx.test.espresso.base.Interrogator.loopAndInterrogate(Interrogator.java:14)
+03-22 00:36:50.617  7557  8078 E unknown:ReactContextBaseJavaModule: 	at androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler$2.run(LooperIdlingResourceInterrogationHandler.java:3)
+03-22 00:36:50.617  7557  8078 E unknown:ReactContextBaseJavaModule: 	at android.os.Handler.handleCallback(Handler.java:938)
+03-22 00:36:50.617  7557  8078 E unknown:ReactContextBaseJavaModule: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+03-22 00:36:50.617  7557  8078 E unknown:ReactContextBaseJavaModule: 	at android.os.Looper.loop(Looper.java:223)
+03-22 00:36:50.617  7557  8078 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$4.run(MessageQueueThreadImpl.java:226)
+03-22 00:36:50.617  7557  8078 E unknown:ReactContextBaseJavaModule: 	at java.lang.Thread.run(Thread.java:923)
+03-22 00:36:50.622  7557  7557 E unknown:ReactInstanceManager: destroyRootView called
+03-22 00:36:50.622  7557  7557 E unknown:ReactInstanceManager: destroyRootView called, unmountReactApplication
+03-22 00:36:50.627  7557  8182 W unknown:ReactContext: initializeMessageQueueThreads() is called.
+03-22 00:36:50.630  7557  7557 W unknown:ReactNative: Packager connection already open, nooping.
+03-22 00:36:50.632  7557  8184 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.drawer.ReactDrawerLayoutManager
+03-22 00:36:50.636  7557  8184 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.uimanager.LayoutShadowNode
+03-22 00:36:50.638  7557  8184 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactHorizontalScrollViewManager
+03-22 00:36:50.641  7557  8184 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactHorizontalScrollContainerViewManager
+03-22 00:36:50.642  7557  8184 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.progressbar.ReactProgressBarViewManager
+03-22 00:36:50.643  7557  8184 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.progressbar.ProgressBarShadowNode
+03-22 00:36:50.644  7557  8184 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactScrollViewManager
+03-22 00:36:50.646  7557  8184 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.slider.ReactSliderManager
+03-22 00:36:50.647  7557  8184 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.slider.ReactSliderManager$ReactSliderShadowNode
+03-22 00:36:50.648  7557  8184 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.switchview.ReactSwitchManager
+03-22 00:36:50.650  7557  8184 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.switchview.ReactSwitchManager$ReactSwitchShadowNode
+03-22 00:36:50.651  7557  8184 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.swiperefresh.SwipeRefreshLayoutManager
+03-22 00:36:50.653  7557  8184 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.frescosupport.FrescoBasedReactTextInlineImageViewManager
+03-22 00:36:50.653  7557  8184 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.frescosupport.FrescoBasedReactTextInlineImageShadowNode
+03-22 00:36:50.654  7557  8184 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.image.ReactImageManager
+03-22 00:36:50.656  7557  8184 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.modal.ReactModalHostManager
+03-22 00:36:50.657  7557  8184 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.modal.ModalHostShadowNode
+03-22 00:36:50.658  7557  8184 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactRawTextManager
+03-22 00:36:50.658  7557  8184 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactRawTextShadowNode
+03-22 00:36:50.659  7557  8184 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.textinput.ReactTextInputManager
+03-22 00:36:50.663  7557  8184 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.textinput.ReactTextInputShadowNode
+03-22 00:36:50.664  7557  8184 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactTextViewManager
+03-22 00:36:50.666  7557  8184 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactTextShadowNode
+03-22 00:36:50.667  7557  8184 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.view.ReactViewManager
+03-22 00:36:50.668  7557  8184 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactVirtualTextViewManager
+03-22 00:36:50.669  7557  8184 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactVirtualTextShadowNode
+03-22 00:36:50.669  7557  8184 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.unimplementedview.ReactUnimplementedViewManager
+03-22 00:36:50.670  7557  8184 W unknown:ReactContext: initializeMessageQueueThreads() is called.
+03-22 00:36:50.672  7557  7557 I DetoxRNLoading: Got new RN-context async'ly through listener
+03-22 00:36:50.672  7557  8028 I DetoxRNIdleRes: Setting up Espresso Idling Resources for React Native
+03-22 00:36:50.676  7557  8028 D AsyncStorageIR: Checking whether a custom IR for Async-Storage is required... (legacy=false)
+03-22 00:36:50.676  7557  8028 D DetoxRNHelpers: Native RN module resolution (class com.reactnativecommunity.asyncstorage.AsyncStorageModule): no such class
+03-22 00:36:50.676  7557  8028 D AsyncStorageIR: Checking whether a custom IR for Async-Storage is required... (legacy=true)
+03-22 00:36:50.677  7557  8028 D AsyncStorageIR: IR for Async-Storage is required! (legacy=true)
+03-22 00:36:50.678  7557  7557 I Detox   : UIManagerModule is busy
+03-22 00:36:50.678  7557  7557 D AsyncStorageIRLegacy: Async-storage is busy!
+03-22 00:36:50.680  7557  8028 I DetoxWSClient: Sending out action 'ready' (ID #-1000)
+03-22 00:36:50.680  7557  8028 I DetoxDispatcher: Done with action 'reactNativeReload'

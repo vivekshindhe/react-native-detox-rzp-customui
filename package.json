@@ -1,0 +1,50 @@
+{
+  "name": "detoxsample",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "cd android && ./gradlew assembleDebug && adb install /Users/vivek.shindhe/RazorpayProjects/testing_projects/DetoxSample/android/app/build/outputs/apk/debug/app-debug.apk",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "e2e:android": "detox build --configuration=android.debug && detox test --configuration=android.debug --record-logs all"
+  },
+  "dependencies": {
+    "jest-circus": "^27.5.1",
+    "react": "17.0.2",
+    "react-native": "0.67.4",
+    "rzp-rn-customui-test": "^2.2.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/runtime": "^7.12.5",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "babel-jest": "^26.6.3",
+    "detox": "^19.5.7",
+    "eslint": "7.14.0",
+    "jest": "^26.6.3",
+    "metro-react-native-babel-preset": "^0.66.2",
+    "react-test-renderer": "17.0.2"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "detox": {
+    "test-runner": "jest",
+    "configurations": {
+      "ios.release": {
+        "binaryPath": "./ios/build/Build/Products/Release-iphonesimulator/DetoxSample.app",
+        "build": "xcodebuild -workspace ios/DetoxSample.xcworkspace -configuration release -scheme DetoxSample -sdk iphonesimulator -derivedDataPath ios/build",
+        "type": "ios.simulator",
+        "name": "iPhone 12 mini"
+      },
+      "android.debug": {
+        "type": "android.attached",
+        "binaryPath": "android/app/build/outputs/apk/debug/app-debug.apk",
+        "build": "cd android && ./gradlew assembleDebug assembleAndroidTest -DtestBuildType=debug && cd ..",
+        "name": "emulator-5554"
+      }
+    }
+  }
+}

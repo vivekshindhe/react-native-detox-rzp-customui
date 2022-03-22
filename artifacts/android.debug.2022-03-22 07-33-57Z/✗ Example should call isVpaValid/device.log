@@ -1,0 +1,207 @@
+--------- beginning of main
+03-22 18:34:12.110 17717 17717 I Detox   : AnimatedModule is busy.
+03-22 18:34:12.196 17717 17779 I DetoxWSClient: Sending out action 'invokeResult' (ID #16)
+03-22 18:34:12.196 17717 17779 I DetoxDispatcher: Done with action 'invoke'
+03-22 18:34:12.265 17717 17781 D DetoxWSClient: Received action 'invoke' (ID #17, params={"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["upiCollect"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]})
+03-22 18:34:12.266 17717 17779 I DetoxDispatcher: Handling action 'invoke' (ID #17)...
+03-22 18:34:12.266 17717 17779 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForTestId, [upiCollect]
+03-22 18:34:12.267 17717 17779 D Detox   : class androidx.test.espresso.Espresso, onView, [(view.getTag() is "upiCollect" and view has effective visibility <VISIBLE>)]
+03-22 18:34:12.268 17717 17779 D Detox   : class com.wix.detox.espresso.DetoxViewActions, click, []
+03-22 18:34:12.268 17717 17779 D Detox   : class com.wix.detox.espresso.EspressoDetox, perform, [androidx.test.espresso.ViewInteraction@4346864, com.wix.detox.espresso.action.RNClickAction@3771acd]
+03-22 18:34:12.275 17717 17717 I ViewInteraction: Performing 'com.wix.detox.espresso.action.detoxsingletap@b6f0f82 click' action on view (view.getTag() is "upiCollect" and view has effective visibility <VISIBLE>)
+03-22 18:34:12.320 17717 17766 D EGL_emulation: app_time_stats: avg=19.57ms min=9.72ms max=199.45ms count=59
+03-22 18:34:12.338 17717 17784 I ReactNativeJS: false
+03-22 18:34:12.417 17717 17784 E ReactNativeJS: Error: Text strings must be rendered within a <Text> component.
+03-22 18:34:12.417 17717 17784 E ReactNativeJS: 
+03-22 18:34:12.417 17717 17784 E ReactNativeJS: This error is located at:
+03-22 18:34:12.417 17717 17784 E ReactNativeJS:     in RCTView (at View.js:32)
+03-22 18:34:12.417 17717 17784 E ReactNativeJS:     in View (at UpiCollect.js:11)
+03-22 18:34:12.417 17717 17784 E ReactNativeJS:     in RCTView (at View.js:32)
+03-22 18:34:12.417 17717 17784 E ReactNativeJS:     in View (at SafeAreaView.js:41)
+03-22 18:34:12.417 17717 17784 E ReactNativeJS:     in SafeAreaView (at UpiCollect.js:10)
+03-22 18:34:12.417 17717 17784 E ReactNativeJS:     in UpiCollect (at App.js:170)
+03-22 18:34:12.417 17717 17784 E ReactNativeJS:     in RCTView (at View.js:32)
+03-22 18:34:12.417 17717 17784 E ReactNativeJS:     in View (at App.js:170)
+03-22 18:34:12.417 17717 17784 E ReactNativeJS:     in RCTView (at View.js:32)
+03-22 18:34:12.417 17717 17784 E ReactNativeJS:     in View (at ScrollView.js:1675)
+03-22 18:34:12.417 17717 17784 E ReactNativeJS:     in RCTScrollView (at ScrollView.js:1793)
+03-22 18:34:12.417 17717 17784 E ReactNativeJS:     in ScrollView (at ScrollView.js:1819)
+03-22 18:34:12.417 17717 17784 E ReactNativeJS:     in ScrollView (at App.js:45)
+03-22 18:34:12.417 17717 17784 E ReactNativeJS:     in RCTView (at View.js:32)
+03-22 18:34:12.417 17717 17784 E ReactNativeJS:     in View (at SafeAreaView.js:41)
+03-22 18:34:12.417 17717 17784 E ReactNativeJS:     in SafeAreaView (at App.js:43)
+03-22 18:34:12.417 17717 17784 E ReactNativeJS:     in App (at renderApplication.js:50)
+03-22 18:34:12.417 17717 17784 E ReactNativeJS:     in RCTView (at View.js:32)
+03-22 18:34:12.417 17717 17784 E ReactNativeJS:     in View (at AppContainer.js:92)
+03-22 18:34:12.417 17717 17784 E ReactNativeJS:     in RCTView (at View.js:32)
+03-22 18:34:12.417 17717 17784 E ReactNativeJS:     in View (at AppContainer.js:119)
+03-22 18:34:12.417 17717 17784 E ReactNativeJS:     in AppContainer (at renderApplication.js:43)
+03-22 18:34:12.417 17717 17784 E ReactNativeJS:     in DetoxSample(RootComponent) (at renderApplication.js:60)
+03-22 18:34:12.423 17717 17784 E ReactNativeJS: Error: Text strings must be rendered within a <Text> component.
+03-22 18:34:12.423 17717 17784 E ReactNativeJS: 
+03-22 18:34:12.423 17717 17784 E ReactNativeJS: This error is located at:
+03-22 18:34:12.423 17717 17784 E ReactNativeJS:     in RCTView (at View.js:32)
+03-22 18:34:12.423 17717 17784 E ReactNativeJS:     in View (at UpiCollect.js:11)
+03-22 18:34:12.423 17717 17784 E ReactNativeJS:     in RCTView (at View.js:32)
+03-22 18:34:12.423 17717 17784 E ReactNativeJS:     in View (at SafeAreaView.js:41)
+03-22 18:34:12.423 17717 17784 E ReactNativeJS:     in SafeAreaView (at UpiCollect.js:10)
+03-22 18:34:12.423 17717 17784 E ReactNativeJS:     in UpiCollect (at App.js:170)
+03-22 18:34:12.423 17717 17784 E ReactNativeJS:     in RCTView (at View.js:32)
+03-22 18:34:12.423 17717 17784 E ReactNativeJS:     in View (at App.js:170)
+03-22 18:34:12.423 17717 17784 E ReactNativeJS:     in RCTView (at View.js:32)
+03-22 18:34:12.423 17717 17784 E ReactNativeJS:     in View (at ScrollView.js:1675)
+03-22 18:34:12.423 17717 17784 E ReactNativeJS:     in RCTScrollView (at ScrollView.js:1793)
+03-22 18:34:12.423 17717 17784 E ReactNativeJS:     in ScrollView (at ScrollView.js:1819)
+03-22 18:34:12.423 17717 17784 E ReactNativeJS:     in ScrollView (at App.js:45)
+03-22 18:34:12.423 17717 17784 E ReactNativeJS:     in RCTView (at View.js:32)
+03-22 18:34:12.423 17717 17784 E ReactNativeJS:     in View (at SafeAreaView.js:41)
+03-22 18:34:12.423 17717 17784 E ReactNativeJS:     in SafeAreaView (at App.js:43)
+03-22 18:34:12.423 17717 17784 E ReactNativeJS:     in App (at renderApplication.js:50)
+03-22 18:34:12.423 17717 17784 E ReactNativeJS:     in RCTView (at View.js:32)
+03-22 18:34:12.423 17717 17784 E ReactNativeJS:     in View (at AppContainer.js:92)
+03-22 18:34:12.423 17717 17784 E ReactNativeJS:     in RCTView (at View.js:32)
+03-22 18:34:12.423 17717 17784 E ReactNativeJS:     in View (at AppContainer.js:119)
+03-22 18:34:12.423 17717 17784 E ReactNativeJS:     in AppContainer (at renderApplication.js:43)
+03-22 18:34:12.423 17717 17784 E ReactNativeJS:     in DetoxSample(RootComponent) (at renderApplication.js:60)
+03-22 18:34:12.472 17717 17717 I Detox   : Network is busy
+03-22 18:34:12.477 17717 17717 I Detox   : Network is busy
+03-22 18:34:12.495 17717 17717 I Detox   : Network is busy
+03-22 18:34:12.538 17717 17717 W unknown:ReactContext: initializeMessageQueueThreads() is called.
+03-22 18:34:12.935 17717 17938 D SoLoader: About to load: libimagepipeline.so
+03-22 18:34:12.936 17717 17938 D SoLoader: libimagepipeline.so not found on /data/data/com.detoxsample/lib-main
+03-22 18:34:12.936 17717 17938 D SoLoader: libimagepipeline.so found on /data/app/~~2c_6tbsA20KVMkP694LlAQ==/com.detoxsample-gVkjT9jlsiUbFjbeHQROeg==/lib/x86_64
+03-22 18:34:12.936 17717 17938 D SoLoader: Not resolving dependencies for libimagepipeline.so
+03-22 18:34:12.942 17717 17938 D SoLoader: Loaded: libimagepipeline.so
+03-22 18:34:13.370 17717 17779 I DetoxWSClient: Sending out action 'invokeResult' (ID #17)
+03-22 18:34:13.371 17717 17779 I DetoxDispatcher: Done with action 'invoke'
+03-22 18:34:13.377 17717 17781 D DetoxWSClient: Received action 'invoke' (ID #18, params={"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["vpaAddress"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.action.ViewActions"},"method":"replaceText","args":["rohan@paytm"]}}]})
+03-22 18:34:13.377 17717 17779 I DetoxDispatcher: Handling action 'invoke' (ID #18)...
+03-22 18:34:13.379 17717 17779 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForTestId, [vpaAddress]
+03-22 18:34:13.379 17717 17779 D Detox   : class androidx.test.espresso.Espresso, onView, [(view.getTag() is "vpaAddress" and view has effective visibility <VISIBLE>)]
+03-22 18:34:13.380 17717 17779 D Detox   : class androidx.test.espresso.action.ViewActions, replaceText, [rohan@paytm]
+03-22 18:34:13.381 17717 17779 D Detox   : class com.wix.detox.espresso.EspressoDetox, perform, [androidx.test.espresso.ViewInteraction@ba4dd10, androidx.test.espresso.action.ReplaceTextAction@aed3009]
+03-22 18:34:13.406 17717 17779 I DetoxActionHandlers: Test exception
+03-22 18:34:13.406 17717 17779 I DetoxActionHandlers: java.lang.reflect.InvocationTargetException
+03-22 18:34:13.406 17717 17779 I DetoxActionHandlers: 	at java.lang.reflect.Method.invoke(Native Method)
+03-22 18:34:13.406 17717 17779 I DetoxActionHandlers: 	at org.apache.commons.lang3.reflect.MethodUtils.invokeStaticMethod(MethodUtils.java:443)
+03-22 18:34:13.406 17717 17779 I DetoxActionHandlers: 	at org.apache.commons.lang3.reflect.MethodUtils.invokeStaticMethod(MethodUtils.java:405)
+03-22 18:34:13.406 17717 17779 I DetoxActionHandlers: 	at com.wix.invoke.types.ClassTarget.execute(ClassTarget.java:23)
+03-22 18:34:13.406 17717 17779 I DetoxActionHandlers: 	at com.wix.invoke.types.Target.invoke(Target.java:59)
+03-22 18:34:13.406 17717 17779 I DetoxActionHandlers: 	at com.wix.invoke.MethodInvocation.invoke(MethodInvocation.java:35)
+03-22 18:34:13.406 17717 17779 I DetoxActionHandlers: 	at com.wix.invoke.MethodInvocation.invoke(MethodInvocation.java:26)
+03-22 18:34:13.406 17717 17779 I DetoxActionHandlers: 	at com.wix.invoke.MethodInvocation.invoke(MethodInvocation.java:20)
+03-22 18:34:13.406 17717 17779 I DetoxActionHandlers: 	at com.wix.detox.adapters.server.InvokeActionHandler.handle(DetoxActionHandlers.kt:54)
+03-22 18:34:13.406 17717 17779 I DetoxActionHandlers: 	at com.wix.detox.adapters.server.ActionsExecutor$executeAction$$inlined$let$lambda$1.run(DetoxActionsDispatcher.kt:64)
+03-22 18:34:13.406 17717 17779 I DetoxActionHandlers: 	at android.os.Handler.handleCallback(Handler.java:938)
+03-22 18:34:13.406 17717 17779 I DetoxActionHandlers: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+03-22 18:34:13.406 17717 17779 I DetoxActionHandlers: 	at android.os.Looper.loopOnce(Looper.java:201)
+03-22 18:34:13.406 17717 17779 I DetoxActionHandlers: 	at android.os.Looper.loop(Looper.java:288)
+03-22 18:34:13.406 17717 17779 I DetoxActionHandlers: 	at com.wix.detox.adapters.server.ActionsExecutor$1.run(DetoxActionsDispatcher.kt:50)
+03-22 18:34:13.406 17717 17779 I DetoxActionHandlers: 	at java.lang.Thread.run(Thread.java:920)
+03-22 18:34:13.406 17717 17779 I DetoxActionHandlers: Caused by: androidx.test.espresso.NoMatchingViewException: No views in hierarchy found matching: (view.getTag() is "vpaAddress" and view has effective visibility <VISIBLE>)
+03-22 18:34:13.406 17717 17779 I DetoxActionHandlers: 
+03-22 18:34:13.406 17717 17779 I DetoxActionHandlers: View Hierarchy:
+03-22 18:34:13.406 17717 17779 I DetoxActionHandlers: +>DecorView{id=-1, visibility=VISIBLE, width=1080, height=1920, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params={(0,0)(fillxfill) gr=CENTER ty=APPLICATION fmt=TRANSPARENT wanim=0x7f0f0005
+03-22 18:34:13.406 17717 17779 I DetoxActionHandlers:   fl=LAYOUT_IN_SCREEN LAYOUT_INSET_DECOR SPLIT_TOUCH HARDWARE_ACCELERATED TRANSLUCENT_STATUS DRAWS_SYSTEM_BAR_BACKGROUNDS
+03-22 18:34:13.406 17717 17779 I DetoxActionHandlers:   pfl=NO_MOVE_ANIMATION FORCE_DRAW_STATUS_BAR_BACKGROUND FIT_INSETS_CONTROLLED
+03-22 18:34:13.406 17717 17779 I DetoxActionHandlers:   bhv=DEFAULT
+03-22 18:34:13.406 17717 17779 I DetoxActionHandlers:   fitSides=}, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3} 
+03-22 18:34:13.406 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.406 17717 17779 I DetoxActionHandlers: +->LinearLayout{id=-1, visibility=VISIBLE, width=1080, height=1878, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@ca22972, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+03-22 18:34:13.406 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.406 17717 17779 I DetoxActionHandlers: +-->ViewStub{id=16908723, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@9d891c3, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} 
+03-22 18:34:13.406 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.406 17717 17779 I DetoxActionHandlers: +-->FrameLayout{id=16908290, res-name=content, visibility=VISIBLE, width=1080, height=1878, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@d71aa40, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} 
+03-22 18:34:13.406 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.406 17717 17779 I DetoxActionHandlers: +--->ReactRootView{id=11, visibility=VISIBLE, width=1080, height=1878, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@4656abe, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} 
+03-22 18:34:13.406 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.407 17717 17779 I DetoxActionHandlers: +---->ReactViewGroup{id=449, visibility=VISIBLE, width=1080, height=1878, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@2a8871f, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=4} 
+03-22 18:34:13.407 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.407 17717 17779 I DetoxActionHandlers: +----->ReactViewGroup{id=237, visibility=VISIBLE, width=1080, height=189, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@be72a6c, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3} 
+03-22 18:34:13.407 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.407 17717 17779 I DetoxActionHandlers: +------>ReactViewGroup{id=219, visibility=VISIBLE, width=102, height=103, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@be22835, tag=null, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=76.0, child-count=1} 
+03-22 18:34:13.407 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.407 17717 17779 I DetoxActionHandlers: +------->ReactImageView{id=217, visibility=VISIBLE, width=21, height=37, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@58974ca, tag=null, root-is-layout-requested=false, has-input-connection=false, x=41.0, y=33.0} 
+03-22 18:34:13.407 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.407 17717 17779 I DetoxActionHandlers: +------>ReactTextView{id=225, visibility=VISIBLE, width=188, height=49, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@5528158, tag=null, root-is-layout-requested=false, has-input-connection=false, x=446.0, y=102.0, text=Log 1 of 2, input-type=0, ime-target=false, has-links=false} 
+03-22 18:34:13.407 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.407 17717 17779 I DetoxActionHandlers: +------>ReactViewGroup{id=233, visibility=VISIBLE, width=102, height=103, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@99a12b1, tag=null, root-is-layout-requested=false, has-input-connection=false, x=962.0, y=76.0, child-count=1} 
+03-22 18:34:13.407 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.407 17717 17779 I DetoxActionHandlers: +------->ReactImageView{id=229, visibility=VISIBLE, width=21, height=37, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@e321396, tag=null, root-is-layout-requested=false, has-input-connection=false, x=41.0, y=33.0} 
+03-22 18:34:13.407 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.407 17717 17779 I DetoxActionHandlers: +----->ReactViewGroup{id=255, visibility=VISIBLE, width=1080, height=193, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@94e3b17, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=189.0, child-count=2} 
+03-22 18:34:13.407 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.407 17717 17779 I DetoxActionHandlers: +------>ReactTextView{id=243, visibility=VISIBLE, width=1017, height=74, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@71a5b04, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=26.0, text=Render Error, input-type=0, ime-target=false, has-links=false} 
+03-22 18:34:13.407 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.409 17717 17779 I DetoxActionHandlers: +------>ReactTextView{id=253, visibility=VISIBLE, width=1080, height=80, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@70c28ed, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=113.0, text=Text strings must be rendered within a <Text> component., input-type=0, ime-target=false, has-links=false} 
+03-22 18:34:13.409 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.409 17717 17779 I DetoxActionHandlers: +----->ReactScrollView{id=425, visibility=VISIBLE, width=1080, height=1370, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@87171b3, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=382.0, child-count=1} 
+03-22 18:34:13.409 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.409 17717 17779 I DetoxActionHandlers: +------>ReactViewGroup{id=423, visibility=VISIBLE, width=1080, height=958, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@c642370, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=9} 
+03-22 18:34:13.409 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.409 17717 17779 I DetoxActionHandlers: +------->ReactTextView{id=259, visibility=VISIBLE, width=1017, height=53, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@20f66e9, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=39.0, text=Component Stack, input-type=0, ime-target=false, has-links=false} 
+03-22 18:34:13.409 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.409 17717 17779 I DetoxActionHandlers: +------->ReactViewGroup{id=289, visibility=VISIBLE, width=1002, height=102, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@31fff6e, tag=null, root-is-layout-requested=false, has-input-connection=false, x=39.0, y=118.0, child-count=2} 
+03-22 18:34:13.409 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.409 17717 17779 I DetoxActionHandlers: +-------->ReactTextView{id=277, visibility=VISIBLE, width=242, height=43, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@187760f, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=11.0, text=<RCTView />, input-type=0, ime-target=false, has-links=false} 
+03-22 18:34:13.409 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.409 17717 17779 I DetoxActionHandlers: +-------->ReactTextView{id=287, visibility=VISIBLE, width=948, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@b40069c, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=54.0, text=View.js:32, input-type=0, ime-target=false, has-links=false} 
+03-22 18:34:13.409 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.409 17717 17779 I DetoxActionHandlers: +------->ReactViewGroup{id=319, visibility=VISIBLE, width=1002, height=102, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@4ee88a5, tag=null, root-is-layout-requested=false, has-input-connection=false, x=39.0, y=220.0, child-count=2} 
+03-22 18:34:13.409 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.410 17717 17779 I DetoxActionHandlers: +-------->ReactTextView{id=307, visibility=VISIBLE, width=176, height=43, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@bd0a47a, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=11.0, text=<View />, input-type=0, ime-target=false, has-links=false} 
+03-22 18:34:13.410 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.410 17717 17779 I DetoxActionHandlers: +-------->ReactTextView{id=317, visibility=VISIBLE, width=948, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@a4f642b, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=54.0, text=UpiCollect.js:11, input-type=0, ime-target=false, has-links=false} 
+03-22 18:34:13.410 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.410 17717 17779 I DetoxActionHandlers: +------->ReactViewGroup{id=349, visibility=VISIBLE, width=1002, height=102, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@894f088, tag=null, root-is-layout-requested=false, has-input-connection=false, x=39.0, y=322.0, child-count=2} 
+03-22 18:34:13.410 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.410 17717 17779 I DetoxActionHandlers: +-------->ReactTextView{id=337, visibility=VISIBLE, width=242, height=43, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@9e40a21, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=11.0, text=<RCTView />, input-type=0, ime-target=false, has-links=false} 
+03-22 18:34:13.410 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.410 17717 17779 I DetoxActionHandlers: +-------->ReactTextView{id=347, visibility=VISIBLE, width=948, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@7b48e46, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=54.0, text=View.js:32, input-type=0, ime-target=false, has-links=false} 
+03-22 18:34:13.410 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.410 17717 17779 I DetoxActionHandlers: +------->ReactViewGroup{id=359, visibility=VISIBLE, width=417, height=80, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@b5e1807, tag=null, root-is-layout-requested=false, has-input-connection=false, x=39.0, y=424.0, child-count=1} 
+03-22 18:34:13.410 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.410 17717 17779 I DetoxActionHandlers: +-------->ReactTextView{id=357, visibility=VISIBLE, width=417, height=80, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@ecc8d34, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=See 20 more components, input-type=0, ime-target=false, has-links=false} 
+03-22 18:34:13.410 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.410 17717 17779 I DetoxActionHandlers: +------->ReactTextView{id=373, visibility=VISIBLE, width=1017, height=53, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@a56275d, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=570.0, text=Call Stack, input-type=0, ime-target=false, has-links=false} 
+03-22 18:34:13.410 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.410 17717 17779 I DetoxActionHandlers: +------->ReactViewGroup{id=387, visibility=VISIBLE, width=1002, height=102, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@59b48d2, tag=null, root-is-layout-requested=false, has-input-connection=false, x=39.0, y=649.0, child-count=2} 
+03-22 18:34:13.410 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.410 17717 17779 I DetoxActionHandlers: +-------->ReactTextView{id=379, visibility=VISIBLE, width=948, height=43, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@7ba2da3, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=11.0, text=performSyncWorkOnRoot, input-type=0, ime-target=false, has-links=false} 
+03-22 18:34:13.410 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.410 17717 17779 I DetoxActionHandlers: +-------->ReactTextView{id=385, visibility=VISIBLE, width=948, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@33f48a0, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=54.0, text=[native code], input-type=0, ime-target=false, has-links=false} 
+03-22 18:34:13.410 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.410 17717 17779 I DetoxActionHandlers: +------->ReactViewGroup{id=403, visibility=VISIBLE, width=1002, height=102, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@5d2dc59, tag=null, root-is-layout-requested=false, has-input-connection=false, x=39.0, y=751.0, child-count=2} 
+03-22 18:34:13.410 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.410 17717 17779 I DetoxActionHandlers: +-------->ReactTextView{id=395, visibility=VISIBLE, width=948, height=43, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@fc1201e, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=11.0, text=callFunctionReturnFlushedQueue, input-type=0, ime-target=false, has-links=false} 
+03-22 18:34:13.410 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.410 17717 17779 I DetoxActionHandlers: +-------->ReactTextView{id=399, visibility=VISIBLE, width=948, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@23800ff, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=54.0, text=[native code], input-type=0, ime-target=false, has-links=false} 
+03-22 18:34:13.410 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.410 17717 17779 I DetoxActionHandlers: +------->ReactViewGroup{id=413, visibility=VISIBLE, width=340, height=80, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@6604ecc, tag=null, root-is-layout-requested=false, has-input-connection=false, x=39.0, y=853.0, child-count=1} 
+03-22 18:34:13.410 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.410 17717 17779 I DetoxActionHandlers: +-------->ReactTextView{id=409, visibility=VISIBLE, width=340, height=80, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@ccbe515, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=See 17 more frames, input-type=0, ime-target=false, has-links=false} 
+03-22 18:34:13.410 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.411 17717 17779 I DetoxActionHandlers: +----->ReactViewGroup{id=447, visibility=VISIBLE, width=1080, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@5db202a, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=1752.0, child-count=2} 
+03-22 18:34:13.411 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.411 17717 17779 I DetoxActionHandlers: +------>ReactViewGroup{id=435, visibility=VISIBLE, width=540, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@c95ae1b, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} 
+03-22 18:34:13.411 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.411 17717 17779 I DetoxActionHandlers: +------->ReactTextView{id=429, visibility=VISIBLE, width=131, height=53, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@aa98bb8, tag=null, root-is-layout-requested=false, has-input-connection=false, x=205.0, y=37.0, text=Dismiss, input-type=0, ime-target=false, has-links=false} 
+03-22 18:34:13.411 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.411 17717 17779 I DetoxActionHandlers: +------>ReactViewGroup{id=445, visibility=VISIBLE, width=540, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@b12bd91, tag=null, root-is-layout-requested=false, has-input-connection=false, x=540.0, y=0.0, child-count=1} 
+03-22 18:34:13.411 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.411 17717 17779 I DetoxActionHandlers: +------->ReactTextView{id=439, visibility=VISIBLE, width=149, height=53, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@be314f6, tag=null, root-is-layout-requested=false, has-input-connection=false, x=196.0, y=37.0, text=Minimize, input-type=0, ime-target=false, has-links=false} 
+03-22 18:34:13.411 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.411 17717 17779 I DetoxActionHandlers: +->View{id=16908336, res-name=navigationBarBackground, visibility=VISIBLE, width=1080, height=42, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@c5710f7, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=1878.0} 
+03-22 18:34:13.411 17717 17779 I DetoxActionHandlers: |
+03-22 18:34:13.411 17717 17779 I DetoxActionHandlers: +->View{id=16908335, res-name=statusBarBackground, visibility=VISIBLE, width=1080, height=63, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@e47ab64, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} 
+03-22 18:34:13.411 17717 17779 I DetoxActionHandlers: 	at dalvik.system.VMStack.getThreadStackTrace(Native Method)
+03-22 18:34:13.411 17717 17779 I DetoxActionHandlers: 	at java.lang.Thread.getStackTrace(Thread.java:1724)
+03-22 18:34:13.411 17717 17779 I DetoxActionHandlers: 	at androidx.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:12)
+03-22 18:34:13.411 17717 17779 I DetoxActionHandlers: 	at androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:7)
+03-22 18:34:13.411 17717 17779 I DetoxActionHandlers: 	at androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:8)
+03-22 18:34:13.411 17717 17779 I DetoxActionHandlers: 	at androidx.test.espresso.ViewInteraction.desugaredPerform(ViewInteraction.java:11)
+03-22 18:34:13.411 17717 17779 I DetoxActionHandlers: 	at androidx.test.espresso.ViewInteraction.perform(ViewInteraction.java:4)
+03-22 18:34:13.411 17717 17779 I DetoxActionHandlers: 	at com.wix.detox.espresso.EspressoDetox.perform(EspressoDetox.java:35)
+03-22 18:34:13.411 17717 17779 I DetoxActionHandlers: 	... 16 more
+03-22 18:34:13.411 17717 17779 I DetoxWSClient: Sending out action 'testFailed' (ID #18)
+03-22 18:34:13.412 17717 17779 I DetoxDispatcher: Done with action 'invoke'

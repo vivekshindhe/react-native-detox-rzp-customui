@@ -1,0 +1,84 @@
+--------- beginning of main
+03-22 21:59:14.223 10840 10907 I DetoxWSClient: Sending out action 'invokeResult' (ID #5)
+03-22 21:59:14.223 10840 10907 I DetoxDispatcher: Done with action 'invoke'
+03-22 21:59:14.229 10840 10909 D DetoxWSClient: Received action 'invoke' (ID #6, params={"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["Card Validity : true"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]})
+03-22 21:59:14.230 10840 10907 I DetoxDispatcher: Handling action 'invoke' (ID #6)...
+03-22 21:59:14.230 10840 10907 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForText, [Card Validity : true]
+03-22 21:59:14.230 10840 10907 D Detox   : class androidx.test.espresso.Espresso, onView, [(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Card Validity : true" and view has effective visibility <VISIBLE>)]
+03-22 21:59:14.231 10840 10907 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForSufficientlyVisible, [75]
+03-22 21:59:14.231 10840 10907 D Detox   : class com.wix.detox.espresso.DetoxAssertion, assertMatcher, [androidx.test.espresso.ViewInteraction@1397679, (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)]
+03-22 21:59:14.237 10840 10840 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)}' assertion on view (an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Card Validity : true" and view has effective visibility <VISIBLE>)
+03-22 21:59:14.238 10840 10907 I DetoxWSClient: Sending out action 'invokeResult' (ID #6)
+03-22 21:59:14.238 10840 10907 I DetoxDispatcher: Done with action 'invoke'
+03-22 21:59:14.243 10840 10909 D DetoxWSClient: Received action 'invoke' (ID #7, params={"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["GET CARD NETWORK"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]})
+03-22 21:59:14.244 10840 10907 I DetoxDispatcher: Handling action 'invoke' (ID #7)...
+03-22 21:59:14.244 10840 10907 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForText, [GET CARD NETWORK]
+03-22 21:59:14.246 10840 10907 D Detox   : class androidx.test.espresso.Espresso, onView, [(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "GET CARD NETWORK" and view has effective visibility <VISIBLE>)]
+03-22 21:59:14.247 10840 10907 D Detox   : class com.wix.detox.espresso.DetoxViewActions, click, []
+03-22 21:59:14.247 10840 10907 D Detox   : class com.wix.detox.espresso.EspressoDetox, perform, [androidx.test.espresso.ViewInteraction@2267fbe, com.wix.detox.espresso.action.RNClickAction@44781f]
+03-22 21:59:14.253 10840 10840 I ViewInteraction: Performing 'com.wix.detox.espresso.action.detoxsingletap@bac76c click' action on view (an instance of android.widget.TextView and view.getText() with or without transformation to match: is "GET CARD NETWORK" and view has effective visibility <VISIBLE>)
+03-22 21:59:14.303 10840 10910 I ReactNativeJS: visa
+03-22 21:59:14.666 10840 10896 D EGL_emulation: app_time_stats: avg=16.61ms min=2.59ms max=81.92ms count=55
+03-22 21:59:14.752 10840 10907 I DetoxWSClient: Sending out action 'invokeResult' (ID #7)
+03-22 21:59:14.752 10840 10907 I DetoxDispatcher: Done with action 'invoke'
+03-22 21:59:14.757 10840 10909 D DetoxWSClient: Received action 'invoke' (ID #8, params={"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["Card Network : visa"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]})
+03-22 21:59:14.758 10840 10907 I DetoxDispatcher: Handling action 'invoke' (ID #8)...
+03-22 21:59:14.759 10840 10907 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForText, [Card Network : visa]
+03-22 21:59:14.760 10840 10907 D Detox   : class androidx.test.espresso.Espresso, onView, [(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Card Network : visa" and view has effective visibility <VISIBLE>)]
+03-22 21:59:14.760 10840 10907 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForSufficientlyVisible, [75]
+03-22 21:59:14.760 10840 10907 D Detox   : class com.wix.detox.espresso.DetoxAssertion, assertMatcher, [androidx.test.espresso.ViewInteraction@660c896, (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)]
+03-22 21:59:14.766 10840 10840 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)}' assertion on view (an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Card Network : visa" and view has effective visibility <VISIBLE>)
+03-22 21:59:14.769 10840 10907 I DetoxWSClient: Sending out action 'invokeResult' (ID #8)
+03-22 21:59:14.770 10840 10907 I DetoxDispatcher: Done with action 'invoke'
+03-22 21:59:14.853 10840 10909 D DetoxWSClient: Received action 'invoke' (ID #9, params={"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["cardNumber"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.action.ViewActions"},"method":"replaceText","args":["9000000000000000"]}}]})
+03-22 21:59:14.854 10840 10907 I DetoxDispatcher: Handling action 'invoke' (ID #9)...
+03-22 21:59:14.858 10840 10907 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForTestId, [cardNumber]
+03-22 21:59:14.861 10840 10907 D Detox   : class androidx.test.espresso.Espresso, onView, [(view.getTag() is "cardNumber" and view has effective visibility <VISIBLE>)]
+03-22 21:59:14.864 10840 10907 D Detox   : class androidx.test.espresso.action.ViewActions, replaceText, [9000000000000000]
+03-22 21:59:14.866 10840 10907 D Detox   : class com.wix.detox.espresso.EspressoDetox, perform, [androidx.test.espresso.ViewInteraction@e574c17, androidx.test.espresso.action.ReplaceTextAction@5249804]
+03-22 21:59:14.874 10840 10840 I ViewInteraction: Performing 'replace text(9000000000000000)' action on view (view.getTag() is "cardNumber" and view has effective visibility <VISIBLE>)
+03-22 21:59:14.893 10840 10907 I DetoxWSClient: Sending out action 'invokeResult' (ID #9)
+03-22 21:59:14.893 10840 10907 I DetoxDispatcher: Done with action 'invoke'
+03-22 21:59:14.901 10840 10909 D DetoxWSClient: Received action 'invoke' (ID #10, params={"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["IS CARD VALID"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]})
+03-22 21:59:14.901 10840 10907 I DetoxDispatcher: Handling action 'invoke' (ID #10)...
+03-22 21:59:14.905 10840 10907 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForText, [IS CARD VALID]
+03-22 21:59:14.907 10840 10907 D Detox   : class androidx.test.espresso.Espresso, onView, [(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "IS CARD VALID" and view has effective visibility <VISIBLE>)]
+03-22 21:59:14.907 10840 10907 D Detox   : class com.wix.detox.espresso.DetoxViewActions, click, []
+03-22 21:59:14.908 10840 10907 D Detox   : class com.wix.detox.espresso.EspressoDetox, perform, [androidx.test.espresso.ViewInteraction@37a92b3, com.wix.detox.espresso.action.RNClickAction@d553070]
+03-22 21:59:14.988 10840 10840 I Detox   : UIManagerModule is busy
+03-22 21:59:15.003 10840 10840 I Detox   : UIManagerModule is busy
+03-22 21:59:15.014 10840 10840 I ViewInteraction: Performing 'com.wix.detox.espresso.action.detoxsingletap@eb4e39c click' action on view (an instance of android.widget.TextView and view.getText() with or without transformation to match: is "IS CARD VALID" and view has effective visibility <VISIBLE>)
+03-22 21:59:15.071 10840 10910 I ReactNativeJS: false
+03-22 21:59:15.101 10840 10840 I Detox   : UIManagerModule is busy
+03-22 21:59:15.520 10840 10907 I DetoxWSClient: Sending out action 'invokeResult' (ID #10)
+03-22 21:59:15.521 10840 10907 I DetoxDispatcher: Done with action 'invoke'
+03-22 21:59:15.526 10840 10909 D DetoxWSClient: Received action 'invoke' (ID #11, params={"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["Card Validity : false"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]})
+03-22 21:59:15.527 10840 10907 I DetoxDispatcher: Handling action 'invoke' (ID #11)...
+03-22 21:59:15.528 10840 10907 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForText, [Card Validity : false]
+03-22 21:59:15.528 10840 10907 D Detox   : class androidx.test.espresso.Espresso, onView, [(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Card Validity : false" and view has effective visibility <VISIBLE>)]
+03-22 21:59:15.529 10840 10907 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForSufficientlyVisible, [75]
+03-22 21:59:15.530 10840 10907 D Detox   : class com.wix.detox.espresso.DetoxAssertion, assertMatcher, [androidx.test.espresso.ViewInteraction@7e4b321, (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)]
+03-22 21:59:15.535 10840 10840 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)}' assertion on view (an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Card Validity : false" and view has effective visibility <VISIBLE>)
+03-22 21:59:15.536 10840 10907 I DetoxWSClient: Sending out action 'invokeResult' (ID #11)
+03-22 21:59:15.536 10840 10907 I DetoxDispatcher: Done with action 'invoke'
+03-22 21:59:15.541 10840 10909 D DetoxWSClient: Received action 'invoke' (ID #12, params={"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["GET CARD NETWORK"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]})
+03-22 21:59:15.542 10840 10907 I DetoxDispatcher: Handling action 'invoke' (ID #12)...
+03-22 21:59:15.543 10840 10907 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForText, [GET CARD NETWORK]
+03-22 21:59:15.543 10840 10907 D Detox   : class androidx.test.espresso.Espresso, onView, [(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "GET CARD NETWORK" and view has effective visibility <VISIBLE>)]
+03-22 21:59:15.543 10840 10907 D Detox   : class com.wix.detox.espresso.DetoxViewActions, click, []
+03-22 21:59:15.543 10840 10907 D Detox   : class com.wix.detox.espresso.EspressoDetox, perform, [androidx.test.espresso.ViewInteraction@77a8346, com.wix.detox.espresso.action.RNClickAction@14d6907]
+03-22 21:59:15.550 10840 10840 I ViewInteraction: Performing 'com.wix.detox.espresso.action.detoxsingletap@6600a34 click' action on view (an instance of android.widget.TextView and view.getText() with or without transformation to match: is "GET CARD NETWORK" and view has effective visibility <VISIBLE>)
+03-22 21:59:15.598 10840 10910 I ReactNativeJS: unknown
+03-22 21:59:15.634 10840 10840 I Detox   : UIManagerModule is busy
+03-22 21:59:15.681 10840 10896 D EGL_emulation: app_time_stats: avg=16.80ms min=9.74ms max=32.80ms count=60
+03-22 21:59:16.054 10840 10907 I DetoxWSClient: Sending out action 'invokeResult' (ID #12)
+03-22 21:59:16.055 10840 10907 I DetoxDispatcher: Done with action 'invoke'
+03-22 21:59:16.061 10840 10909 D DetoxWSClient: Received action 'invoke' (ID #13, params={"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["Card Network : unknown"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]})
+03-22 21:59:16.062 10840 10907 I DetoxDispatcher: Handling action 'invoke' (ID #13)...
+03-22 21:59:16.062 10840 10907 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForText, [Card Network : unknown]
+03-22 21:59:16.062 10840 10907 D Detox   : class androidx.test.espresso.Espresso, onView, [(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Card Network : unknown" and view has effective visibility <VISIBLE>)]
+03-22 21:59:16.063 10840 10907 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForSufficientlyVisible, [75]
+03-22 21:59:16.063 10840 10907 D Detox   : class com.wix.detox.espresso.DetoxAssertion, assertMatcher, [androidx.test.espresso.ViewInteraction@9b0b51e, (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)]
+03-22 21:59:16.069 10840 10840 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)}' assertion on view (an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Card Network : unknown" and view has effective visibility <VISIBLE>)
+03-22 21:59:16.071 10840 10907 I DetoxWSClient: Sending out action 'invokeResult' (ID #13)
+03-22 21:59:16.071 10840 10907 I DetoxDispatcher: Done with action 'invoke'

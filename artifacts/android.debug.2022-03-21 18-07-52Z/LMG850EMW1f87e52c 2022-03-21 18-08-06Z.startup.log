@@ -1,0 +1,142 @@
+--------- beginning of main
+03-21 23:38:04.084 12207 12207 I com.detoxsampl: Late-enabling -Xcheck:jni
+03-21 23:38:04.110 12207 12207 I com.detoxsampl: Unquickening 19 vdex files!
+--------- beginning of system
+03-21 23:38:04.193 12207 12207 W ActivityThread: Package uses different ABI(s) than its instrumentation: package[com.detoxsample]: arm64-v8a, null instrumentation[com.detoxsample.test]: null, null
+03-21 23:38:04.196 12207 12207 I Typeface: Current DefaultTypeface ( lgtravel )
+03-21 23:38:04.204 12207 12207 I com.detoxsampl: The ClassLoaderContext is a special shared library.
+03-21 23:38:04.215 12207 12207 I chatty  : uid=10445(com.detoxsample) identical 2 lines
+03-21 23:38:04.218 12207 12207 I com.detoxsampl: The ClassLoaderContext is a special shared library.
+03-21 23:38:04.414 12207 12207 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+03-21 23:38:04.415 12207 12207 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+03-21 23:38:04.416 12207 12207 I com.detoxsampl: The ClassLoaderContext is a special shared library.
+03-21 23:38:04.418 12207 12207 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+03-21 23:38:04.418 12207 12207 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+03-21 23:38:04.419 12207 12207 I com.detoxsampl: The ClassLoaderContext is a special shared library.
+03-21 23:38:04.423 12207 12207 I chatty  : uid=10445(com.detoxsample) identical 2 lines
+03-21 23:38:04.424 12207 12207 I com.detoxsampl: The ClassLoaderContext is a special shared library.
+03-21 23:38:04.590 12207 12207 W com.detoxsampl: Accessing hidden method Landroid/app/Instrumentation;->execStartActivity(Landroid/content/Context;Landroid/os/IBinder;Landroid/os/IBinder;Landroid/app/Activity;Landroid/content/Intent;ILandroid/os/Bundle;)Landroid/app/Instrumentation$ActivityResult; (greylist, linking, allowed)
+03-21 23:38:04.590 12207 12207 W com.detoxsampl: Accessing hidden method Landroid/app/Instrumentation;->execStartActivity(Landroid/content/Context;Landroid/os/IBinder;Landroid/os/IBinder;Ljava/lang/String;Landroid/content/Intent;ILandroid/os/Bundle;)Landroid/app/Instrumentation$ActivityResult; (greylist, linking, allowed)
+03-21 23:38:04.598 12207 12207 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: true
+03-21 23:38:04.599 12207 12207 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: true
+03-21 23:38:04.601 12207 12207 I MonitoringInstr: Instrumentation started!
+03-21 23:38:04.610 12207 12207 V TestEventClient: No service name argument was given (testDiscoveryService, testRunEventService or orchestratorService)
+03-21 23:38:04.613 12207 12207 D SoLoader: init start
+03-21 23:38:04.614 12207 12207 D SoLoader: adding system library source: /vendor/lib64
+03-21 23:38:04.614 12207 12207 D SoLoader: adding system library source: /system/lib64
+03-21 23:38:04.615 12207 12207 D SoLoader: adding application source: com.facebook.soloader.DirectorySoSource[root = /data/app/~~Poid-1zu9EWPvvb4bzoRVg==/com.detoxsample-lPXVakiTZSiU40JUFuyQEQ==/lib/arm64 flags = 0]
+03-21 23:38:04.616 12207 12207 D SoLoader: adding backup source from : com.facebook.soloader.ApkSoSource[root = /data/data/com.detoxsample/lib-main flags = 1]
+03-21 23:38:04.616 12207 12207 D SoLoader: Preparing SO source: com.facebook.soloader.DirectorySoSource[root = /system/lib64 flags = 2]
+03-21 23:38:04.616 12207 12207 D SoLoader: Preparing SO source: com.facebook.soloader.DirectorySoSource[root = /vendor/lib64 flags = 2]
+03-21 23:38:04.616 12207 12207 D SoLoader: Preparing SO source: com.facebook.soloader.DirectorySoSource[root = /data/app/~~Poid-1zu9EWPvvb4bzoRVg==/com.detoxsample-lPXVakiTZSiU40JUFuyQEQ==/lib/arm64 flags = 0]
+03-21 23:38:04.616 12207 12207 D SoLoader: Preparing SO source: com.facebook.soloader.ApkSoSource[root = /data/data/com.detoxsample/lib-main flags = 1]
+03-21 23:38:04.617 12207 12207 V fb-UnpackingSoSource: locked dso store /data/user/0/com.detoxsample/lib-main
+03-21 23:38:04.619 12207 12207 V fb-UnpackingSoSource: deps mismatch on deps store: regenerating
+03-21 23:38:04.619 12207 12207 V fb-UnpackingSoSource: so store dirty: regenerating
+03-21 23:38:04.660 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libbetter.so: deferring to libdir
+03-21 23:38:04.660 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libc++_shared.so: deferring to libdir
+03-21 23:38:04.660 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libevent-2.1.so: deferring to libdir
+03-21 23:38:04.660 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libevent_core-2.1.so: deferring to libdir
+03-21 23:38:04.660 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libevent_extra-2.1.so: deferring to libdir
+03-21 23:38:04.660 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libfabricjni.so: deferring to libdir
+03-21 23:38:04.660 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libfb.so: deferring to libdir
+03-21 23:38:04.661 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libfbjni.so: deferring to libdir
+03-21 23:38:04.661 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libflipper.so: deferring to libdir
+03-21 23:38:04.661 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libfolly_futures.so: deferring to libdir
+03-21 23:38:04.661 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libfolly_json.so: deferring to libdir
+03-21 23:38:04.661 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libglog.so: deferring to libdir
+03-21 23:38:04.661 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libglog_init.so: deferring to libdir
+03-21 23:38:04.661 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libimagepipeline.so: deferring to libdir
+03-21 23:38:04.661 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libjsc.so: deferring to libdir
+03-21 23:38:04.661 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libjscexecutor.so: deferring to libdir
+03-21 23:38:04.661 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libjsi.so: deferring to libdir
+03-21 23:38:04.661 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libjsijniprofiler.so: deferring to libdir
+03-21 23:38:04.661 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libjsinspector.so: deferring to libdir
+03-21 23:38:04.661 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/liblogger.so: deferring to libdir
+03-21 23:38:04.661 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libmapbufferjni.so: deferring to libdir
+03-21 23:38:04.661 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libnative-filters.so: deferring to libdir
+03-21 23:38:04.661 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libnative-imagetranscoder.so: deferring to libdir
+03-21 23:38:04.661 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libreact_codegen_rncore.so: deferring to libdir
+03-21 23:38:04.662 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libreact_debug.so: deferring to libdir
+03-21 23:38:04.662 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libreact_nativemodule_core.so: deferring to libdir
+03-21 23:38:04.662 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libreact_render_animations.so: deferring to libdir
+03-21 23:38:04.662 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libreact_render_attributedstring.so: deferring to libdir
+03-21 23:38:04.662 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libreact_render_componentregistry.so: deferring to libdir
+03-21 23:38:04.662 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libreact_render_core.so: deferring to libdir
+03-21 23:38:04.662 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libreact_render_debug.so: deferring to libdir
+03-21 23:38:04.662 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libreact_render_graphics.so: deferring to libdir
+03-21 23:38:04.662 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libreact_render_imagemanager.so: deferring to libdir
+03-21 23:38:04.662 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libreact_render_leakchecker.so: deferring to libdir
+03-21 23:38:04.662 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libreact_render_mapbuffer.so: deferring to libdir
+03-21 23:38:04.662 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libreact_render_mounting.so: deferring to libdir
+03-21 23:38:04.662 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libreact_render_runtimescheduler.so: deferring to libdir
+03-21 23:38:04.662 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libreact_render_scheduler.so: deferring to libdir
+03-21 23:38:04.662 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libreact_render_telemetry.so: deferring to libdir
+03-21 23:38:04.662 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libreact_render_templateprocessor.so: deferring to libdir
+03-21 23:38:04.662 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libreact_render_textlayoutmanager.so: deferring to libdir
+03-21 23:38:04.662 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libreact_render_uimanager.so: deferring to libdir
+03-21 23:38:04.662 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libreact_utils.so: deferring to libdir
+03-21 23:38:04.662 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libreactconfig.so: deferring to libdir
+03-21 23:38:04.662 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libreactnativeblob.so: deferring to libdir
+03-21 23:38:04.663 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libreactnativejni.so: deferring to libdir
+03-21 23:38:04.663 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libreactnativeutilsjni.so: deferring to libdir
+03-21 23:38:04.663 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libreactperfloggerjni.so: deferring to libdir
+03-21 23:38:04.663 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/librrc_image.so: deferring to libdir
+03-21 23:38:04.663 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/librrc_modal.so: deferring to libdir
+03-21 23:38:04.663 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/librrc_progressbar.so: deferring to libdir
+03-21 23:38:04.663 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/librrc_root.so: deferring to libdir
+03-21 23:38:04.663 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/librrc_scrollview.so: deferring to libdir
+03-21 23:38:04.663 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/librrc_slider.so: deferring to libdir
+03-21 23:38:04.663 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/librrc_switch.so: deferring to libdir
+03-21 23:38:04.663 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/librrc_text.so: deferring to libdir
+03-21 23:38:04.663 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/librrc_textinput.so: deferring to libdir
+03-21 23:38:04.663 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/librrc_unimplementedview.so: deferring to libdir
+03-21 23:38:04.663 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/librrc_view.so: deferring to libdir
+03-21 23:38:04.663 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libturbomodulejsijni.so: deferring to libdir
+03-21 23:38:04.663 12207 12207 D ApkSoSource: not allowing consideration of lib/arm64-v8a/libyoga.so: deferring to libdir
+03-21 23:38:04.663 12207 12207 V fb-UnpackingSoSource: regenerating DSO store com.facebook.soloader.ApkSoSource
+03-21 23:38:04.664 12207 12207 V fb-UnpackingSoSource: Finished regenerating DSO store com.facebook.soloader.ApkSoSource
+03-21 23:38:04.664 12207 12207 V fb-UnpackingSoSource: starting syncer worker
+03-21 23:38:04.671 12207 12207 V fb-UnpackingSoSource: releasing dso store lock for /data/user/0/com.detoxsample/lib-main (from syncer thread)
+03-21 23:38:04.672 12207 12207 V fb-UnpackingSoSource: not releasing dso store lock for /data/user/0/com.detoxsample/lib-main (syncer thread started)
+03-21 23:38:04.672 12207 12207 D SoLoader: init finish: 4 SO sources prepared
+03-21 23:38:04.672 12207 12207 D SoLoader: init exiting
+03-21 23:38:04.680 12207 12207 D SoLoader: init exiting
+03-21 23:38:04.680 12207 12207 D SoLoader: About to load: libjscexecutor.so
+03-21 23:38:04.681 12207 12207 D SoLoader: libjscexecutor.so not found on /data/data/com.detoxsample/lib-main
+03-21 23:38:04.681 12207 12207 D SoLoader: libjscexecutor.so found on /data/app/~~Poid-1zu9EWPvvb4bzoRVg==/com.detoxsample-lPXVakiTZSiU40JUFuyQEQ==/lib/arm64
+03-21 23:38:04.681 12207 12207 D SoLoader: Not resolving dependencies for libjscexecutor.so
+03-21 23:38:04.687 12207 12207 D JavaScriptCore.Version: 250230.2.1
+03-21 23:38:04.688 12207 12207 D SoLoader: Loaded: libjscexecutor.so
+03-21 23:38:04.689 12207 12207 D SoLoader: init exiting
+03-21 23:38:04.772 12207 12207 I SensorManager: registerListenerImpl() [Sensor: LGE Accelerometer Non-wakeup, Rate: 66667, SensorEventListener: com.facebook.react.common.ShakeDetector@717fc72] by com.facebook.react.common.ShakeDetector.start():60
+03-21 23:38:04.790 12207 12246 D SoLoader: About to load: libfbjni.so
+03-21 23:38:04.791 12207 12246 D SoLoader: libfbjni.so not found on /data/data/com.detoxsample/lib-main
+03-21 23:38:04.791 12207 12246 D SoLoader: libfbjni.so found on /data/app/~~Poid-1zu9EWPvvb4bzoRVg==/com.detoxsample-lPXVakiTZSiU40JUFuyQEQ==/lib/arm64
+03-21 23:38:04.791 12207 12246 D SoLoader: Not resolving dependencies for libfbjni.so
+03-21 23:38:04.792 12207 12246 D SoLoader: Loaded: libfbjni.so
+03-21 23:38:04.792 12207 12246 D SoLoader: About to load: libflipper.so
+03-21 23:38:04.793 12207 12246 D SoLoader: libflipper.so not found on /data/data/com.detoxsample/lib-main
+03-21 23:38:04.793 12207 12246 D SoLoader: libflipper.so found on /data/app/~~Poid-1zu9EWPvvb4bzoRVg==/com.detoxsample-lPXVakiTZSiU40JUFuyQEQ==/lib/arm64
+03-21 23:38:04.793 12207 12246 D SoLoader: Not resolving dependencies for libflipper.so
+03-21 23:38:04.799 12207 12246 D SoLoader: Loaded: libflipper.so
+03-21 23:38:04.820 12207 12207 W com.detoxsampl: Accessing hidden field Landroid/view/View;->mKeyedTags:Landroid/util/SparseArray; (greylist, reflection, allowed)
+03-21 23:38:04.820 12207 12207 W com.detoxsampl: Accessing hidden field Landroid/view/View;->mListenerInfo:Landroid/view/View$ListenerInfo; (greylist, reflection, allowed)
+03-21 23:38:04.820 12207 12207 W com.detoxsampl: Accessing hidden field Landroid/view/View$ListenerInfo;->mOnClickListener:Landroid/view/View$OnClickListener; (greylist, reflection, allowed)
+03-21 23:38:04.824 12207 12207 I flipper : flipper: FlipperClient::addPlugin Inspector
+03-21 23:38:04.825 12207 12207 I flipper : flipper: FlipperClient::addPlugin React
+03-21 23:38:04.826 12207 12207 I flipper : flipper: FlipperClient::addPlugin Databases
+03-21 23:38:04.827 12207 12207 I flipper : flipper: FlipperClient::addPlugin Preferences
+03-21 23:38:04.828 12207 12207 I flipper : flipper: FlipperClient::addPlugin CrashReporter
+03-21 23:38:04.830 12207 12207 I flipper : flipper: FlipperClient::addPlugin Network
+03-21 23:38:04.849 12207 12251 W unknown:InspectorPackagerConnection: Couldn't connect to packager, will silently retry
+03-21 23:38:04.853 12207 12252 W unknown:ReconnectingWebSocket: Couldn't connect to "ws://localhost:8081/message?device=LM-G850%20-%2011%20-%20API%2030&app=com.detoxsample&clientid=BridgeDevSupportManager", will silently retry
+03-21 23:38:04.861 12207 12238 I UsageTrackerFacilitator: Usage tracking enabled
+03-21 23:38:04.864 12207 12238 I TestRequestBuilder: Scanning classpath to find tests in paths [/data/app/~~HV3mzgDIJ5ZrCqpS37DMyA==/com.detoxsample.test-iLH3xNn7pjM4Wdrz3pJwug==/base.apk]
+03-21 23:38:04.865 12207 12238 W com.detoxsampl: Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+03-21 23:38:05.537 12207 12238 D TestExecutor: Adding listener androidx.test.internal.runner.listener.LogRunListener
+03-21 23:38:05.537 12207 12238 D TestExecutor: Adding listener androidx.test.internal.runner.listener.InstrumentationResultPrinter
+03-21 23:38:05.537 12207 12238 D TestExecutor: Adding listener androidx.test.internal.runner.listener.ActivityFinisherRunListener
+03-21 23:38:05.538 12207 12238 I TestRunner: run started: 1 tests
+03-21 23:38:05.538 12207 12238 I TestRunner: run finished: 0 tests, 0 failed, 0 ignored
+03-21 23:38:06.014 12207 12238 I MonitoringInstr: waitForActivitiesToComplete() took: 0ms

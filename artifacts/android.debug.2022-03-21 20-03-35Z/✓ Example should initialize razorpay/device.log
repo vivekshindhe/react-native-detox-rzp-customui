@@ -1,0 +1,42 @@
+--------- beginning of main
+03-22 01:33:54.266   321   321 W com.detoxsampl: Accessing hidden field Landroid/widget/ScrollView;->mScroller:Landroid/widget/OverScroller; (greylist, reflection, allowed)
+03-22 01:33:54.329   321  1133 D SoLoader: About to load: libimagepipeline.so
+03-22 01:33:54.329   321  1133 D SoLoader: libimagepipeline.so not found on /data/data/com.detoxsample/lib-main
+03-22 01:33:54.330   321  1133 D SoLoader: libimagepipeline.so found on /data/app/~~UavNe9gSWtsY0v6Vfp7zbQ==/com.detoxsample-Imb5op9aayGdC-4nIPZjeQ==/lib/arm64
+03-22 01:33:54.330   321  1133 D SoLoader: Not resolving dependencies for libimagepipeline.so
+03-22 01:33:54.340   321  1133 D SoLoader: Loaded: libimagepipeline.so
+03-22 01:33:54.342   321   321 I Detox   : Wait is over: app is now idle!
+03-22 01:33:54.343   321   818 I DetoxWSClient: Sending out action 'ready' (ID #-1000)
+03-22 01:33:54.343   321   818 I DetoxDispatcher: Done with action 'isReady'
+03-22 01:33:54.343   321   818 I DetoxDispatcher: Handling action 'loginSuccess' (ID #0)...
+03-22 01:33:54.343   321   818 I DetoxDispatcher: Done with action 'loginSuccess'
+03-22 01:33:54.343   321   818 I DetoxDispatcher: Handling action 'isReady' (ID #-1000)...
+03-22 01:33:54.353   321   321 I Detox   : Wait is over: app is now idle!
+03-22 01:33:54.353   321   818 I DetoxWSClient: Sending out action 'ready' (ID #-1000)
+03-22 01:33:54.353   321   818 I DetoxDispatcher: Done with action 'isReady'
+03-22 01:33:54.466   321   822 D DetoxWSClient: Received action 'invoke' (ID #1, params={"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["initializeRzp"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]})
+03-22 01:33:54.467   321   818 I DetoxDispatcher: Handling action 'invoke' (ID #1)...
+03-22 01:33:54.476   321   818 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForTestId, [initializeRzp]
+03-22 01:33:54.487   321   818 D Detox   : class androidx.test.espresso.Espresso, onView, [(view.getTag() is "initializeRzp" and view has effective visibility <VISIBLE>)]
+03-22 01:33:54.488   321   818 D Detox   : class com.wix.detox.espresso.DetoxViewActions, click, []
+03-22 01:33:54.490   321   818 W com.detoxsampl: Accessing hidden method Landroid/view/ViewConfiguration;->getDoubleTapMinTime()I (greylist, reflection, allowed)
+03-22 01:33:54.493   321   818 D Detox   : class com.wix.detox.espresso.EspressoDetox, perform, [androidx.test.espresso.ViewInteraction@3c80385, com.wix.detox.espresso.action.RNClickAction@b1a35da]
+03-22 01:33:54.697   321   321 W com.detoxsampl: Accessing hidden method Landroid/view/WindowManagerGlobal;->getInstance()Landroid/view/WindowManagerGlobal; (greylist, reflection, allowed)
+03-22 01:33:54.697   321   321 W com.detoxsampl: Accessing hidden field Landroid/view/WindowManagerGlobal;->mViews:Ljava/util/ArrayList; (greylist, reflection, allowed)
+03-22 01:33:54.698   321   321 W com.detoxsampl: Accessing hidden field Landroid/view/WindowManagerGlobal;->mParams:Ljava/util/ArrayList; (greylist, reflection, allowed)
+03-22 01:33:54.701   321   321 I ViewInteraction: Performing 'com.wix.detox.espresso.action.detoxsingletap@b8a5301 click' action on view (view.getTag() is "initializeRzp" and view has effective visibility <VISIBLE>)
+--------- beginning of system
+03-22 01:33:54.713   321   321 I ViewRootImpl: ViewRoot's Touch Event : ACTION_DOWN
+03-22 01:33:54.738   321   321 I ViewRootImpl: ViewRoot's Touch Event : ACTION_UP
+03-22 01:33:54.821   321   321 I TetheringManager: registerTetheringEventCallback:com.detoxsample
+03-22 01:33:56.173   321   818 I DetoxWSClient: Sending out action 'invokeResult' (ID #1)
+03-22 01:33:56.173   321   818 I DetoxDispatcher: Done with action 'invoke'
+03-22 01:33:56.186   321   822 D DetoxWSClient: Received action 'invoke' (ID #2, params={"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["Status changes"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]})
+03-22 01:33:56.187   321   818 I DetoxDispatcher: Handling action 'invoke' (ID #2)...
+03-22 01:33:56.187   321   818 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForText, [Status changes]
+03-22 01:33:56.188   321   818 D Detox   : class androidx.test.espresso.Espresso, onView, [(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Status changes" and view has effective visibility <VISIBLE>)]
+03-22 01:33:56.189   321   818 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForSufficientlyVisible, [75]
+03-22 01:33:56.190   321   818 D Detox   : class com.wix.detox.espresso.DetoxAssertion, assertMatcher, [androidx.test.espresso.ViewInteraction@4616020, (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)]
+03-22 01:33:56.197   321   321 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)}' assertion on view (an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Status changes" and view has effective visibility <VISIBLE>)
+03-22 01:33:56.199   321   818 I DetoxWSClient: Sending out action 'invokeResult' (ID #2)
+03-22 01:33:56.199   321   818 I DetoxDispatcher: Done with action 'invoke'

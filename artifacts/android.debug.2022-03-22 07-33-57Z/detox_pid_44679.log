@@ -1,0 +1,802 @@
+Mar 22 13:03:59 detox[44679] TRACE: [DETOX_CREATE] created a Detox instance with config:
+{
+  appsConfig: {
+    default: {
+      type: 'android.apk',
+      binaryPath: 'android/app/build/outputs/apk/debug/app-debug.apk',
+      build: 'cd android && ./gradlew assembleDebug assembleAndroidTest -DtestBuildType=debug && cd ..'
+    }
+  },
+  artifactsConfig: {
+    rootDir: 'artifacts/android.debug.2022-03-22 07-33-57Z',
+    plugins: {
+      log: {
+        enabled: true,
+        keepOnlyFailedTestsArtifacts: false
+      },
+      screenshot: {
+        enabled: true,
+        shouldTakeAutomaticSnapshots: false,
+        keepOnlyFailedTestsArtifacts: false
+      },
+      video: {
+        enabled: false,
+        keepOnlyFailedTestsArtifacts: false
+      },
+      instruments: {
+        enabled: false,
+        keepOnlyFailedTestsArtifacts: false
+      },
+      timeline: {
+        enabled: false
+      },
+      uiHierarchy: {
+        enabled: false,
+        keepOnlyFailedTestsArtifacts: false
+      }
+    },
+    pathBuilder: ArtifactPathBuilder {
+      _rootDir: 'artifacts/android.debug.2022-03-22 07-33-57Z'
+    }
+  },
+  behaviorConfig: {
+    init: {
+      reinstallApp: true,
+      exposeGlobals: true
+    },
+    cleanup: {
+      shutdownDevice: false
+    },
+    launchApp: 'auto'
+  },
+  cliConfig: {
+    recordLogs: 'all',
+    configuration: 'android.debug',
+    useCustomLogger: true
+  },
+  configurationName: 'android.debug',
+  deviceConfig: {
+    type: 'android.attached',
+    device: {
+      adbName: 'emulator-5554'
+    }
+  },
+  runnerConfig: {
+    testRunner: 'jest',
+    runnerConfig: 'e2e/config.json',
+    specs: 'e2e',
+    skipLegacyWorkersInjection: false
+  },
+  sessionConfig: {
+    autoStart: true,
+    sessionId: '3fe7cb7d-d97d-2bb3-dafd-1240e68ad085',
+    debugSynchronization: 10000
+  }
+}
+Mar 22 13:03:59 detox[44679] DEBUG: [WSS_CREATE] Detox server listening on localhost:57929...
+Mar 22 13:03:59 detox[44679] DEBUG: [WSS_CONNECTION, #57930] registered a new connection.
+Mar 22 13:03:59 detox[44679] TRACE: [WS_OPEN] opened web socket to: ws://localhost:57929
+Mar 22 13:03:59 detox[44679] TRACE: [WS_SEND] {"type":"login","params":{"sessionId":"3fe7cb7d-d97d-2bb3-dafd-1240e68ad085","role":"tester"},"messageId":0}
+Mar 22 13:03:59 detox[44679] TRACE: [WSS_GET_FROM, #57930] {"type":"login","params":{"sessionId":"3fe7cb7d-d97d-2bb3-dafd-1240e68ad085","role":"tester"},"messageId":0}
+Mar 22 13:03:59 detox[44679] TRACE: [SESSION_CREATED] created session 3fe7cb7d-d97d-2bb3-dafd-1240e68ad085
+Mar 22 13:03:59 detox[44679] TRACE: [WSS_SEND_TO, #tester] {"type":"loginSuccess","params":{"testerConnected":true,"appConnected":false},"messageId":0}
+Mar 22 13:03:59 detox[44679] TRACE: [SESSION_JOINED] tester joined session 3fe7cb7d-d97d-2bb3-dafd-1240e68ad085
+Mar 22 13:03:59 detox[44679] TRACE: [WS_MESSAGE] {"type":"loginSuccess","params":{"testerConnected":true,"appConnected":false},"messageId":0}
+ 
+Mar 22 13:03:59 detox[44679] DEBUG: [EXEC_CMD, #0] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb"  devices
+Mar 22 13:03:59 detox[44679] DEBUG: [EXEC_SUCCESS, #0] List of devices attached
+emulator-5554	device
+
+
+Mar 22 13:03:59 detox[44679] DEBUG: [DEVICE_LOOKUP] Found a matching & free device emulator-5554
+Mar 22 13:03:59 detox[44679] DEBUG: [EXEC_CMD, #1] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "getprop ro.build.version.sdk"
+Mar 22 13:03:59 detox[44679] TRACE: [EXEC_SUCCESS, #1] 32
+
+Mar 22 13:03:59 detox[44679] DEBUG: [EXEC_CMD, #2] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "dumpsys power | grep \"^[ ]*m[UW].*=\""
+Mar 22 13:03:59 detox[44679] TRACE: [EXEC_SUCCESS, #2]   mWakefulness=Awake
+  mWakefulnessChanging=false
+  mWakeLockSummary=0x0
+  mWakeUpWhenPluggedOrUnpluggedConfig=false
+  mWakeUpWhenPluggedOrUnpluggedInTheaterModeConfig=false
+  mUserActivityTimeoutOverrideFromWindowManager=-1
+  mUserInactiveOverrideFromWindowManager=false
+  mUserId=0
+  mWakeLockSummary=0x0
+  mUserInteractionBackoffMillis=60000
+
+Mar 22 13:03:59 detox[44679] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onBootDevice({ deviceId: 'emulator-5554', type: 'device', coldBoot: false })
+Mar 22 13:03:59 detox[44679] DEBUG: [EXEC_CMD, #3] "/Users/vivek.shindhe/Library/Android/sdk/build-tools/31.0.0/aapt" dump badging "/Users/vivek.shindhe/RazorpayProjects/testing_projects/DetoxSample/android/app/build/outputs/apk/debug/app-debug.apk"
+Mar 22 13:03:59 detox[44679] TRACE: [EXEC_SUCCESS, #3] package: name='com.detoxsample' versionCode='1' versionName='1.0' compileSdkVersion='30' compileSdkVersionCodename='11'
+sdkVersion:'21'
+targetSdkVersion:'30'
+uses-permission: name='android.permission.SYSTEM_ALERT_WINDOW'
+uses-permission: name='android.permission.INTERNET'
+uses-permission: name='android.permission.ACCESS_WIFI_STATE'
+uses-permission: name='android.permission.ACCESS_NETWORK_STATE'
+application-label:'DetoxSample'
+application-label-af:'DetoxSample'
+application-label-am:'DetoxSample'
+application-label-ar:'DetoxSample'
+application-label-as:'DetoxSample'
+application-label-az:'DetoxSample'
+application-label-be:'DetoxSample'
+application-label-bg:'DetoxSample'
+application-label-bn:'DetoxSample'
+application-label-bs:'DetoxSample'
+application-label-ca:'DetoxSample'
+application-label-cs:'DetoxSample'
+application-label-da:'DetoxSample'
+application-label-de:'DetoxSample'
+application-label-el:'DetoxSample'
+application-label-en-AU:'DetoxSample'
+application-label-en-CA:'DetoxSample'
+application-label-en-GB:'DetoxSample'
+application-label-en-IN:'DetoxSample'
+application-label-en-SG:'DetoxSample'
+application-label-en-XC:'DetoxSample'
+application-label-es:'DetoxSample'
+application-label-es-419:'DetoxSample'
+application-label-es-US:'DetoxSample'
+application-label-et:'DetoxSample'
+application-label-eu:'DetoxSample'
+application-label-fa:'DetoxSample'
+application-label-fi:'DetoxSample'
+application-label-fil:'DetoxSample'
+application-label-fr:'DetoxSample'
+application-label-fr-CA:'DetoxSample'
+application-label-gl:'DetoxSample'
+application-label-gu:'DetoxSample'
+application-label-hi:'DetoxSample'
+application-label-hr:'DetoxSample'
+application-label-hu:'DetoxSample'
+application-label-hy:'DetoxSample'
+application-label-id:'DetoxSample'
+application-label-in:'DetoxSample'
+application-label-is:'DetoxSample'
+application-label-it:'DetoxSample'
+application-label-iw:'DetoxSample'
+application-label-ja:'DetoxSample'
+application-label-ka:'DetoxSample'
+application-label-kk:'DetoxSample'
+application-label-km:'DetoxSample'
+application-label-kn:'DetoxSample'
+application-label-ko:'DetoxSample'
+application-label-ky:'DetoxSample'
+application-label-lo:'DetoxSample'
+application-label-lt:'DetoxSample'
+application-label-lv:'DetoxSample'
+application-label-mk:'DetoxSample'
+application-label-ml:'DetoxSample'
+application-label-mn:'DetoxSample'
+application-label-mr:'DetoxSample'
+application-label-ms:'DetoxSample'
+application-label-my:'DetoxSample'
+application-label-nb:'DetoxSample'
+application-label-ne:'DetoxSample'
+application-label-nl:'DetoxSample'
+application-label-or:'DetoxSample'
+application-label-pa:'DetoxSample'
+application-label-pl:'DetoxSample'
+application-label-pt:'DetoxSample'
+application-label-pt-BR:'DetoxSample'
+application-label-pt-PT:'DetoxSample'
+application-label-ro:'DetoxSample'
+application-label-ru:'DetoxSample'
+application-label-si:'DetoxSample'
+application-label-sk:'DetoxSample'
+application-label-sl:'DetoxSample'
+application-label-sq:'DetoxSample'
+application-label-sr:'DetoxSample'
+application-label-sr-Latn:'DetoxSample'
+application-label-sv:'DetoxSample'
+application-label-sw:'DetoxSample'
+application-label-ta:'DetoxSample'
+application-label-te:'DetoxSample'
+application-label-th:'DetoxSample'
+application-label-tl:'DetoxSample'
+application-label-tr:'DetoxSample'
+application-label-uk:'DetoxSample'
+application-label-ur:'DetoxSample'
+application-label-uz:'DetoxSample'
+application-label-vi:'DetoxSample'
+application-label-zh-CN:'DetoxSample'
+application-label-zh-HK:'DetoxSample'
+application-label-zh-TW:'DetoxSample'
+application-label-zu:'DetoxSample'
+application-icon-120:'res/mipmap-mdpi-v4/ic_launcher.png'
+application-icon-160:'res/mipmap-mdpi-v4/ic_launcher.png'
+application-icon-240:'res/mipmap-hdpi-v4/ic_launcher.png'
+application-icon-320:'res/mipmap-xhdpi-v4/ic_launcher.png'
+application-icon-480:'res/mipmap-xxhdpi-v4/ic_launcher.png'
+application-icon-640:'res/mipmap-xxxhdpi-v4/ic_launcher.png'
+application-icon-65534:'res/mipmap-mdpi-v4/ic_launcher.png'
+application: label='DetoxSample' icon='res/mipmap-mdpi-v4/ic_launcher.png'
+application-debuggable
+launchable-activity: name='com.detoxsample.MainActivity'  label='DetoxSample' icon=''
+uses-library-not-required:'org.apache.http.legacy'
+feature-group: label=''
+  uses-gl-es: '0x20000'
+  uses-feature: name='android.hardware.faketouch'
+  uses-implied-feature: name='android.hardware.faketouch' reason='default feature for all apps'
+  uses-feature: name='android.hardware.wifi'
+  uses-implied-feature: name='android.hardware.wifi' reason='requested android.permission.ACCESS_WIFI_STATE permission'
+main
+other-activities
+other-services
+supports-screens: 'small' 'normal' 'large' 'xlarge'
+supports-any-density: 'true'
+locales: '--_--' 'af' 'am' 'ar' 'as' 'az' 'be' 'bg' 'bn' 'bs' 'ca' 'cs' 'da' 'de' 'el' 'en-AU' 'en-CA' 'en-GB' 'en-IN' 'en-SG' 'en-XC' 'es' 'es-419' 'es-US' 'et' 'eu' 'fa' 'fi' 'fil' 'fr' 'fr-CA' 'gl' 'gu' 'hi' 'hr' 'hu' 'hy' 'id' 'in' 'is' 'it' 'iw' 'ja' 'ka' 'kk' 'km' 'kn' 'ko' 'ky' 'lo' 'lt' 'lv' 'mk' 'ml' 'mn' 'mr' 'ms' 'my' 'nb' 'ne' 'nl' 'or' 'pa' 'pl' 'pt' 'pt-BR' 'pt-PT' 'ro' 'ru' 'si' 'sk' 'sl' 'sq' 'sr' 'sr-Latn' 'sv' 'sw' 'ta' 'te' 'th' 'tl' 'tr' 'uk' 'ur' 'uz' 'vi' 'zh-CN' 'zh-HK' 'zh-TW' 'zu'
+densities: '120' '160' '240' '320' '480' '640' '65534'
+native-code: 'arm64-v8a' 'armeabi-v7a' 'x86' 'x86_64'
+
+Mar 22 13:03:59 detox[44679] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onBeforeTerminateApp({ deviceId: 'emulator-5554', bundleId: 'com.detoxsample' })
+Mar 22 13:03:59 detox[44679] DEBUG: [EXEC_CMD, #4] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "am force-stop com.detoxsample"
+Mar 22 13:03:59 detox[44679] TRACE: [EXEC_SUCCESS, #4] 
+Mar 22 13:03:59 detox[44679] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onTerminateApp({ deviceId: 'emulator-5554', bundleId: 'com.detoxsample' })
+Mar 22 13:03:59 detox[44679] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onBeforeUninstallApp({ deviceId: 'emulator-5554', bundleId: 'com.detoxsample' })
+Mar 22 13:03:59 detox[44679] DEBUG: [EXEC_CMD, #5] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "pm list packages com.detoxsample"
+Mar 22 13:03:59 detox[44679] TRACE: [EXEC_SUCCESS, #5] package:com.detoxsample.test
+package:com.detoxsample
+
+Mar 22 13:03:59 detox[44679] DEBUG: [EXEC_CMD, #6] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 uninstall com.detoxsample
+Mar 22 13:04:00 detox[44679] TRACE: [EXEC_SUCCESS, #6] Success
+
+Mar 22 13:04:00 detox[44679] DEBUG: [EXEC_CMD, #7] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "pm list packages com.detoxsample.test"
+Mar 22 13:04:00 detox[44679] TRACE: [EXEC_SUCCESS, #7] package:com.detoxsample.test
+
+Mar 22 13:04:00 detox[44679] DEBUG: [EXEC_CMD, #8] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 uninstall com.detoxsample.test
+Mar 22 13:04:00 detox[44679] TRACE: [EXEC_SUCCESS, #8] Success
+
+Mar 22 13:04:00 detox[44679] DEBUG: [EXEC_CMD, #9] "/Users/vivek.shindhe/Library/Android/sdk/build-tools/31.0.0/aapt" dump xmlstrings "/Users/vivek.shindhe/RazorpayProjects/testing_projects/DetoxSample/android/app/build/outputs/apk/debug/app-debug.apk" AndroidManifest.xml
+Mar 22 13:04:00 detox[44679] TRACE: [EXEC_SUCCESS, #9] String pool of 77 unique UTF-16 non-sorted strings, 77 entries and 0 styles using 3480 bytes:
+String #0: theme
+String #1: label
+String #2: icon
+String #3: name
+String #4: permission
+String #5: debuggable
+String #6: exported
+String #7: excludeFromRecents
+String #8: launchMode
+String #9: configChanges
+String #10: value
+String #11: mimeType
+String #12: scheme
+String #13: host
+String #14: minSdkVersion
+String #15: versionCode
+String #16: versionName
+String #17: windowSoftInputMode
+String #18: targetSdkVersion
+String #19: allowBackup
+String #20: glEsVersion
+String #21: required
+String #22: usesCleartextTraffic
+String #23: networkSecurityConfig
+String #24: roundIcon
+String #25: compileSdkVersion
+String #26: compileSdkVersionCodename
+String #27: appComponentFactory
+String #28: *
+String #29: */*
+String #30: 1.0
+String #31: 11
+String #32: action
+String #33: activity
+String #34: android
+String #35: android.intent.action.MAIN
+String #36: android.intent.action.SEND
+String #37: android.intent.action.VIEW
+String #38: android.intent.category.BROWSABLE
+String #39: android.intent.category.LAUNCHER
+String #40: android.permission.ACCESS_NETWORK_STATE
+String #41: android.permission.ACCESS_WIFI_STATE
+String #42: android.permission.INTERNET
+String #43: android.permission.SYSTEM_ALERT_WINDOW
+String #44: androidx.core.app.CoreComponentFactory
+String #45: application
+String #46: category
+String #47: com.detoxsample
+String #48: com.detoxsample.MainActivity
+String #49: com.detoxsample.MainApplication
+String #50: com.facebook.react.devsupport.DevSettingsActivity
+String #51: com.google.android.gms.auth.api.signin.RevocationBoundService
+String #52: com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+String #53: com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION
+String #54: com.google.android.gms.common.api.GoogleApiActivity
+String #55: com.google.android.gms.version
+String #56: com.razorpay.RzpGpayMerged
+String #57: com.razorpay.plugin.googlepay_all
+String #58: com.razorpay.rn.RazorpayPaymentActivity
+String #59: data
+String #60: http://schemas.android.com/apk/res/android
+String #61: intent
+String #62: intent-filter
+String #63: manifest
+String #64: meta-data
+String #65: org.apache.http.legacy
+String #66: package
+String #67: pay
+String #68: platformBuildVersionCode
+String #69: platformBuildVersionName
+String #70: queries
+String #71: service
+String #72: upi
+String #73: uses-feature
+String #74: uses-library
+String #75: uses-permission
+String #76: uses-sdk
+
+Mar 22 13:04:00 detox[44679] DEBUG: [EXEC_CMD, #10] "/Users/vivek.shindhe/Library/Android/sdk/build-tools/31.0.0/aapt" dump xmlstrings "/Users/vivek.shindhe/RazorpayProjects/testing_projects/DetoxSample/android/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk" AndroidManifest.xml
+Mar 22 13:04:00 detox[44679] TRACE: [EXEC_SUCCESS, #10] String pool of 41 unique UTF-16 non-sorted strings, 41 entries and 0 styles using 2032 bytes:
+String #0: theme
+String #1: label
+String #2: name
+String #3: debuggable
+String #4: exported
+String #5: targetPackage
+String #6: handleProfiling
+String #7: functionalTest
+String #8: minSdkVersion
+String #9: targetSdkVersion
+String #10: compileSdkVersion
+String #11: compileSdkVersionCodename
+String #12: 11
+String #13: Tests for com.detoxsample
+String #14: action
+String #15: activity
+String #16: android
+String #17: android.intent.action.MAIN
+String #18: android.permission.REORDER_TASKS
+String #19: android.test.runner
+String #20: androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity
+String #21: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity
+String #22: androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity
+String #23: androidx.test.orchestrator
+String #24: androidx.test.runner.AndroidJUnitRunner
+String #25: androidx.test.services
+String #26: application
+String #27: com.detoxsample
+String #28: com.detoxsample.test
+String #29: com.google.android.apps.common.testing.services
+String #30: http://schemas.android.com/apk/res/android
+String #31: instrumentation
+String #32: intent-filter
+String #33: manifest
+String #34: package
+String #35: platformBuildVersionCode
+String #36: platformBuildVersionName
+String #37: queries
+String #38: uses-library
+String #39: uses-permission
+String #40: uses-sdk
+
+Mar 22 13:04:00 detox[44679] DEBUG: [SPAWN_CMD, #11, cpid=44694] /Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb -s emulator-5554 install -r -g -t /Users/vivek.shindhe/RazorpayProjects/testing_projects/DetoxSample/android/app/build/outputs/apk/debug/app-debug.apk
+Mar 22 13:04:01 detox[44679] TRACE: [SPAWN_STDOUT, #11, cpid=44694] Performing Streamed Install
+Success
+
+Mar 22 13:04:01 detox[44679] DEBUG: [SPAWN_END, #11, cpid=44694] /Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb -s emulator-5554 install -r -g -t /Users/vivek.shindhe/RazorpayProjects/testing_projects/DetoxSample/android/app/build/outputs/apk/debug/app-debug.apk exited with code #0
+Mar 22 13:04:01 detox[44679] DEBUG: [SPAWN_CMD, #12, cpid=44695] /Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb -s emulator-5554 install -r -g -t /Users/vivek.shindhe/RazorpayProjects/testing_projects/DetoxSample/android/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
+Mar 22 13:04:02 detox[44679] TRACE: [SPAWN_STDOUT, #12, cpid=44695] Performing Streamed Install
+Success
+
+Mar 22 13:04:02 detox[44679] DEBUG: [SPAWN_END, #12, cpid=44695] /Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb -s emulator-5554 install -r -g -t /Users/vivek.shindhe/RazorpayProjects/testing_projects/DetoxSample/android/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk exited with code #0
+Mar 22 13:04:02 ROOT_DESCRIBE_BLOCK[44679] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onRunDescribeStart({ name: 'ROOT_DESCRIBE_BLOCK' })
+Mar 22 13:04:02 Example[44679] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onRunDescribeStart({ name: 'Example' })
+Mar 22 13:04:02 detox[44679] INFO:  [97mExample[39m is assigned to [94mAttachedDevice:emulator-5554[39m
+Mar 22 13:04:02 detox[44679] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onBeforeTerminateApp({ deviceId: 'emulator-5554', bundleId: 'com.detoxsample' })
+Mar 22 13:04:02 detox[44679] DEBUG: [EXEC_CMD, #13] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "am force-stop com.detoxsample"
+Mar 22 13:04:03 detox[44679] TRACE: [EXEC_SUCCESS, #13] 
+Mar 22 13:04:03 detox[44679] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onTerminateApp({ deviceId: 'emulator-5554', bundleId: 'com.detoxsample' })
+Mar 22 13:04:03 detox[44679] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onBeforeLaunchApp({
+  deviceId: 'emulator-5554',
+  bundleId: 'com.detoxsample',
+  launchArgs: {
+    detoxServer: 'ws://localhost:57929',
+    detoxSessionId: '3fe7cb7d-d97d-2bb3-dafd-1240e68ad085'
+  }
+})
+Mar 22 13:04:03 detox[44679] DEBUG: [EXEC_CMD, #14] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "date +\"%m-%d %T.000\""
+Mar 22 13:04:03 detox[44679] TRACE: [EXEC_SUCCESS, #14] 03-22 18:34:02.000
+
+Mar 22 13:04:03 detox[44679] DEBUG: [EXEC_CMD, #15] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 reverse tcp:57929 tcp:57929
+Mar 22 13:04:03 detox[44679] TRACE: [EXEC_SUCCESS, #15] 57929
+
+Mar 22 13:04:03 detox[44679] DEBUG: [EXEC_CMD, #16] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "pm list instrumentation"
+Mar 22 13:04:03 detox[44679] TRACE: [EXEC_SUCCESS, #16] instrumentation:com.detoxsample.test/androidx.test.runner.AndroidJUnitRunner (target=com.detoxsample)
+
+Mar 22 13:04:03 detox[44679] DEBUG: [SPAWN_CMD, #17, cpid=44701] /Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb -s emulator-5554 shell am instrument -w -r -e detoxServer ws://localhost:57929 -e detoxSessionId 3fe7cb7d-d97d-2bb3-dafd-1240e68ad085 -e debug false com.detoxsample.test/androidx.test.runner.AndroidJUnitRunner
+Mar 22 13:04:03 detox[44679] DEBUG: [EXEC_CMD, #18] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "ps | grep \"com\.detoxsample$\""
+Mar 22 13:04:03 detox[44679] TRACE: [EXEC_SUCCESS, #18] u0_a180      17717   362 14449084 108736 0                  0 R com.detoxsample
+
+Mar 22 13:04:03 detox[17717] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onLaunchApp({
+  deviceId: 'emulator-5554',
+  bundleId: 'com.detoxsample',
+  launchArgs: {
+    detoxServer: 'ws://localhost:57929',
+    detoxSessionId: '3fe7cb7d-d97d-2bb3-dafd-1240e68ad085'
+  },
+  pid: 17717
+})
+Mar 22 13:04:03 detox[44679] TRACE: [ARTIFACT_START] starting ADBLogcatRecording
+Mar 22 13:04:03 detox[44679] DEBUG: [SPAWN_CMD, #19, cpid=44703] /Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb -s emulator-5554 shell "logcat -T \"03-22 18:34:02.000\" --pid=17717 -f /sdcard/13359305_0.log"
+Mar 22 13:04:04 detox[44679] DEBUG: [EXEC_CMD, #20] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell du /sdcard/13359305_0.log
+Mar 22 13:04:04 detox[44679] TRACE: [EXEC_SUCCESS, #20] 4	/sdcard/13359305_0.log
+
+Mar 22 13:04:05 detox[44679] TRACE: [SPAWN_STDOUT, #17, cpid=44701] INSTRUMENTATION_STATUS: class=com.detoxsample.DetoxTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.detoxsample.DetoxTest:
+
+Mar 22 13:04:05 detox[44679] TRACE: [SPAWN_STDOUT, #17, cpid=44701] INSTRUMENTATION_STATUS: test=runDetoxTests
+INSTRUMENTATION_STATUS_CODE: 1
+
+Mar 22 13:04:06 detox[44679] DEBUG: [WSS_CONNECTION, #58004] registered a new connection.
+Mar 22 13:04:06 detox[44679] TRACE: [WSS_GET_FROM, #58004] {"messageId":0,"type":"login","params":{"role":"app","sessionId":"3fe7cb7d-d97d-2bb3-dafd-1240e68ad085"}}
+Mar 22 13:04:06 detox[44679] TRACE: [WSS_SEND_TO, #app] {"messageId":0,"type":"loginSuccess","params":{"testerConnected":true,"appConnected":true}}
+Mar 22 13:04:06 detox[44679] TRACE: [SESSION_JOINED] app joined session 3fe7cb7d-d97d-2bb3-dafd-1240e68ad085
+Mar 22 13:04:06 detox[44679] TRACE: [WSS_SEND_TO, #tester] {"type":"appConnected"}
+Mar 22 13:04:06 detox[44679] TRACE: [WS_MESSAGE] {"type":"appConnected"}
+ 
+Mar 22 13:04:06 detox[44679] TRACE: [WS_SEND] {"type":"isReady","params":{},"messageId":-1000}
+Mar 22 13:04:06 detox[44679] TRACE: [WSS_GET_FROM, #tester] {"type":"isReady","params":{},"messageId":-1000}
+Mar 22 13:04:06 detox[44679] TRACE: [WSS_SEND_TO, #app] {"type":"isReady","params":{},"messageId":-1000}
+Mar 22 13:04:06 detox[44679] TRACE: [WSS_GET_FROM, #app] {"messageId":-1000,"type":"ready","params":{}}
+Mar 22 13:04:06 detox[44679] TRACE: [WSS_SEND_TO, #tester] {"messageId":-1000,"type":"ready","params":{}}
+Mar 22 13:04:06 detox[44679] TRACE: [WS_MESSAGE] {"messageId":-1000,"type":"ready","params":{}}
+ 
+Mar 22 13:04:06 detox[17717] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onAppReady({ deviceId: 'emulator-5554', bundleId: 'com.detoxsample', pid: 17717 })
+Mar 22 13:04:06 detox[44679] INFO:  [1m[37mExample: [39m[22m[90mshould initialize razorpay[39m
+Mar 22 13:04:06 detox[44679] TRACE: [DETOX_BEFORE_EACH] running test: "Example should initialize razorpay"
+Mar 22 13:04:06 detox[44679] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onTestStart({
+  title: 'should initialize razorpay',
+  fullName: 'Example should initialize razorpay',
+  status: 'running',
+  invocations: 1
+})
+Mar 22 13:04:06 detox[44679] TRACE: [ARTIFACT_STOP] stopping ADBLogcatRecording
+Mar 22 13:04:06 detox[44679] DEBUG: [EXEC_CMD, #21] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "date +\"%m-%d %T.000\""
+Mar 22 13:04:06 detox[44679] TRACE: [WSS_GET_FROM, #app] {"messageId":-1000,"type":"ready","params":{}}
+Mar 22 13:04:06 detox[44679] TRACE: [WSS_SEND_TO, #tester] {"messageId":-1000,"type":"ready","params":{}}
+Mar 22 13:04:06 detox[44679] TRACE: [WS_MESSAGE] {"messageId":-1000,"type":"ready","params":{}}
+ 
+Mar 22 13:04:06 detox[44679] TRACE: [EXEC_SUCCESS, #21] 03-22 18:34:06.000
+
+Mar 22 13:04:06 detox[44703] TRACE: [SPAWN_KILL] sending SIGINT to: /Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb -s emulator-5554 shell logcat -T "03-22 18:34:02.000" --pid=17717 -f /sdcard/13359305_0.log
+Mar 22 13:04:06 detox[44679] DEBUG: [SPAWN_END, #19, cpid=44703] /Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb -s emulator-5554 shell "logcat -T \"03-22 18:34:02.000\" --pid=17717 -f /sdcard/13359305_0.log" terminated with SIGINT
+Mar 22 13:04:06 detox[44679] TRACE: [ARTIFACT_START] starting ADBLogcatRecording
+Mar 22 13:04:06 detox[44679] DEBUG: [SPAWN_CMD, #22, cpid=44707] /Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb -s emulator-5554 shell "logcat -T \"03-22 18:34:06.000\" --pid=17717 -f /sdcard/13359305_1.log"
+Mar 22 13:04:06 detox[44679] TRACE: [WS_SEND] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["initRazorpay"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]},"messageId":1}
+Mar 22 13:04:06 detox[44679] TRACE: [WSS_GET_FROM, #tester] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["initRazorpay"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]},"messageId":1}
+Mar 22 13:04:06 detox[44679] TRACE: [WSS_SEND_TO, #app] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["initRazorpay"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]},"messageId":1}
+Mar 22 13:04:07 detox[44679] DEBUG: [EXEC_CMD, #23] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell du /sdcard/13359305_1.log
+Mar 22 13:04:07 detox[44679] TRACE: [EXEC_SUCCESS, #23] 4	/sdcard/13359305_1.log
+
+Mar 22 13:04:08 detox[44679] TRACE: [WSS_GET_FROM, #app] {"messageId":1,"type":"invokeResult","params":{"result":null}}
+Mar 22 13:04:08 detox[44679] TRACE: [WSS_SEND_TO, #tester] {"messageId":1,"type":"invokeResult","params":{"result":null}}
+Mar 22 13:04:08 detox[44679] TRACE: [WS_MESSAGE] {"messageId":1,"type":"invokeResult","params":{"result":null}}
+ 
+Mar 22 13:04:08 detox[44679] TRACE: [WS_SEND] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["Razorpay Initialized"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]},"messageId":2}
+Mar 22 13:04:08 detox[44679] TRACE: [WSS_GET_FROM, #tester] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["Razorpay Initialized"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]},"messageId":2}
+Mar 22 13:04:08 detox[44679] TRACE: [WSS_SEND_TO, #app] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["Razorpay Initialized"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]},"messageId":2}
+Mar 22 13:04:08 detox[44679] TRACE: [WSS_GET_FROM, #app] {"messageId":2,"type":"invokeResult","params":{"result":null}}
+Mar 22 13:04:08 detox[44679] TRACE: [WSS_SEND_TO, #tester] {"messageId":2,"type":"invokeResult","params":{"result":null}}
+Mar 22 13:04:08 detox[44679] TRACE: [WS_MESSAGE] {"messageId":2,"type":"invokeResult","params":{"result":null}}
+ 
+Mar 22 13:04:08 detox[44679] TRACE: [DETOX_AFTER_EACH] passed test: "Example should initialize razorpay"
+Mar 22 13:04:08 detox[44679] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onTestDone({
+  title: 'should initialize razorpay',
+  fullName: 'Example should initialize razorpay',
+  status: 'passed',
+  invocations: 1,
+  timedOut: false
+})
+Mar 22 13:04:08 detox[44679] TRACE: [ARTIFACT_STOP] stopping ADBLogcatRecording
+Mar 22 13:04:08 detox[44679] DEBUG: [EXEC_CMD, #24] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "date +\"%m-%d %T.000\""
+Mar 22 13:04:08 detox[44679] TRACE: [EXEC_SUCCESS, #24] 03-22 18:34:07.000
+
+Mar 22 13:04:08 detox[44707] TRACE: [SPAWN_KILL] sending SIGINT to: /Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb -s emulator-5554 shell logcat -T "03-22 18:34:06.000" --pid=17717 -f /sdcard/13359305_1.log
+Mar 22 13:04:08 detox[44679] DEBUG: [SPAWN_END, #22, cpid=44707] /Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb -s emulator-5554 shell "logcat -T \"03-22 18:34:06.000\" --pid=17717 -f /sdcard/13359305_1.log" terminated with SIGINT
+Mar 22 13:04:08 detox[44679] INFO:  [1m[37mExample: [39m[22m[90mshould initialize razorpay[39m[90m [[32mOK[90m][39m
+Mar 22 13:04:08 detox[44679] INFO:  [1m[37mExample: [39m[22m[90mshould try card utility functions: isCardValid-pass/getCardNetwork-pass[39m
+Mar 22 13:04:08 detox[44679] TRACE: [DETOX_BEFORE_EACH] running test: "Example should try card utility functions: isCardValid-pass/getCardNetwork-pass"
+Mar 22 13:04:08 detox[44679] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onTestStart({
+  title: 'should try card utility functions: isCardValid-pass/getCardNetwork-pass',
+  fullName: 'Example should try card utility functions: isCardValid-pass/getCardNetwork-pass',
+  status: 'running',
+  invocations: 1
+})
+Mar 22 13:04:08 detox[44679] TRACE: [ARTIFACT_START] starting ADBLogcatRecording
+Mar 22 13:04:08 detox[44679] DEBUG: [SPAWN_CMD, #25, cpid=44710] /Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb -s emulator-5554 shell "logcat -T \"03-22 18:34:07.000\" --pid=17717 -f /sdcard/13359305_2.log"
+Mar 22 13:04:08 detox[44679] TRACE: [WS_SEND] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["cards"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]},"messageId":3}
+Mar 22 13:04:08 detox[44679] TRACE: [WSS_GET_FROM, #tester] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["cards"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]},"messageId":3}
+Mar 22 13:04:08 detox[44679] TRACE: [WSS_SEND_TO, #app] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["cards"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]},"messageId":3}
+Mar 22 13:04:08 detox[44679] TRACE: [ARTIFACT_SAVE] saving ADBLogcatRecording to: artifacts/android.debug.2022-03-22 07-33-57Z/✓ Example should initialize razorpay/device.log
+Mar 22 13:04:08 detox[44679] DEBUG: [EXEC_CMD, #26] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 pull "/sdcard/13359305_1.log" "artifacts/android.debug.2022-03-22 07-33-57Z/✓ Example should initialize razorpay/device.log"
+Mar 22 13:04:08 detox[44679] TRACE: [EXEC_SUCCESS, #26] /sdcard/13359305_1.log: 1 file pulled, 0 skipped. 1.0 MB/s (7734 bytes in 0.007s)
+
+Mar 22 13:04:08 detox[44679] DEBUG: [EXEC_CMD, #27] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "rm  \"/sdcard/13359305_1.log\""
+Mar 22 13:04:08 detox[44679] TRACE: [EXEC_SUCCESS, #27] 
+Mar 22 13:04:08 detox[44679] TRACE: [ARTIFACT_SAVE] saving ADBLogcatRecording to: artifacts/android.debug.2022-03-22 07-33-57Z/emulator-5554 2022-03-22 07-34-08Z.startup.log
+Mar 22 13:04:08 detox[44679] DEBUG: [EXEC_CMD, #28] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 pull "/sdcard/13359305_0.log" "artifacts/android.debug.2022-03-22 07-33-57Z/emulator-5554 2022-03-22 07-34-08Z.startup.log"
+Mar 22 13:04:08 detox[44679] TRACE: [EXEC_SUCCESS, #28] /sdcard/13359305_0.log: 1 file pulled, 0 skipped. 4.3 MB/s (30999 bytes in 0.007s)
+
+Mar 22 13:04:08 detox[44679] DEBUG: [EXEC_CMD, #29] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "rm  \"/sdcard/13359305_0.log\""
+Mar 22 13:04:08 detox[44679] TRACE: [EXEC_SUCCESS, #29] 
+Mar 22 13:04:08 detox[44679] DEBUG: [EXEC_CMD, #30] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell du /sdcard/13359305_2.log
+Mar 22 13:04:08 detox[44679] TRACE: [EXEC_SUCCESS, #30] 4	/sdcard/13359305_2.log
+
+Mar 22 13:04:08 detox[44679] TRACE: [WSS_GET_FROM, #app] {"messageId":3,"type":"invokeResult","params":{"result":null}}
+Mar 22 13:04:08 detox[44679] TRACE: [WSS_SEND_TO, #tester] {"messageId":3,"type":"invokeResult","params":{"result":null}}
+Mar 22 13:04:08 detox[44679] TRACE: [WS_MESSAGE] {"messageId":3,"type":"invokeResult","params":{"result":null}}
+ 
+Mar 22 13:04:08 detox[44679] TRACE: [WS_SEND] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["cardNumber"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.action.ViewActions"},"method":"replaceText","args":["4111111111111111"]}}]},"messageId":4}
+Mar 22 13:04:08 detox[44679] TRACE: [WSS_GET_FROM, #tester] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["cardNumber"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.action.ViewActions"},"method":"replaceText","args":["4111111111111111"]}}]},"messageId":4}
+Mar 22 13:04:08 detox[44679] TRACE: [WSS_SEND_TO, #app] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["cardNumber"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.action.ViewActions"},"method":"replaceText","args":["4111111111111111"]}}]},"messageId":4}
+Mar 22 13:04:08 detox[44679] TRACE: [WSS_GET_FROM, #app] {"messageId":4,"type":"invokeResult","params":{"result":null}}
+Mar 22 13:04:08 detox[44679] TRACE: [WSS_SEND_TO, #tester] {"messageId":4,"type":"invokeResult","params":{"result":null}}
+Mar 22 13:04:08 detox[44679] TRACE: [WS_MESSAGE] {"messageId":4,"type":"invokeResult","params":{"result":null}}
+ 
+Mar 22 13:04:08 detox[44679] TRACE: [WS_SEND] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["IS CARD VALID"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]},"messageId":5}
+Mar 22 13:04:08 detox[44679] TRACE: [WSS_GET_FROM, #tester] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["IS CARD VALID"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]},"messageId":5}
+Mar 22 13:04:08 detox[44679] TRACE: [WSS_SEND_TO, #app] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["IS CARD VALID"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]},"messageId":5}
+Mar 22 13:04:09 detox[44679] TRACE: [WSS_GET_FROM, #app] {"messageId":5,"type":"invokeResult","params":{"result":null}}
+Mar 22 13:04:09 detox[44679] TRACE: [WSS_SEND_TO, #tester] {"messageId":5,"type":"invokeResult","params":{"result":null}}
+Mar 22 13:04:09 detox[44679] TRACE: [WS_MESSAGE] {"messageId":5,"type":"invokeResult","params":{"result":null}}
+ 
+Mar 22 13:04:09 detox[44679] TRACE: [WS_SEND] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["Card Validity : true"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]},"messageId":6}
+Mar 22 13:04:09 detox[44679] TRACE: [WSS_GET_FROM, #tester] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["Card Validity : true"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]},"messageId":6}
+Mar 22 13:04:09 detox[44679] TRACE: [WSS_SEND_TO, #app] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["Card Validity : true"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]},"messageId":6}
+Mar 22 13:04:09 detox[44679] TRACE: [WSS_GET_FROM, #app] {"messageId":6,"type":"invokeResult","params":{"result":null}}
+Mar 22 13:04:09 detox[44679] TRACE: [WSS_SEND_TO, #tester] {"messageId":6,"type":"invokeResult","params":{"result":null}}
+Mar 22 13:04:09 detox[44679] TRACE: [WS_MESSAGE] {"messageId":6,"type":"invokeResult","params":{"result":null}}
+ 
+Mar 22 13:04:09 detox[44679] TRACE: [WS_SEND] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["GET CARD NETWORK"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]},"messageId":7}
+Mar 22 13:04:09 detox[44679] TRACE: [WSS_GET_FROM, #tester] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["GET CARD NETWORK"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]},"messageId":7}
+Mar 22 13:04:09 detox[44679] TRACE: [WSS_SEND_TO, #app] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["GET CARD NETWORK"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]},"messageId":7}
+Mar 22 13:04:10 detox[44679] TRACE: [WSS_GET_FROM, #app] {"messageId":7,"type":"invokeResult","params":{"result":null}}
+Mar 22 13:04:10 detox[44679] TRACE: [WSS_SEND_TO, #tester] {"messageId":7,"type":"invokeResult","params":{"result":null}}
+Mar 22 13:04:10 detox[44679] TRACE: [WS_MESSAGE] {"messageId":7,"type":"invokeResult","params":{"result":null}}
+ 
+Mar 22 13:04:10 detox[44679] TRACE: [WS_SEND] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["Card Network : visa"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]},"messageId":8}
+Mar 22 13:04:10 detox[44679] TRACE: [WSS_GET_FROM, #tester] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["Card Network : visa"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]},"messageId":8}
+Mar 22 13:04:10 detox[44679] TRACE: [WSS_SEND_TO, #app] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["Card Network : visa"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]},"messageId":8}
+Mar 22 13:04:10 detox[44679] TRACE: [WSS_GET_FROM, #app] {"messageId":8,"type":"invokeResult","params":{"result":null}}
+Mar 22 13:04:10 detox[44679] TRACE: [WSS_SEND_TO, #tester] {"messageId":8,"type":"invokeResult","params":{"result":null}}
+Mar 22 13:04:10 detox[44679] TRACE: [WS_MESSAGE] {"messageId":8,"type":"invokeResult","params":{"result":null}}
+ 
+Mar 22 13:04:10 detox[44679] TRACE: [DETOX_AFTER_EACH] passed test: "Example should try card utility functions: isCardValid-pass/getCardNetwork-pass"
+Mar 22 13:04:10 detox[44679] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onTestDone({
+  title: 'should try card utility functions: isCardValid-pass/getCardNetwork-pass',
+  fullName: 'Example should try card utility functions: isCardValid-pass/getCardNetwork-pass',
+  status: 'passed',
+  invocations: 1,
+  timedOut: false
+})
+Mar 22 13:04:10 detox[44679] TRACE: [ARTIFACT_STOP] stopping ADBLogcatRecording
+Mar 22 13:04:10 detox[44679] DEBUG: [EXEC_CMD, #31] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "date +\"%m-%d %T.000\""
+Mar 22 13:04:10 detox[44679] TRACE: [EXEC_SUCCESS, #31] 03-22 18:34:09.000
+
+Mar 22 13:04:10 detox[44710] TRACE: [SPAWN_KILL] sending SIGINT to: /Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb -s emulator-5554 shell logcat -T "03-22 18:34:07.000" --pid=17717 -f /sdcard/13359305_2.log
+Mar 22 13:04:10 detox[44679] DEBUG: [SPAWN_END, #25, cpid=44710] /Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb -s emulator-5554 shell "logcat -T \"03-22 18:34:07.000\" --pid=17717 -f /sdcard/13359305_2.log" terminated with SIGINT
+Mar 22 13:04:10 detox[44679] INFO:  [1m[37mExample: [39m[22m[90mshould try card utility functions: isCardValid-pass/getCardNetwork-pass[39m[90m [[32mOK[90m][39m
+Mar 22 13:04:10 detox[44679] INFO:  [1m[37mExample: [39m[22m[90mshould try card utility functions: isCardValid-fail/getCardNetwork[39m
+Mar 22 13:04:10 detox[44679] TRACE: [DETOX_BEFORE_EACH] running test: "Example should try card utility functions: isCardValid-fail/getCardNetwork"
+Mar 22 13:04:10 detox[44679] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onTestStart({
+  title: 'should try card utility functions: isCardValid-fail/getCardNetwork',
+  fullName: 'Example should try card utility functions: isCardValid-fail/getCardNetwork',
+  status: 'running',
+  invocations: 1
+})
+Mar 22 13:04:10 detox[44679] TRACE: [ARTIFACT_START] starting ADBLogcatRecording
+Mar 22 13:04:10 detox[44679] DEBUG: [SPAWN_CMD, #32, cpid=44718] /Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb -s emulator-5554 shell "logcat -T \"03-22 18:34:09.000\" --pid=17717 -f /sdcard/13359305_3.log"
+Mar 22 13:04:10 detox[44679] TRACE: [WS_SEND] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["cardNumber"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.action.ViewActions"},"method":"replaceText","args":["9000000000000000"]}}]},"messageId":9}
+Mar 22 13:04:10 detox[44679] TRACE: [ARTIFACT_SAVE] saving ADBLogcatRecording to: artifacts/android.debug.2022-03-22 07-33-57Z/✓ Example should try card utility functions_ isCardValid-pass_getCardNetwork-pass/device.log
+Mar 22 13:04:10 detox[44679] DEBUG: [EXEC_CMD, #33] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 pull "/sdcard/13359305_2.log" "artifacts/android.debug.2022-03-22 07-33-57Z/✓ Example should try card utility functions_ isCardValid-pass_getCardNetwork-pass/device.log"
+Mar 22 13:04:10 detox[44679] TRACE: [WSS_GET_FROM, #tester] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["cardNumber"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.action.ViewActions"},"method":"replaceText","args":["9000000000000000"]}}]},"messageId":9}
+Mar 22 13:04:10 detox[44679] TRACE: [WSS_SEND_TO, #app] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["cardNumber"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.action.ViewActions"},"method":"replaceText","args":["9000000000000000"]}}]},"messageId":9}
+Mar 22 13:04:10 detox[44679] TRACE: [EXEC_SUCCESS, #33] /sdcard/13359305_2.log: 1 file pulled, 0 skipped. 4.0 MB/s (15107 bytes in 0.004s)
+
+Mar 22 13:04:10 detox[44679] DEBUG: [EXEC_CMD, #34] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "rm  \"/sdcard/13359305_2.log\""
+Mar 22 13:04:10 detox[44679] TRACE: [WSS_GET_FROM, #app] {"messageId":9,"type":"invokeResult","params":{"result":null}}
+Mar 22 13:04:10 detox[44679] TRACE: [WSS_SEND_TO, #tester] {"messageId":9,"type":"invokeResult","params":{"result":null}}
+Mar 22 13:04:10 detox[44679] TRACE: [WS_MESSAGE] {"messageId":9,"type":"invokeResult","params":{"result":null}}
+ 
+Mar 22 13:04:10 detox[44679] TRACE: [WS_SEND] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["IS CARD VALID"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]},"messageId":10}
+Mar 22 13:04:10 detox[44679] TRACE: [WSS_GET_FROM, #tester] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["IS CARD VALID"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]},"messageId":10}
+Mar 22 13:04:10 detox[44679] TRACE: [WSS_SEND_TO, #app] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["IS CARD VALID"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]},"messageId":10}
+Mar 22 13:04:10 detox[44679] TRACE: [EXEC_SUCCESS, #34] 
+Mar 22 13:04:10 detox[44679] DEBUG: [EXEC_CMD, #35] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell du /sdcard/13359305_3.log
+Mar 22 13:04:10 detox[44679] TRACE: [EXEC_SUCCESS, #35] 4	/sdcard/13359305_3.log
+
+Mar 22 13:04:10 detox[44679] TRACE: [WSS_GET_FROM, #app] {"messageId":10,"type":"invokeResult","params":{"result":null}}
+Mar 22 13:04:10 detox[44679] TRACE: [WSS_SEND_TO, #tester] {"messageId":10,"type":"invokeResult","params":{"result":null}}
+Mar 22 13:04:10 detox[44679] TRACE: [WS_MESSAGE] {"messageId":10,"type":"invokeResult","params":{"result":null}}
+ 
+Mar 22 13:04:10 detox[44679] TRACE: [WS_SEND] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["Card Validity : false"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]},"messageId":11}
+Mar 22 13:04:10 detox[44679] TRACE: [WSS_GET_FROM, #tester] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["Card Validity : false"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]},"messageId":11}
+Mar 22 13:04:10 detox[44679] TRACE: [WSS_SEND_TO, #app] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["Card Validity : false"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]},"messageId":11}
+Mar 22 13:04:10 detox[44679] TRACE: [WSS_GET_FROM, #app] {"messageId":11,"type":"invokeResult","params":{"result":null}}
+Mar 22 13:04:10 detox[44679] TRACE: [WSS_SEND_TO, #tester] {"messageId":11,"type":"invokeResult","params":{"result":null}}
+Mar 22 13:04:10 detox[44679] TRACE: [WS_MESSAGE] {"messageId":11,"type":"invokeResult","params":{"result":null}}
+ 
+Mar 22 13:04:10 detox[44679] TRACE: [WS_SEND] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["GET CARD NETWORK"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]},"messageId":12}
+Mar 22 13:04:10 detox[44679] TRACE: [WSS_GET_FROM, #tester] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["GET CARD NETWORK"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]},"messageId":12}
+Mar 22 13:04:10 detox[44679] TRACE: [WSS_SEND_TO, #app] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["GET CARD NETWORK"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]},"messageId":12}
+Mar 22 13:04:11 detox[44679] TRACE: [WSS_GET_FROM, #app] {"messageId":12,"type":"invokeResult","params":{"result":null}}
+Mar 22 13:04:11 detox[44679] TRACE: [WSS_SEND_TO, #tester] {"messageId":12,"type":"invokeResult","params":{"result":null}}
+Mar 22 13:04:11 detox[44679] TRACE: [WS_MESSAGE] {"messageId":12,"type":"invokeResult","params":{"result":null}}
+ 
+Mar 22 13:04:11 detox[44679] TRACE: [WS_SEND] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["Card Network : unknown"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]},"messageId":13}
+Mar 22 13:04:11 detox[44679] TRACE: [WSS_GET_FROM, #tester] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["Card Network : unknown"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]},"messageId":13}
+Mar 22 13:04:11 detox[44679] TRACE: [WSS_SEND_TO, #app] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["Card Network : unknown"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]},"messageId":13}
+Mar 22 13:04:11 detox[44679] TRACE: [WSS_GET_FROM, #app] {"messageId":13,"type":"invokeResult","params":{"result":null}}
+Mar 22 13:04:11 detox[44679] TRACE: [WSS_SEND_TO, #tester] {"messageId":13,"type":"invokeResult","params":{"result":null}}
+Mar 22 13:04:11 detox[44679] TRACE: [WS_MESSAGE] {"messageId":13,"type":"invokeResult","params":{"result":null}}
+ 
+Mar 22 13:04:11 detox[44679] TRACE: [DETOX_AFTER_EACH] passed test: "Example should try card utility functions: isCardValid-fail/getCardNetwork"
+Mar 22 13:04:11 detox[44679] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onTestDone({
+  title: 'should try card utility functions: isCardValid-fail/getCardNetwork',
+  fullName: 'Example should try card utility functions: isCardValid-fail/getCardNetwork',
+  status: 'passed',
+  invocations: 1,
+  timedOut: false
+})
+Mar 22 13:04:11 detox[44679] TRACE: [ARTIFACT_STOP] stopping ADBLogcatRecording
+Mar 22 13:04:11 detox[44679] DEBUG: [EXEC_CMD, #36] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "date +\"%m-%d %T.000\""
+Mar 22 13:04:11 detox[44679] TRACE: [EXEC_SUCCESS, #36] 03-22 18:34:11.000
+
+Mar 22 13:04:11 detox[44718] TRACE: [SPAWN_KILL] sending SIGINT to: /Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb -s emulator-5554 shell logcat -T "03-22 18:34:09.000" --pid=17717 -f /sdcard/13359305_3.log
+Mar 22 13:04:11 detox[44679] DEBUG: [SPAWN_END, #32, cpid=44718] /Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb -s emulator-5554 shell "logcat -T \"03-22 18:34:09.000\" --pid=17717 -f /sdcard/13359305_3.log" terminated with SIGINT
+Mar 22 13:04:11 detox[44679] INFO:  [1m[37mExample: [39m[22m[90mshould try card utility functions: isCardValid-fail/getCardNetwork[39m[90m [[32mOK[90m][39m
+Mar 22 13:04:11 detox[44679] INFO:  [1m[37mExample: [39m[22m[90mshould call card utility: getCardNetworkLength[39m
+Mar 22 13:04:11 detox[44679] TRACE: [DETOX_BEFORE_EACH] running test: "Example should call card utility: getCardNetworkLength"
+Mar 22 13:04:11 detox[44679] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onTestStart({
+  title: 'should call card utility: getCardNetworkLength',
+  fullName: 'Example should call card utility: getCardNetworkLength',
+  status: 'running',
+  invocations: 1
+})
+Mar 22 13:04:11 detox[44679] TRACE: [ARTIFACT_START] starting ADBLogcatRecording
+Mar 22 13:04:11 detox[44679] DEBUG: [SPAWN_CMD, #37, cpid=44725] /Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb -s emulator-5554 shell "logcat -T \"03-22 18:34:11.000\" --pid=17717 -f /sdcard/13359305_4.log"
+Mar 22 13:04:11 detox[44679] TRACE: [WS_SEND] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["GET CARD NETWORK LENGTH"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]},"messageId":14}
+Mar 22 13:04:11 detox[44679] TRACE: [ARTIFACT_SAVE] saving ADBLogcatRecording to: artifacts/android.debug.2022-03-22 07-33-57Z/✓ Example should try card utility functions_ isCardValid-fail_getCardNetwork/device.log
+Mar 22 13:04:11 detox[44679] DEBUG: [EXEC_CMD, #38] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 pull "/sdcard/13359305_3.log" "artifacts/android.debug.2022-03-22 07-33-57Z/✓ Example should try card utility functions_ isCardValid-fail_getCardNetwork/device.log"
+Mar 22 13:04:11 detox[44679] TRACE: [WSS_GET_FROM, #tester] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["GET CARD NETWORK LENGTH"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]},"messageId":14}
+Mar 22 13:04:11 detox[44679] TRACE: [WSS_SEND_TO, #app] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["GET CARD NETWORK LENGTH"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]},"messageId":14}
+Mar 22 13:04:11 detox[44679] TRACE: [EXEC_SUCCESS, #38] /sdcard/13359305_3.log: 1 file pulled, 0 skipped. 2.9 MB/s (16489 bytes in 0.005s)
+
+Mar 22 13:04:11 detox[44679] DEBUG: [EXEC_CMD, #39] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "rm  \"/sdcard/13359305_3.log\""
+Mar 22 13:04:11 detox[44679] TRACE: [EXEC_SUCCESS, #39] 
+Mar 22 13:04:11 detox[44679] DEBUG: [EXEC_CMD, #40] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell du /sdcard/13359305_4.log
+Mar 22 13:04:11 detox[44679] TRACE: [EXEC_SUCCESS, #40] 4	/sdcard/13359305_4.log
+
+Mar 22 13:04:12 detox[44679] TRACE: [WSS_GET_FROM, #app] {"messageId":14,"type":"invokeResult","params":{"result":null}}
+Mar 22 13:04:12 detox[44679] TRACE: [WSS_SEND_TO, #tester] {"messageId":14,"type":"invokeResult","params":{"result":null}}
+Mar 22 13:04:12 detox[44679] TRACE: [WS_MESSAGE] {"messageId":14,"type":"invokeResult","params":{"result":null}}
+ 
+Mar 22 13:04:12 detox[44679] TRACE: [WS_SEND] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["Card Network length : 16"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]},"messageId":15}
+Mar 22 13:04:12 detox[44679] TRACE: [WSS_GET_FROM, #tester] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["Card Network length : 16"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]},"messageId":15}
+Mar 22 13:04:12 detox[44679] TRACE: [WSS_SEND_TO, #app] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["Card Network length : 16"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]},"messageId":15}
+Mar 22 13:04:12 detox[44679] TRACE: [WSS_GET_FROM, #app] {"messageId":15,"type":"invokeResult","params":{"result":null}}
+Mar 22 13:04:12 detox[44679] TRACE: [WSS_SEND_TO, #tester] {"messageId":15,"type":"invokeResult","params":{"result":null}}
+Mar 22 13:04:12 detox[44679] TRACE: [WS_MESSAGE] {"messageId":15,"type":"invokeResult","params":{"result":null}}
+ 
+Mar 22 13:04:12 detox[44679] TRACE: [WS_SEND] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["cards"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]},"messageId":16}
+Mar 22 13:04:12 detox[44679] TRACE: [WSS_GET_FROM, #tester] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["cards"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]},"messageId":16}
+Mar 22 13:04:12 detox[44679] TRACE: [WSS_SEND_TO, #app] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["cards"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]},"messageId":16}
+Mar 22 13:04:12 detox[44679] TRACE: [WSS_GET_FROM, #app] {"messageId":16,"type":"invokeResult","params":{"result":null}}
+Mar 22 13:04:12 detox[44679] TRACE: [WSS_SEND_TO, #tester] {"messageId":16,"type":"invokeResult","params":{"result":null}}
+Mar 22 13:04:12 detox[44679] TRACE: [WS_MESSAGE] {"messageId":16,"type":"invokeResult","params":{"result":null}}
+ 
+Mar 22 13:04:12 detox[44679] TRACE: [DETOX_AFTER_EACH] passed test: "Example should call card utility: getCardNetworkLength"
+Mar 22 13:04:12 detox[44679] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onTestDone({
+  title: 'should call card utility: getCardNetworkLength',
+  fullName: 'Example should call card utility: getCardNetworkLength',
+  status: 'passed',
+  invocations: 1,
+  timedOut: false
+})
+Mar 22 13:04:12 detox[44679] TRACE: [ARTIFACT_STOP] stopping ADBLogcatRecording
+Mar 22 13:04:12 detox[44679] DEBUG: [EXEC_CMD, #41] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "date +\"%m-%d %T.000\""
+Mar 22 13:04:12 detox[44679] TRACE: [EXEC_SUCCESS, #41] 03-22 18:34:12.000
+
+Mar 22 13:04:12 detox[44725] TRACE: [SPAWN_KILL] sending SIGINT to: /Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb -s emulator-5554 shell logcat -T "03-22 18:34:11.000" --pid=17717 -f /sdcard/13359305_4.log
+Mar 22 13:04:12 detox[44679] DEBUG: [SPAWN_END, #37, cpid=44725] /Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb -s emulator-5554 shell "logcat -T \"03-22 18:34:11.000\" --pid=17717 -f /sdcard/13359305_4.log" terminated with SIGINT
+Mar 22 13:04:12 detox[44679] INFO:  [1m[37mExample: [39m[22m[90mshould call card utility: getCardNetworkLength[39m[90m [[32mOK[90m][39m
+Mar 22 13:04:12 detox[44679] INFO:  [1m[37mExample: [39m[22m[90mshould call isVpaValid[39m
+Mar 22 13:04:12 detox[44679] TRACE: [DETOX_BEFORE_EACH] running test: "Example should call isVpaValid"
+Mar 22 13:04:12 detox[44679] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onTestStart({
+  title: 'should call isVpaValid',
+  fullName: 'Example should call isVpaValid',
+  status: 'running',
+  invocations: 1
+})
+Mar 22 13:04:12 detox[44679] TRACE: [ARTIFACT_START] starting ADBLogcatRecording
+Mar 22 13:04:12 detox[44679] DEBUG: [SPAWN_CMD, #42, cpid=44731] /Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb -s emulator-5554 shell "logcat -T \"03-22 18:34:12.000\" --pid=17717 -f /sdcard/13359305_5.log"
+Mar 22 13:04:12 detox[44679] TRACE: [WS_SEND] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["upiCollect"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]},"messageId":17}
+Mar 22 13:04:12 detox[44679] TRACE: [ARTIFACT_SAVE] saving ADBLogcatRecording to: artifacts/android.debug.2022-03-22 07-33-57Z/✓ Example should call card utility_ getCardNetworkLength/device.log
+Mar 22 13:04:12 detox[44679] DEBUG: [EXEC_CMD, #43] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 pull "/sdcard/13359305_4.log" "artifacts/android.debug.2022-03-22 07-33-57Z/✓ Example should call card utility_ getCardNetworkLength/device.log"
+Mar 22 13:04:12 detox[44679] TRACE: [WSS_GET_FROM, #tester] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["upiCollect"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]},"messageId":17}
+Mar 22 13:04:12 detox[44679] TRACE: [WSS_SEND_TO, #app] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["upiCollect"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]},"messageId":17}
+Mar 22 13:04:12 detox[44679] TRACE: [EXEC_SUCCESS, #43] /sdcard/13359305_4.log: 1 file pulled, 0 skipped. 1.4 MB/s (8160 bytes in 0.005s)
+
+Mar 22 13:04:12 detox[44679] DEBUG: [EXEC_CMD, #44] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "rm  \"/sdcard/13359305_4.log\""
+Mar 22 13:04:12 detox[44679] TRACE: [EXEC_SUCCESS, #44] 
+Mar 22 13:04:12 detox[44679] DEBUG: [EXEC_CMD, #45] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell du /sdcard/13359305_5.log
+Mar 22 13:04:12 detox[44679] TRACE: [EXEC_SUCCESS, #45] 4	/sdcard/13359305_5.log
+
+Mar 22 13:04:13 detox[44679] TRACE: [WSS_GET_FROM, #app] {"messageId":17,"type":"invokeResult","params":{"result":null}}
+Mar 22 13:04:13 detox[44679] TRACE: [WSS_SEND_TO, #tester] {"messageId":17,"type":"invokeResult","params":{"result":null}}
+Mar 22 13:04:13 detox[44679] TRACE: [WS_MESSAGE] {"messageId":17,"type":"invokeResult","params":{"result":null}}
+ 
+Mar 22 13:04:13 detox[44679] TRACE: [WS_SEND] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["vpaAddress"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.action.ViewActions"},"method":"replaceText","args":["rohan@paytm"]}}]},"messageId":18}
+Mar 22 13:04:13 detox[44679] TRACE: [WSS_GET_FROM, #tester] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["vpaAddress"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.action.ViewActions"},"method":"replaceText","args":["rohan@paytm"]}}]},"messageId":18}
+Mar 22 13:04:13 detox[44679] TRACE: [WSS_SEND_TO, #app] {"type":"invoke","params":{"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["vpaAddress"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.action.ViewActions"},"method":"replaceText","args":["rohan@paytm"]}}]},"messageId":18}
+Mar 22 13:04:13 detox[44679] TRACE: [WSS_GET_FROM, #app] {"messageId":18,"type":"testFailed","params":{"details":"No views in hierarchy found matching: (view.getTag() is \"vpaAddress\" and view has effective visibility <VISIBLE>)\n","viewHierarchy":"+>DecorView{id=-1, visibility=VISIBLE, width=1080, height=1920, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params={(0,0)(fillxfill) gr=CENTER ty=APPLICATION fmt=TRANSPARENT wanim=0x7f0f0005\n  fl=LAYOUT_IN_SCREEN LAYOUT_INSET_DECOR SPLIT_TOUCH HARDWARE_ACCELERATED TRANSLUCENT_STATUS DRAWS_SYSTEM_BAR_BACKGROUNDS\n  pfl=NO_MOVE_ANIMATION FORCE_DRAW_STATUS_BAR_BACKGROUND FIT_INSETS_CONTROLLED\n  bhv=DEFAULT\n  fitSides=}, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3} \n|\n+->LinearLayout{id=-1, visibility=VISIBLE, width=1080, height=1878, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@ca22972, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} \n|\n+-->ViewStub{id=16908723, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@9d891c3, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} \n|\n+-->FrameLayout{id=16908290, res-name=content, visibility=VISIBLE, width=1080, height=1878, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@d71aa40, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} \n|\n+--->ReactRootView{id=11, visibility=VISIBLE, width=1080, height=1878, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@4656abe, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} \n|\n+---->ReactViewGroup{id=449, visibility=VISIBLE, width=1080, height=1878, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@2a8871f, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=4} \n|\n+----->ReactViewGroup{id=237, visibility=VISIBLE, width=1080, height=189, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@be72a6c, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3} \n|\n+------>ReactViewGroup{id=219, visibility=VISIBLE, width=102, height=103, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@be22835, tag=null, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=76.0, child-count=1} \n|\n+------->ReactImageView{id=217, visibility=VISIBLE, width=21, height=37, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@58974ca, tag=null, root-is-layout-requested=false, has-input-connection=false, x=41.0, y=33.0} \n|\n+------>ReactTextView{id=225, visibility=VISIBLE, width=188, height=49, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@5528158, tag=null, root-is-layout-requested=false, has-input-connection=false, x=446.0, y=102.0, text=Log 1 of 2, input-type=0, ime-target=false, has-links=false} \n|\n+------>ReactViewGroup{id=233, visibility=VISIBLE, width=102, height=103, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@99a12b1, tag=null, root-is-layout-requested=false, has-input-connection=false, x=962.0, y=76.0, child-count=1} \n|\n+------->ReactImageView{id=229, visibility=VISIBLE, width=21, height=37, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@e321396, tag=null, root-is-layout-requested=false, has-input-connection=false, x=41.0, y=33.0} \n|\n+----->ReactViewGroup{id=255, visibility=VISIBLE, width=1080, height=193, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@94e3b17, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=189.0, child-count=2} \n|\n+------>ReactTextView{id=243, visibility=VISIBLE, width=1017, height=74, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@71a5b04, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=26.0, text=Render Error, input-type=0, ime-target=false, has-links=false} \n|\n+------>ReactTextView{id=253, visibility=VISIBLE, width=1080, height=80, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@70c28ed, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=113.0, text=Text strings must be rendered within a <Text> component., input-type=0, ime-target=false, has-links=false} \n|\n+----->ReactScrollView{id=425, visibility=VISIBLE, width=1080, height=1370, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@87171b3, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=382.0, child-count=1} \n|\n+------>ReactViewGroup{id=423, visibility=VISIBLE, width=1080, height=958, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@c642370, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=9} \n|\n+------->ReactTextView{id=259, visibility=VISIBLE, width=1017, height=53, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@20f66e9, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=39.0, text=Component Stack, input-type=0, ime-target=false, has-links=false} \n|\n+------->ReactViewGroup{id=289, visibility=VISIBLE, width=1002, height=102, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@31fff6e, tag=null, root-is-layout-requested=false, has-input-connection=false, x=39.0, y=118.0, child-count=2} \n|\n+-------->ReactTextView{id=277, visibility=VISIBLE, width=242, height=43, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@187760f, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=11.0, text=<RCTView \/>, input-type=0, ime-target=false, has-links=false} \n|\n+-------->ReactTextView{id=287, visibility=VISIBLE, width=948, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@b40069c, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=54.0, text=View.js:32, input-type=0, ime-target=false, has-links=false} \n|\n+------->ReactViewGroup{id=319, visibility=VISIBLE, width=1002, height=102, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@4ee88a5, tag=null, root-is-layout-requested=false, has-input-connection=false, x=39.0, y=220.0, child-count=2} \n|\n+-------->ReactTextView{id=307, visibility=VISIBLE, width=176, height=43, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@bd0a47a, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=11.0, text=<View \/>, input-type=0, ime-target=false, has-links=false} \n|\n+-------->ReactTextView{id=317, visibility=VISIBLE, width=948, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@a4f642b, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=54.0, text=UpiCollect.js:11, input-type=0, ime-target=false, has-links=false} \n|\n+------->ReactViewGroup{id=349, visibility=VISIBLE, width=1002, height=102, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@894f088, tag=null, root-is-layout-requested=false, has-input-connection=false, x=39.0, y=322.0, child-count=2} \n|\n+-------->ReactTextView{id=337, visibility=VISIBLE, width=242, height=43, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@9e40a21, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=11.0, text=<RCTView \/>, input-type=0, ime-target=false, has-links=false} \n|\n+-------->ReactTextView{id=347, visibility=VISIBLE, width=948, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@7b48e46, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=54.0, text=View.js:32, input-type=0, ime-target=false, has-links=false} \n|\n+------->ReactViewGroup{id=359, visibility=VISIBLE, width=417, height=80, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@b5e1807, tag=null, root-is-layout-requested=false, has-input-connection=false, x=39.0, y=424.0, child-count=1} \n|\n+-------->ReactTextView{id=357, visibility=VISIBLE, width=417, height=80, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@ecc8d34, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=See 20 more components, input-type=0, ime-target=false, has-links=false} \n|\n+------->ReactTextView{id=373, visibility=VISIBLE, width=1017, height=53, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@a56275d, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=570.0, text=Call Stack, input-type=0, ime-target=false, has-links=false} \n|\n+------->ReactViewGroup{id=387, visibility=VISIBLE, width=1002, height=102, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@59b48d2, tag=null, root-is-layout-requested=false, has-input-connection=false, x=39.0, y=649.0, child-count=2} \n|\n+-------->ReactTextView{id=379, visibility=VISIBLE, width=948, height=43, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@7ba2da3, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=11.0, text=performSyncWorkOnRoot, input-type=0, ime-target=false, has-links=false} \n|\n+-------->ReactTextView{id=385, visibility=VISIBLE, width=948, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@33f48a0, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=54.0, text=[native code], input-type=0, ime-target=false, has-links=false} \n|\n+------->ReactViewGroup{id=403, visibility=VISIBLE, width=1002, height=102, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@5d2dc59, tag=null, root-is-layout-requested=false, has-input-connection=false, x=39.0, y=751.0, child-count=2} \n|\n+-------->ReactTextView{id=395, visibility=VISIBLE, width=948, height=43, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@fc1201e, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=11.0, text=callFunctionReturnFlushedQueue, input-type=0, ime-target=false, has-links=false} \n|\n+-------->ReactTextView{id=399, visibility=VISIBLE, width=948, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@23800ff, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=54.0, text=[native code], input-type=0, ime-target=false, has-links=false} \n|\n+------->ReactViewGroup{id=413, visibility=VISIBLE, width=340, height=80, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@6604ecc, tag=null, root-is-layout-requested=false, has-input-connection=false, x=39.0, y=853.0, child-count=1} \n|\n+-------->ReactTextView{id=409, visibility=VISIBLE, width=340, height=80, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@ccbe515, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=See 17 more frames, input-type=0, ime-target=false, has-links=false} \n|\n+----->ReactViewGroup{id=447, visibility=VISIBLE, width=1080, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@5db202a, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=1752.0, child-count=2} \n|\n+------>ReactViewGroup{id=435, visibility=VISIBLE, width=540, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@c95ae1b, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} \n|\n+------->ReactTextView{id=429, visibility=VISIBLE, width=131, height=53, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@aa98bb8, tag=null, root-is-layout-requested=false, has-input-connection=false, x=205.0, y=37.0, text=Dismiss, input-type=0, ime-target=false, has-links=false} \n|\n+------>ReactViewGroup{id=445, visibility=VISIBLE, width=540, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@b12bd91, tag=null, root-is-layout-requested=false, has-input-connection=false, x=540.0, y=0.0, child-count=1} \n|\n+------->ReactTextView{id=439, visibility=VISIBLE, width=149, height=53, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@be314f6, tag=null, root-is-layout-requested=false, has-input-connection=false, x=196.0, y=37.0, text=Minimize, input-type=0, ime-target=false, has-links=false} \n|\n+->View{id=16908336, res-name=navigationBarBackground, visibility=VISIBLE, width=1080, height=42, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@c5710f7, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=1878.0} \n|\n+->View{id=16908335, res-name=statusBarBackground, visibility=VISIBLE, width=1080, height=63, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@e47ab64, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}"}}
+Mar 22 13:04:13 detox[44679] TRACE: [WSS_SEND_TO, #tester] {"messageId":18,"type":"testFailed","params":{"details":"No views in hierarchy found matching: (view.getTag() is \"vpaAddress\" and view has effective visibility <VISIBLE>)\n","viewHierarchy":"+>DecorView{id=-1, visibility=VISIBLE, width=1080, height=1920, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params={(0,0)(fillxfill) gr=CENTER ty=APPLICATION fmt=TRANSPARENT wanim=0x7f0f0005\n  fl=LAYOUT_IN_SCREEN LAYOUT_INSET_DECOR SPLIT_TOUCH HARDWARE_ACCELERATED TRANSLUCENT_STATUS DRAWS_SYSTEM_BAR_BACKGROUNDS\n  pfl=NO_MOVE_ANIMATION FORCE_DRAW_STATUS_BAR_BACKGROUND FIT_INSETS_CONTROLLED\n  bhv=DEFAULT\n  fitSides=}, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3} \n|\n+->LinearLayout{id=-1, visibility=VISIBLE, width=1080, height=1878, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@ca22972, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} \n|\n+-->ViewStub{id=16908723, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@9d891c3, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} \n|\n+-->FrameLayout{id=16908290, res-name=content, visibility=VISIBLE, width=1080, height=1878, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@d71aa40, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} \n|\n+--->ReactRootView{id=11, visibility=VISIBLE, width=1080, height=1878, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@4656abe, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} \n|\n+---->ReactViewGroup{id=449, visibility=VISIBLE, width=1080, height=1878, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@2a8871f, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=4} \n|\n+----->ReactViewGroup{id=237, visibility=VISIBLE, width=1080, height=189, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@be72a6c, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3} \n|\n+------>ReactViewGroup{id=219, visibility=VISIBLE, width=102, height=103, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@be22835, tag=null, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=76.0, child-count=1} \n|\n+------->ReactImageView{id=217, visibility=VISIBLE, width=21, height=37, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@58974ca, tag=null, root-is-layout-requested=false, has-input-connection=false, x=41.0, y=33.0} \n|\n+------>ReactTextView{id=225, visibility=VISIBLE, width=188, height=49, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@5528158, tag=null, root-is-layout-requested=false, has-input-connection=false, x=446.0, y=102.0, text=Log 1 of 2, input-type=0, ime-target=false, has-links=false} \n|\n+------>ReactViewGroup{id=233, visibility=VISIBLE, width=102, height=103, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@99a12b1, tag=null, root-is-layout-requested=false, has-input-connection=false, x=962.0, y=76.0, child-count=1} \n|\n+------->ReactImageView{id=229, visibility=VISIBLE, width=21, height=37, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@e321396, tag=null, root-is-layout-requested=false, has-input-connection=false, x=41.0, y=33.0} \n|\n+----->ReactViewGroup{id=255, visibility=VISIBLE, width=1080, height=193, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@94e3b17, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=189.0, child-count=2} \n|\n+------>ReactTextView{id=243, visibility=VISIBLE, width=1017, height=74, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@71a5b04, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=26.0, text=Render Error, input-type=0, ime-target=false, has-links=false} \n|\n+------>ReactTextView{id=253, visibility=VISIBLE, width=1080, height=80, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@70c28ed, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=113.0, text=Text strings must be rendered within a <Text> component., input-type=0, ime-target=false, has-links=false} \n|\n+----->ReactScrollView{id=425, visibility=VISIBLE, width=1080, height=1370, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@87171b3, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=382.0, child-count=1} \n|\n+------>ReactViewGroup{id=423, visibility=VISIBLE, width=1080, height=958, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@c642370, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=9} \n|\n+------->ReactTextView{id=259, visibility=VISIBLE, width=1017, height=53, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@20f66e9, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=39.0, text=Component Stack, input-type=0, ime-target=false, has-links=false} \n|\n+------->ReactViewGroup{id=289, visibility=VISIBLE, width=1002, height=102, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@31fff6e, tag=null, root-is-layout-requested=false, has-input-connection=false, x=39.0, y=118.0, child-count=2} \n|\n+-------->ReactTextView{id=277, visibility=VISIBLE, width=242, height=43, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@187760f, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=11.0, text=<RCTView />, input-type=0, ime-target=false, has-links=false} \n|\n+-------->ReactTextView{id=287, visibility=VISIBLE, width=948, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@b40069c, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=54.0, text=View.js:32, input-type=0, ime-target=false, has-links=false} \n|\n+------->ReactViewGroup{id=319, visibility=VISIBLE, width=1002, height=102, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@4ee88a5, tag=null, root-is-layout-requested=false, has-input-connection=false, x=39.0, y=220.0, child-count=2} \n|\n+-------->ReactTextView{id=307, visibility=VISIBLE, width=176, height=43, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@bd0a47a, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=11.0, text=<View />, input-type=0, ime-target=false, has-links=false} \n|\n+-------->ReactTextView{id=317, visibility=VISIBLE, width=948, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@a4f642b, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=54.0, text=UpiCollect.js:11, input-type=0, ime-target=false, has-links=false} \n|\n+------->ReactViewGroup{id=349, visibility=VISIBLE, width=1002, height=102, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@894f088, tag=null, root-is-layout-requested=false, has-input-connection=false, x=39.0, y=322.0, child-count=2} \n|\n+-------->ReactTextView{id=337, visibility=VISIBLE, width=242, height=43, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@9e40a21, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=11.0, text=<RCTView />, input-type=0, ime-target=false, has-links=false} \n|\n+-------->ReactTextView{id=347, visibility=VISIBLE, width=948, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@7b48e46, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=54.0, text=View.js:32, input-type=0, ime-target=false, has-links=false} \n|\n+------->ReactViewGroup{id=359, visibility=VISIBLE, width=417, height=80, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@b5e1807, tag=null, root-is-layout-requested=false, has-input-connection=false, x=39.0, y=424.0, child-count=1} \n|\n+-------->ReactTextView{id=357, visibility=VISIBLE, width=417, height=80, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@ecc8d34, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=See 20 more components, input-type=0, ime-target=false, has-links=false} \n|\n+------->ReactTextView{id=373, visibility=VISIBLE, width=1017, height=53, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@a56275d, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=570.0, text=Call Stack, input-type=0, ime-target=false, has-links=false} \n|\n+------->ReactViewGroup{id=387, visibility=VISIBLE, width=1002, height=102, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@59b48d2, tag=null, root-is-layout-requested=false, has-input-connection=false, x=39.0, y=649.0, child-count=2} \n|\n+-------->ReactTextView{id=379, visibility=VISIBLE, width=948, height=43, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@7ba2da3, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=11.0, text=performSyncWorkOnRoot, input-type=0, ime-target=false, has-links=false} \n|\n+-------->ReactTextView{id=385, visibility=VISIBLE, width=948, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@33f48a0, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=54.0, text=[native code], input-type=0, ime-target=false, has-links=false} \n|\n+------->ReactViewGroup{id=403, visibility=VISIBLE, width=1002, height=102, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@5d2dc59, tag=null, root-is-layout-requested=false, has-input-connection=false, x=39.0, y=751.0, child-count=2} \n|\n+-------->ReactTextView{id=395, visibility=VISIBLE, width=948, height=43, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@fc1201e, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=11.0, text=callFunctionReturnFlushedQueue, input-type=0, ime-target=false, has-links=false} \n|\n+-------->ReactTextView{id=399, visibility=VISIBLE, width=948, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@23800ff, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=54.0, text=[native code], input-type=0, ime-target=false, has-links=false} \n|\n+------->ReactViewGroup{id=413, visibility=VISIBLE, width=340, height=80, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@6604ecc, tag=null, root-is-layout-requested=false, has-input-connection=false, x=39.0, y=853.0, child-count=1} \n|\n+-------->ReactTextView{id=409, visibility=VISIBLE, width=340, height=80, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@ccbe515, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=See 17 more frames, input-type=0, ime-target=false, has-links=false} \n|\n+----->ReactViewGroup{id=447, visibility=VISIBLE, width=1080, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@5db202a, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=1752.0, child-count=2} \n|\n+------>ReactViewGroup{id=435, visibility=VISIBLE, width=540, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@c95ae1b, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} \n|\n+------->ReactTextView{id=429, visibility=VISIBLE, width=131, height=53, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@aa98bb8, tag=null, root-is-layout-requested=false, has-input-connection=false, x=205.0, y=37.0, text=Dismiss, input-type=0, ime-target=false, has-links=false} \n|\n+------>ReactViewGroup{id=445, visibility=VISIBLE, width=540, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@b12bd91, tag=null, root-is-layout-requested=false, has-input-connection=false, x=540.0, y=0.0, child-count=1} \n|\n+------->ReactTextView{id=439, visibility=VISIBLE, width=149, height=53, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@be314f6, tag=null, root-is-layout-requested=false, has-input-connection=false, x=196.0, y=37.0, text=Minimize, input-type=0, ime-target=false, has-links=false} \n|\n+->View{id=16908336, res-name=navigationBarBackground, visibility=VISIBLE, width=1080, height=42, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@c5710f7, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=1878.0} \n|\n+->View{id=16908335, res-name=statusBarBackground, visibility=VISIBLE, width=1080, height=63, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@e47ab64, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}"}}
+Mar 22 13:04:13 detox[44679] TRACE: [WS_MESSAGE] {"messageId":18,"type":"testFailed","params":{"details":"No views in hierarchy found matching: (view.getTag() is \"vpaAddress\" and view has effective visibility <VISIBLE>)\n","viewHierarchy":"+>DecorView{id=-1, visibility=VISIBLE, width=1080, height=1920, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params={(0,0)(fillxfill) gr=CENTER ty=APPLICATION fmt=TRANSPARENT wanim=0x7f0f0005\n  fl=LAYOUT_IN_SCREEN LAYOUT_INSET_DECOR SPLIT_TOUCH HARDWARE_ACCELERATED TRANSLUCENT_STATUS DRAWS_SYSTEM_BAR_BACKGROUNDS\n  pfl=NO_MOVE_ANIMATION FORCE_DRAW_STATUS_BAR_BACKGROUND FIT_INSETS_CONTROLLED\n  bhv=DEFAULT\n  fitSides=}, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3} \n|\n+->LinearLayout{id=-1, visibility=VISIBLE, width=1080, height=1878, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@ca22972, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} \n|\n+-->ViewStub{id=16908723, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@9d891c3, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} \n|\n+-->FrameLayout{id=16908290, res-name=content, visibility=VISIBLE, width=1080, height=1878, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@d71aa40, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} \n|\n+--->ReactRootView{id=11, visibility=VISIBLE, width=1080, height=1878, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@4656abe, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} \n|\n+---->ReactViewGroup{id=449, visibility=VISIBLE, width=1080, height=1878, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@2a8871f, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=4} \n|\n+----->ReactViewGroup{id=237, visibility=VISIBLE, width=1080, height=189, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@be72a6c, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3} \n|\n+------>ReactViewGroup{id=219, visibility=VISIBLE, width=102, height=103, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@be22835, tag=null, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=76.0, child-count=1} \n|\n+------->ReactImageView{id=217, visibility=VISIBLE, width=21, height=37, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@58974ca, tag=null, root-is-layout-requested=false, has-input-connection=false, x=41.0, y=33.0} \n|\n+------>ReactTextView{id=225, visibility=VISIBLE, width=188, height=49, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@5528158, tag=null, root-is-layout-requested=false, has-input-connection=false, x=446.0, y=102.0, text=Log 1 of 2, input-type=0, ime-target=false, has-links=false} \n|\n+------>ReactViewGroup{id=233, visibility=VISIBLE, width=102, height=103, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@99a12b1, tag=null, root-is-layout-requested=false, has-input-connection=false, x=962.0, y=76.0, child-count=1} \n|\n+------->ReactImageView{id=229, visibility=VISIBLE, width=21, height=37, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@e321396, tag=null, root-is-layout-requested=false, has-input-connection=false, x=41.0, y=33.0} \n|\n+----->ReactViewGroup{id=255, visibility=VISIBLE, width=1080, height=193, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@94e3b17, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=189.0, child-count=2} \n|\n+------>ReactTextView{id=243, visibility=VISIBLE, width=1017, height=74, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@71a5b04, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=26.0, text=Render Error, input-type=0, ime-target=false, has-links=false} \n|\n+------>ReactTextView{id=253, visibility=VISIBLE, width=1080, height=80, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@70c28ed, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=113.0, text=Text strings must be rendered within a <Text> component., input-type=0, ime-target=false, has-links=false} \n|\n+----->ReactScrollView{id=425, visibility=VISIBLE, width=1080, height=1370, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@87171b3, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=382.0, child-count=1} \n|\n+------>ReactViewGroup{id=423, visibility=VISIBLE, width=1080, height=958, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@c642370, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=9} \n|\n+------->ReactTextView{id=259, visibility=VISIBLE, width=1017, height=53, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@20f66e9, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=39.0, text=Component Stack, input-type=0, ime-target=false, has-links=false} \n|\n+------->ReactViewGroup{id=289, visibility=VISIBLE, width=1002, height=102, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@31fff6e, tag=null, root-is-layout-requested=false, has-input-connection=false, x=39.0, y=118.0, child-count=2} \n|\n+-------->ReactTextView{id=277, visibility=VISIBLE, width=242, height=43, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@187760f, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=11.0, text=<RCTView />, input-type=0, ime-target=false, has-links=false} \n|\n+-------->ReactTextView{id=287, visibility=VISIBLE, width=948, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@b40069c, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=54.0, text=View.js:32, input-type=0, ime-target=false, has-links=false} \n|\n+------->ReactViewGroup{id=319, visibility=VISIBLE, width=1002, height=102, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@4ee88a5, tag=null, root-is-layout-requested=false, has-input-connection=false, x=39.0, y=220.0, child-count=2} \n|\n+-------->ReactTextView{id=307, visibility=VISIBLE, width=176, height=43, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@bd0a47a, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=11.0, text=<View />, input-type=0, ime-target=false, has-links=false} \n|\n+-------->ReactTextView{id=317, visibility=VISIBLE, width=948, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@a4f642b, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=54.0, text=UpiCollect.js:11, input-type=0, ime-target=false, has-links=false} \n|\n+------->ReactViewGroup{id=349, visibility=VISIBLE, width=1002, height=102, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@894f088, tag=null, root-is-layout-requested=false, has-input-connection=false, x=39.0, y=322.0, child-count=2} \n|\n+-------->ReactTextView{id=337, visibility=VISIBLE, width=242, height=43, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@9e40a21, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=11.0, text=<RCTView />, input-type=0, ime-target=false, has-links=false} \n|\n+-------->ReactTextView{id=347, visibility=VISIBLE, width=948, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@7b48e46, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=54.0, text=View.js:32, input-type=0, ime-target=false, has-links=false} \n|\n+------->ReactViewGroup{id=359, visibility=VISIBLE, width=417, height=80, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@b5e1807, tag=null, root-is-layout-requested=false, has-input-connection=false, x=39.0, y=424.0, child-count=1} \n|\n+-------->ReactTextView{id=357, visibility=VISIBLE, width=417, height=80, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@ecc8d34, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=See 20 more components, input-type=0, ime-target=false, has-links=false} \n|\n+------->ReactTextView{id=373, visibility=VISIBLE, width=1017, height=53, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@a56275d, tag=null, root-is-layout-requested=false, has-input-connection=false, x=32.0, y=570.0, text=Call Stack, input-type=0, ime-target=false, has-links=false} \n|\n+------->ReactViewGroup{id=387, visibility=VISIBLE, width=1002, height=102, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@59b48d2, tag=null, root-is-layout-requested=false, has-input-connection=false, x=39.0, y=649.0, child-count=2} \n|\n+-------->ReactTextView{id=379, visibility=VISIBLE, width=948, height=43, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@7ba2da3, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=11.0, text=performSyncWorkOnRoot, input-type=0, ime-target=false, has-links=false} \n|\n+-------->ReactTextView{id=385, visibility=VISIBLE, width=948, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@33f48a0, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=54.0, text=[native code], input-type=0, ime-target=false, has-links=false} \n|\n+------->ReactViewGroup{id=403, visibility=VISIBLE, width=1002, height=102, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@5d2dc59, tag=null, root-is-layout-requested=false, has-input-connection=false, x=39.0, y=751.0, child-count=2} \n|\n+-------->ReactTextView{id=395, visibility=VISIBLE, width=948, height=43, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@fc1201e, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=11.0, text=callFunctionReturnFlushedQueue, input-type=0, ime-target=false, has-links=false} \n|\n+-------->ReactTextView{id=399, visibility=VISIBLE, width=948, height=38, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@23800ff, tag=null, root-is-layout-requested=false, has-input-connection=false, x=26.0, y=54.0, text=[native code], input-type=0, ime-target=false, has-links=false} \n|\n+------->ReactViewGroup{id=413, visibility=VISIBLE, width=340, height=80, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@6604ecc, tag=null, root-is-layout-requested=false, has-input-connection=false, x=39.0, y=853.0, child-count=1} \n|\n+-------->ReactTextView{id=409, visibility=VISIBLE, width=340, height=80, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@ccbe515, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=See 17 more frames, input-type=0, ime-target=false, has-links=false} \n|\n+----->ReactViewGroup{id=447, visibility=VISIBLE, width=1080, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@5db202a, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=1752.0, child-count=2} \n|\n+------>ReactViewGroup{id=435, visibility=VISIBLE, width=540, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@c95ae1b, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} \n|\n+------->ReactTextView{id=429, visibility=VISIBLE, width=131, height=53, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@aa98bb8, tag=null, root-is-layout-requested=false, has-input-connection=false, x=205.0, y=37.0, text=Dismiss, input-type=0, ime-target=false, has-links=false} \n|\n+------>ReactViewGroup{id=445, visibility=VISIBLE, width=540, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@b12bd91, tag=null, root-is-layout-requested=false, has-input-connection=false, x=540.0, y=0.0, child-count=1} \n|\n+------->ReactTextView{id=439, visibility=VISIBLE, width=149, height=53, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@be314f6, tag=null, root-is-layout-requested=false, has-input-connection=false, x=196.0, y=37.0, text=Minimize, input-type=0, ime-target=false, has-links=false} \n|\n+->View{id=16908336, res-name=navigationBarBackground, visibility=VISIBLE, width=1080, height=42, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@c5710f7, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=1878.0} \n|\n+->View{id=16908335, res-name=statusBarBackground, visibility=VISIBLE, width=1080, height=63, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@e47ab64, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}"}}
+ 
+Mar 22 13:04:13 detox[44679] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onTestFnFailure({
+  error: DetoxRuntimeError: Test Failed: No views in hierarchy found matching: (view.getTag() is "vpaAddress" and view has effective visibility <VISIBLE>)
+  
+  
+  HINT: To print view hierarchy on failed actions/matches, use log-level verbose or higher.
+      at _callee6$ (/Users/vivek.shindhe/RazorpayProjects/testing_projects/DetoxSample/e2e/firstTest.e2e.js:68:40)
+      at tryCatch (/Users/vivek.shindhe/RazorpayProjects/testing_projects/DetoxSample/node_modules/regenerator-runtime/runtime.js:63:40)
+      at Generator.invoke [as _invoke] (/Users/vivek.shindhe/RazorpayProjects/testing_projects/DetoxSample/node_modules/regenerator-runtime/runtime.js:294:22)
+      at Generator.next (/Users/vivek.shindhe/RazorpayProjects/testing_projects/DetoxSample/node_modules/regenerator-runtime/runtime.js:119:21)
+      at tryCatch (/Users/vivek.shindhe/RazorpayProjects/testing_projects/DetoxSample/node_modules/regenerator-runtime/runtime.js:63:40)
+      at invoke (/Users/vivek.shindhe/RazorpayProjects/testing_projects/DetoxSample/node_modules/regenerator-runtime/runtime.js:155:20)
+      at /Users/vivek.shindhe/RazorpayProjects/testing_projects/DetoxSample/node_modules/regenerator-runtime/runtime.js:165:13
+      at processTicksAndRejections (internal/process/task_queues.js:95:5)
+})
+Mar 22 13:04:13 detox[44679] TRACE: [DETOX_AFTER_EACH] failed test: "Example should call isVpaValid"
+Mar 22 13:04:13 detox[44679] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onTestDone({
+  title: 'should call isVpaValid',
+  fullName: 'Example should call isVpaValid',
+  status: 'failed',
+  invocations: 1,
+  timedOut: false
+})
+Mar 22 13:04:13 detox[44679] TRACE: [ARTIFACT_STOP] stopping ADBLogcatRecording
+Mar 22 13:04:13 detox[44679] DEBUG: [EXEC_CMD, #46] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "date +\"%m-%d %T.000\""
+Mar 22 13:04:13 detox[44679] TRACE: [EXEC_SUCCESS, #46] 03-22 18:34:13.000
+
+Mar 22 13:04:13 detox[44731] TRACE: [SPAWN_KILL] sending SIGINT to: /Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb -s emulator-5554 shell logcat -T "03-22 18:34:12.000" --pid=17717 -f /sdcard/13359305_5.log
+Mar 22 13:04:13 detox[44679] DEBUG: [SPAWN_END, #42, cpid=44731] /Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb -s emulator-5554 shell "logcat -T \"03-22 18:34:12.000\" --pid=17717 -f /sdcard/13359305_5.log" terminated with SIGINT
+Mar 22 13:04:13 detox[44679] INFO:  [1m[37mExample: [39m[22m[90mshould call isVpaValid[39m[90m [[31mFAIL[90m][39m
+Mar 22 13:04:13 Example[44679] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onRunDescribeFinish({ name: 'Example' })
+Mar 22 13:04:13 ROOT_DESCRIBE_BLOCK[44679] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onRunDescribeFinish({ name: 'ROOT_DESCRIBE_BLOCK' })
+Mar 22 13:04:13 detox[44679] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onBeforeCleanup()
+Mar 22 13:04:13 detox[44679] TRACE: [ARTIFACT_SAVE] saving ADBLogcatRecording to: artifacts/android.debug.2022-03-22 07-33-57Z/✗ Example should call isVpaValid/device.log
+Mar 22 13:04:13 detox[44679] DEBUG: [EXEC_CMD, #47] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 pull "/sdcard/13359305_5.log" "artifacts/android.debug.2022-03-22 07-33-57Z/✗ Example should call isVpaValid/device.log"
+Mar 22 13:04:13 detox[44679] TRACE: [EXEC_SUCCESS, #47] /sdcard/13359305_5.log: 1 file pulled, 0 skipped. 8.6 MB/s (37556 bytes in 0.004s)
+
+Mar 22 13:04:13 detox[44679] DEBUG: [EXEC_CMD, #48] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 shell "rm  \"/sdcard/13359305_5.log\""
+Mar 22 13:04:13 detox[44679] TRACE: [EXEC_SUCCESS, #48] 
+Mar 22 13:04:13 detox[44679] TRACE: [ARTIFACT_START] starting FileArtifact
+Mar 22 13:04:13 detox[44679] TRACE: [ARTIFACT_STOP] stopping FileArtifact
+Mar 22 13:04:13 detox[44679] TRACE: [ARTIFACT_SAVE] saving FileArtifact to: artifacts/android.debug.2022-03-22 07-33-57Z/detox_pid_44679.json.log { append: true }
+Mar 22 13:04:13 detox[44679] TRACE: [ARTIFACT_START] starting FileArtifact
+Mar 22 13:04:13 detox[44679] TRACE: [ARTIFACT_STOP] stopping FileArtifact
+Mar 22 13:04:13 detox[44679] TRACE: [ARTIFACT_SAVE] saving FileArtifact to: artifacts/android.debug.2022-03-22 07-33-57Z/detox_pid_44679.log { append: true }
+Mar 22 13:04:13 detox[44679] DEBUG: [MOVE_FILE] moving "/private/var/folders/gr/3jbywwxx66x6q68_04cm6twh0000gq/T/05413fd2-1abc-46d8-be17-c7bb63facc52.detox.log" to artifacts/android.debug.2022-03-22 07-33-57Z/detox_pid_44679.json.log
+Mar 22 13:04:13 detox[44679] DEBUG: [MOVE_FILE] moving "/private/var/folders/gr/3jbywwxx66x6q68_04cm6twh0000gq/T/3177f5da-38a1-49f9-9dc3-dbcf34bc2970.detox.log" to artifacts/android.debug.2022-03-22 07-33-57Z/detox_pid_44679.log
+Mar 22 13:04:13 detox[44679] TRACE: [WS_SEND] {"type":"cleanup","params":{"stopRunner":false},"messageId":-49642}
+Mar 22 13:04:13 detox[44679] TRACE: [WSS_GET_FROM, #tester] {"type":"cleanup","params":{"stopRunner":false},"messageId":-49642}
+Mar 22 13:04:13 detox[44679] TRACE: [WSS_SEND_TO, #app] {"type":"cleanup","params":{"stopRunner":false},"messageId":-49642}
+Mar 22 13:04:13 detox[44679] TRACE: [WSS_GET_FROM, #app] {"messageId":-49642,"type":"cleanupDone","params":{}}
+Mar 22 13:04:13 detox[44679] TRACE: [WSS_SEND_TO, #tester] {"messageId":-49642,"type":"cleanupDone","params":{}}
+Mar 22 13:04:13 detox[44679] TRACE: [WS_MESSAGE] {"messageId":-49642,"type":"cleanupDone","params":{}}
+ 
+Mar 22 13:04:13 detox[44679] TRACE: [SESSION_TORN] tester exited session 3fe7cb7d-d97d-2bb3-dafd-1240e68ad085
+Mar 22 13:04:13 detox[44679] TRACE: [WSS_SEND_TO, #app] {"type":"testerDisconnected","messageId":-1}
+Mar 22 13:04:13 detox[44701] TRACE: [SPAWN_KILL] sending SIGINT to: /Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb -s emulator-5554 shell am instrument -w -r -e detoxServer ws://localhost:57929 -e detoxSessionId 3fe7cb7d-d97d-2bb3-dafd-1240e68ad085 -e debug false com.detoxsample.test/androidx.test.runner.AndroidJUnitRunner
+Mar 22 13:04:13 detox[44679] DEBUG: [SPAWN_END, #17, cpid=44701] /Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb -s emulator-5554 shell am instrument -w -r -e detoxServer ws://localhost:57929 -e detoxSessionId 3fe7cb7d-d97d-2bb3-dafd-1240e68ad085 -e debug false com.detoxsample.test/androidx.test.runner.AndroidJUnitRunner terminated with SIGINT
+Mar 22 13:04:13 detox[44679] DEBUG: [EXEC_CMD, #49] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s emulator-5554 reverse --remove tcp:57929
+Mar 22 13:04:13 detox[44679] DEBUG: [WSS_CLOSE] Detox server has been closed gracefully
+Mar 22 13:04:13 detox[44679] TRACE: [SESSION_TORN] app exited session 3fe7cb7d-d97d-2bb3-dafd-1240e68ad085
+Mar 22 13:04:13 detox[44679] TRACE: [EXEC_SUCCESS, #49] 

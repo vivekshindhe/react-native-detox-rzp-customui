@@ -1,0 +1,196 @@
+--------- beginning of main
+03-22 11:27:51.009 17833 17833 W com.detoxsampl: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (greylist, reflection, allowed)
+03-22 11:27:51.010 17833 17833 W com.detoxsampl: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (greylist, reflection, allowed)
+03-22 11:27:51.019 17833 17833 D LifecycleMonitor: Lifecycle status change: com.detoxsample.MainActivity@4a44af4 in: CREATED
+03-22 11:27:51.021 17833 17833 D LifecycleMonitor: Lifecycle status change: com.detoxsample.MainActivity@4a44af4 in: STARTED
+03-22 11:27:51.028 17833 17833 D LifecycleMonitor: Lifecycle status change: com.detoxsample.MainActivity@4a44af4 in: RESUMED
+03-22 11:27:51.050 17833 17833 I TouchFilterInputStageHelper: [needTouchEventFilter] Displayid : 0
+03-22 11:27:51.052 17833 17833 D HandGripFilter: getdisplaysize, x : 1080 y : 2340
+03-22 11:27:51.059 17833 17833 W unknown:ReactNative: Packager connection already open, nooping.
+03-22 11:27:51.075 17833 18005 I AdrenoGLES-0: QUALCOMM build                   : 59e4ca3, Ic42881d075
+03-22 11:27:51.075 17833 18005 I AdrenoGLES-0: Build Date                       : 01/07/21
+03-22 11:27:51.075 17833 18005 I AdrenoGLES-0: OpenGL ES Shader Compiler Version: EV031.32.02.06
+03-22 11:27:51.075 17833 18005 I AdrenoGLES-0: Local Branch                     : mybrancheb50fcd0-9e7c-f130-bc5f-5cb90179c3d8
+03-22 11:27:51.075 17833 18005 I AdrenoGLES-0: Remote Branch                    : quic/gfx-adreno.lnx.1.0.r99-rel
+03-22 11:27:51.075 17833 18005 I AdrenoGLES-0: Remote Branch                    : NONE
+03-22 11:27:51.075 17833 18005 I AdrenoGLES-0: Reconstruct Branch               : NOTHING
+03-22 11:27:51.075 17833 18005 I AdrenoGLES-0: Build Config                     : S P 10.0.7 AArch64
+03-22 11:27:51.075 17833 18005 I AdrenoGLES-0: Driver Path                      : /vendor/lib64/egl/libGLESv2_adreno.so
+03-22 11:27:51.080 17833 18005 I AdrenoGLES-0: PFP: 0x016ee190, ME: 0x00000000
+03-22 11:27:51.144 17833 17833 I TouchFilterInputStageHelper: [needTouchEventFilter] Displayid : 0
+03-22 11:27:51.145 17833 17833 D HandGripFilter: getdisplaysize, x : 1080 y : 2340
+03-22 11:27:51.178 17833 17924 D SoLoader: About to load: libreactnativejni.so
+03-22 11:27:51.178 17833 17924 D SoLoader: libreactnativejni.so not found on /data/data/com.detoxsample/lib-main
+03-22 11:27:51.179 17833 17924 D SoLoader: libreactnativejni.so found on /data/app/~~QA2I5lJxz-IDFDhUuCvU1g==/com.detoxsample-pJC1s7kyrU9tYtpS9dO1eA==/lib/arm64
+03-22 11:27:51.179 17833 17924 D SoLoader: Not resolving dependencies for libreactnativejni.so
+03-22 11:27:51.180 17833 17924 D SoLoader: Loaded: libreactnativejni.so
+--------- beginning of system
+03-22 11:27:51.234 17833 17833 I Timeline: Timeline: Activity_idle id: ActivityRecord{c152e16 token=android.os.BinderProxy@8f3b65 {com.detoxsample/com.detoxsample.MainActivity}} time:1793720
+03-22 11:27:51.256 17833 17898 I Detox   : Detox server connection details: url=ws://localhost:56309, sessionId=66fa3fab-35a7-0a2f-a60b-bdc47812125a
+03-22 11:27:51.261 17833 18014 I DetoxDispatcher: Handling action '_init' (ID #0)...
+03-22 11:27:51.261 17833 18014 I Detox   : Connecting to server...
+03-22 11:27:51.261 17833 18014 I DetoxWSClient: At connectToServer
+03-22 11:27:51.277 17833 18016 D DetoxWSClient: At onOpen
+03-22 11:27:51.278 17833 18016 I DetoxWSClient: Sending out action 'login' (ID #0)
+03-22 11:27:51.278 17833 18016 I Detox   : Connected to server!
+03-22 11:27:51.287 17833 18016 D DetoxWSClient: Received action 'loginSuccess' (ID #0, params={"testerConnected":true,"appConnected":true})
+03-22 11:27:51.296 17833 18013 W unknown:ReactContext: initializeMessageQueueThreads() is called.
+03-22 11:27:51.306 17833 17833 W unknown:ReactNative: Packager connection already open, nooping.
+03-22 11:27:51.325 17833 18016 D DetoxWSClient: Received action 'isReady' (ID #-1000, params={})
+03-22 11:27:51.338 17833 18021 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.drawer.ReactDrawerLayoutManager
+03-22 11:27:51.342 17833 18021 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.uimanager.LayoutShadowNode
+03-22 11:27:51.345 17833 18021 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactHorizontalScrollViewManager
+03-22 11:27:51.348 17833 18021 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactHorizontalScrollContainerViewManager
+03-22 11:27:51.348 17833 18021 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.progressbar.ReactProgressBarViewManager
+03-22 11:27:51.349 17833 18021 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.progressbar.ProgressBarShadowNode
+03-22 11:27:51.351 17833 18021 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactScrollViewManager
+03-22 11:27:51.353 17833 18021 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.slider.ReactSliderManager
+03-22 11:27:51.355 17833 18021 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.slider.ReactSliderManager$ReactSliderShadowNode
+03-22 11:27:51.355 17833 18021 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.switchview.ReactSwitchManager
+03-22 11:27:51.357 17833 18021 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.switchview.ReactSwitchManager$ReactSwitchShadowNode
+03-22 11:27:51.357 17833 18021 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.swiperefresh.SwipeRefreshLayoutManager
+03-22 11:27:51.359 17833 18021 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.frescosupport.FrescoBasedReactTextInlineImageViewManager
+03-22 11:27:51.359 17833 18021 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.frescosupport.FrescoBasedReactTextInlineImageShadowNode
+03-22 11:27:51.360 17833 18021 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.image.ReactImageManager
+03-22 11:27:51.362 17833 18021 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.modal.ReactModalHostManager
+03-22 11:27:51.363 17833 18021 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.modal.ModalHostShadowNode
+03-22 11:27:51.364 17833 18021 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactRawTextManager
+03-22 11:27:51.364 17833 18021 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactRawTextShadowNode
+03-22 11:27:51.365 17833 18021 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.textinput.ReactTextInputManager
+03-22 11:27:51.368 17833 18021 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.textinput.ReactTextInputShadowNode
+03-22 11:27:51.370 17833 18021 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactTextViewManager
+03-22 11:27:51.371 17833 18021 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactTextShadowNode
+03-22 11:27:51.372 17833 18021 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.view.ReactViewManager
+03-22 11:27:51.374 17833 18021 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactVirtualTextViewManager
+03-22 11:27:51.374 17833 18021 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactVirtualTextShadowNode
+03-22 11:27:51.375 17833 18021 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.unimplementedview.ReactUnimplementedViewManager
+03-22 11:27:51.383 17833 18021 W unknown:ReactContext: initializeMessageQueueThreads() is called.
+03-22 11:27:51.385 17833 18021 D SoLoader: About to load: libyoga.so
+03-22 11:27:51.385 17833 18021 D SoLoader: libyoga.so not found on /data/data/com.detoxsample/lib-main
+03-22 11:27:51.386 17833 18021 D SoLoader: libyoga.so found on /data/app/~~QA2I5lJxz-IDFDhUuCvU1g==/com.detoxsample-pJC1s7kyrU9tYtpS9dO1eA==/lib/arm64
+03-22 11:27:51.386 17833 18021 D SoLoader: Not resolving dependencies for libyoga.so
+03-22 11:27:51.386 17833 18021 D SoLoader: Loaded: libyoga.so
+03-22 11:27:51.393 17833 17833 I DetoxRNLoading: Got new RN-context async'ly through listener
+03-22 11:27:51.393 17833 18014 I DetoxRNIdleRes: Setting up Espresso Idling Resources for React Native
+03-22 11:27:51.411 17833 18014 D AsyncStorageIR: Checking whether a custom IR for Async-Storage is required... (legacy=false)
+03-22 11:27:51.412 17833 18014 D DetoxRNHelpers: Native RN module resolution (class com.reactnativecommunity.asyncstorage.AsyncStorageModule): no such class
+03-22 11:27:51.412 17833 18014 D AsyncStorageIR: Checking whether a custom IR for Async-Storage is required... (legacy=true)
+03-22 11:27:51.413 17833 18014 D AsyncStorageIR: IR for Async-Storage is required! (legacy=true)
+03-22 11:27:51.416 17833 17833 D AsyncStorageIRLegacy: Async-storage is busy!
+03-22 11:27:51.421 17833 18014 I DetoxDispatcher: Done with action '_init'
+03-22 11:27:51.421 17833 18014 I DetoxDispatcher: Handling action 'isReady' (ID #-1000)...
+03-22 11:27:51.426 17833 18021 I flipper : flipper: FlipperClient::addPlugin Fresco
+03-22 11:27:51.427 17833 18021 W com.detoxsampl: Accessing hidden method Landroid/os/MessageQueue;->next()Landroid/os/Message; (greylist, reflection, allowed)
+03-22 11:27:51.427 17833 18021 W com.detoxsampl: Accessing hidden field Landroid/os/MessageQueue;->mMessages:Landroid/os/Message; (greylist, reflection, allowed)
+03-22 11:27:51.427 17833 18021 W com.detoxsampl: Accessing hidden method Landroid/os/Message;->recycleUnchecked()V (greylist, reflection, allowed)
+03-22 11:27:51.449 17833 18020 D SoLoader: About to load: libreactnativeblob.so
+03-22 11:27:51.449 17833 18020 D SoLoader: libreactnativeblob.so not found on /data/data/com.detoxsample/lib-main
+03-22 11:27:51.449 17833 18020 D SoLoader: libreactnativeblob.so found on /data/app/~~QA2I5lJxz-IDFDhUuCvU1g==/com.detoxsample-pJC1s7kyrU9tYtpS9dO1eA==/lib/arm64
+03-22 11:27:51.449 17833 18020 D SoLoader: Not resolving dependencies for libreactnativeblob.so
+03-22 11:27:51.450 17833 18020 D SoLoader: Loaded: libreactnativeblob.so
+03-22 11:27:51.475 17833 18021 I WebViewFactory: Loading com.google.android.webview version 99.0.4844.58 (code 484405833)
+03-22 11:27:51.495 17833 18021 W com.detoxsampl: Accessing hidden method Landroid/os/Trace;->isTagEnabled(J)Z (greylist, reflection, allowed)
+03-22 11:27:51.495 17833 18021 W com.detoxsampl: Accessing hidden method Landroid/os/Trace;->traceBegin(JLjava/lang/String;)V (greylist, reflection, allowed)
+03-22 11:27:51.495 17833 18021 W com.detoxsampl: Accessing hidden method Landroid/os/Trace;->traceEnd(J)V (greylist, reflection, allowed)
+03-22 11:27:51.495 17833 18021 W com.detoxsampl: Accessing hidden method Landroid/os/Trace;->asyncTraceBegin(JLjava/lang/String;I)V (greylist, reflection, allowed)
+03-22 11:27:51.495 17833 18021 W com.detoxsampl: Accessing hidden method Landroid/os/Trace;->asyncTraceEnd(JLjava/lang/String;I)V (greylist, reflection, allowed)
+03-22 11:27:51.503 17833 18021 I cr_WVCFactoryProvider: Loaded version=99.0.4844.58 minSdkVersion=29 isBundle=true multiprocess=true packageId=3
+03-22 11:27:51.541 17833 18021 I cr_LibraryLoader: Successfully loaded native library
+03-22 11:27:51.542 17833 18021 I cr_CachingUmaRecorder: Flushed 8 samples from 8 histograms.
+03-22 11:27:51.610 17833 18020 I ReactNativeJS: Running "DetoxSample" with {"rootTag":1}
+03-22 11:27:51.759 17833 17833 W com.detoxsampl: Accessing hidden field Landroid/widget/ScrollView;->mScroller:Landroid/widget/OverScroller; (greylist, reflection, allowed)
+03-22 11:27:51.788 17833 17833 I Detox   : Wait is over: app is now idle!
+03-22 11:27:51.788 17833 18014 I DetoxWSClient: Sending out action 'ready' (ID #-1000)
+03-22 11:27:51.789 17833 18014 I DetoxDispatcher: Done with action 'isReady'
+03-22 11:27:51.789 17833 18014 I DetoxDispatcher: Handling action 'loginSuccess' (ID #0)...
+03-22 11:27:51.789 17833 18014 I DetoxDispatcher: Done with action 'loginSuccess'
+03-22 11:27:51.789 17833 18014 I DetoxDispatcher: Handling action 'isReady' (ID #-1000)...
+03-22 11:27:51.790 17833 17833 I Detox   : JS Bridge is busy
+03-22 11:27:51.795 17833 17833 I Detox   : Wait is over: app is now idle!
+03-22 11:27:51.795 17833 18014 I DetoxWSClient: Sending out action 'ready' (ID #-1000)
+03-22 11:27:51.795 17833 18014 I DetoxDispatcher: Done with action 'isReady'
+03-22 11:27:51.885 17833 18016 D DetoxWSClient: Received action 'invoke' (ID #1, params={"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["initRazorpay"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]})
+03-22 11:27:51.886 17833 18014 I DetoxDispatcher: Handling action 'invoke' (ID #1)...
+03-22 11:27:51.892 17833 18014 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForTestId, [initRazorpay]
+03-22 11:27:51.908 17833 18014 D Detox   : class androidx.test.espresso.Espresso, onView, [(view.getTag() is "initRazorpay" and view has effective visibility <VISIBLE>)]
+03-22 11:27:51.909 17833 18014 D Detox   : class com.wix.detox.espresso.DetoxViewActions, click, []
+03-22 11:27:51.910 17833 18014 W com.detoxsampl: Accessing hidden method Landroid/view/ViewConfiguration;->getDoubleTapMinTime()I (greylist, reflection, allowed)
+03-22 11:27:51.914 17833 18014 D Detox   : class com.wix.detox.espresso.EspressoDetox, perform, [androidx.test.espresso.ViewInteraction@dc03088, com.wix.detox.espresso.action.RNClickAction@ace4a21]
+03-22 11:27:51.937 17833 17833 W com.detoxsampl: Accessing hidden method Landroid/view/WindowManagerGlobal;->getInstance()Landroid/view/WindowManagerGlobal; (greylist, reflection, allowed)
+03-22 11:27:51.937 17833 17833 W com.detoxsampl: Accessing hidden field Landroid/view/WindowManagerGlobal;->mViews:Ljava/util/ArrayList; (greylist, reflection, allowed)
+03-22 11:27:51.937 17833 17833 W com.detoxsampl: Accessing hidden field Landroid/view/WindowManagerGlobal;->mParams:Ljava/util/ArrayList; (greylist, reflection, allowed)
+03-22 11:27:51.945 17833 17833 I ViewInteraction: Performing 'com.wix.detox.espresso.action.detoxsingletap@5f25807 click' action on view (view.getTag() is "initRazorpay" and view has effective visibility <VISIBLE>)
+03-22 11:27:51.952 17833 17833 I ViewRootImpl: ViewRoot's Touch Event : ACTION_DOWN
+03-22 11:27:51.983 17833 17833 I ViewRootImpl: ViewRoot's Touch Event : ACTION_UP
+03-22 11:27:51.999 17833 18020 I ReactNativeJS: clicked
+03-22 11:27:52.047 17833 17833 I TetheringManager: registerTetheringEventCallback:com.detoxsample
+03-22 11:27:52.247 17833 17833 I Detox   : AnimatedModule is busy.
+03-22 11:27:52.252 17833 17833 I Detox   : AnimatedModule is busy.
+03-22 11:27:52.269 17833 17833 I Detox   : AnimatedModule is busy.
+03-22 11:27:52.286 17833 17833 I Detox   : AnimatedModule is busy.
+03-22 11:27:52.302 17833 17833 I Detox   : AnimatedModule is busy.
+03-22 11:27:52.319 17833 17833 I Detox   : AnimatedModule is busy.
+03-22 11:27:52.336 17833 17833 I Detox   : AnimatedModule is busy.
+03-22 11:27:52.352 17833 17833 I Detox   : AnimatedModule is busy.
+03-22 11:27:52.369 17833 17833 I Detox   : AnimatedModule is busy.
+03-22 11:27:52.386 17833 17833 I Detox   : AnimatedModule is busy.
+03-22 11:27:52.403 17833 17833 I Detox   : AnimatedModule is busy.
+03-22 11:27:52.420 17833 17833 I Detox   : AnimatedModule is busy.
+03-22 11:27:52.437 17833 17833 I Detox   : AnimatedModule is busy.
+03-22 11:27:53.114 17833 18014 I DetoxWSClient: Sending out action 'invokeResult' (ID #1)
+03-22 11:27:53.115 17833 18014 I DetoxDispatcher: Done with action 'invoke'
+03-22 11:27:53.125 17833 18016 D DetoxWSClient: Received action 'invoke' (ID #2, params={"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["Status changes"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]})
+03-22 11:27:53.126 17833 18014 I DetoxDispatcher: Handling action 'invoke' (ID #2)...
+03-22 11:27:53.127 17833 18014 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForText, [Status changes]
+03-22 11:27:53.128 17833 18014 D Detox   : class androidx.test.espresso.Espresso, onView, [(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Status changes" and view has effective visibility <VISIBLE>)]
+03-22 11:27:53.129 17833 18014 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForSufficientlyVisible, [75]
+03-22 11:27:53.131 17833 18014 D Detox   : class com.wix.detox.espresso.DetoxAssertion, assertMatcher, [androidx.test.espresso.ViewInteraction@bb389fd, (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)]
+03-22 11:27:53.164 17833 17833 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)}' assertion on view (an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Status changes" and view has effective visibility <VISIBLE>)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: Test exception
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: java.lang.reflect.InvocationTargetException
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	at java.lang.reflect.Method.invoke(Native Method)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	at org.apache.commons.lang3.reflect.MethodUtils.invokeStaticMethod(MethodUtils.java:443)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	at org.apache.commons.lang3.reflect.MethodUtils.invokeStaticMethod(MethodUtils.java:405)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	at com.wix.invoke.types.ClassTarget.execute(ClassTarget.java:23)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	at com.wix.invoke.types.Target.invoke(Target.java:59)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	at com.wix.invoke.MethodInvocation.invoke(MethodInvocation.java:35)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	at com.wix.invoke.MethodInvocation.invoke(MethodInvocation.java:26)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	at com.wix.invoke.MethodInvocation.invoke(MethodInvocation.java:20)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	at com.wix.detox.adapters.server.InvokeActionHandler.handle(DetoxActionHandlers.kt:54)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	at com.wix.detox.adapters.server.ActionsExecutor$executeAction$$inlined$let$lambda$1.run(DetoxActionsDispatcher.kt:64)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	at android.os.Handler.handleCallback(Handler.java:938)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	at android.os.Looper.loop(Looper.java:223)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	at com.wix.detox.adapters.server.ActionsExecutor$1.run(DetoxActionsDispatcher.kt:50)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	at java.lang.Thread.run(Thread.java:923)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: Caused by: androidx.test.espresso.base.DefaultFailureHandler$AssertionFailedWithCauseError: '(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)' doesn't match the selected view.
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: Expected: (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers:      Got: was null
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	at dalvik.system.VMStack.getThreadStackTrace(Native Method)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	at java.lang.Thread.getStackTrace(Thread.java:1736)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	at androidx.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:12)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	at androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:7)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	at androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:5)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	at androidx.test.espresso.ViewInteraction.check(ViewInteraction.java:12)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	at com.wix.detox.espresso.DetoxAssertion.assertMatcher(DetoxAssertion.java:32)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	... 15 more
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: Caused by: junit.framework.AssertionFailedError: '(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)' doesn't match the selected view.
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: Expected: (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers:      Got: was null
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	at androidx.test.espresso.matcher.ViewMatchers.assertThat(ViewMatchers.java:16)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	at com.wix.detox.espresso.assertion.ViewAssertions$MatchesViewAssertion.check(ViewAssertions.java:52)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	at androidx.test.espresso.ViewInteraction$SingleExecutionViewAssertion.check(ViewInteraction.java:2)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:12)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:1)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	at android.os.Handler.handleCallback(Handler.java:938)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	at android.os.Looper.loop(Looper.java:223)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	at android.app.ActivityThread.main(ActivityThread.java:7868)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	at java.lang.reflect.Method.invoke(Native Method)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+03-22 11:27:53.166 17833 18014 I DetoxActionHandlers: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:981)
+03-22 11:27:53.166 17833 18014 I DetoxWSClient: Sending out action 'testFailed' (ID #2)
+03-22 11:27:53.167 17833 18014 I DetoxDispatcher: Done with action 'invoke'

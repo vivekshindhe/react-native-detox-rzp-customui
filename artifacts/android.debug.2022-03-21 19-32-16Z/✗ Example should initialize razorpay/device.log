@@ -1,0 +1,257 @@
+--------- beginning of system
+03-22 01:02:36.210  2958  2958 I Timeline: Timeline: Activity_idle id: ActivityRecord{fb2719a token=android.os.BinderProxy@962d73d {com.detoxsample/com.detoxsample.MainActivity}} time:379308439
+--------- beginning of main
+03-22 01:02:36.212  2958  2995 I Detox   : Detox server connection details: url=ws://localhost:58452, sessionId=fb20150a-1ede-be18-5ae7-4615c7203806
+03-22 01:02:36.229  2958  3568 I DetoxDispatcher: Handling action '_init' (ID #0)...
+03-22 01:02:36.229  2958  3568 I Detox   : Connecting to server...
+03-22 01:02:36.229  2958  3568 I DetoxWSClient: At connectToServer
+03-22 01:02:36.237  2958  2958 D DetoxRNLoading: Got new RN-context directly and immediately
+03-22 01:02:36.254  2958  3568 I DetoxRNIdleRes: Setting up Espresso Idling Resources for React Native
+03-22 01:02:36.259  2958  3094 W com.detoxsampl: Accessing hidden method Landroid/os/MessageQueue;->next()Landroid/os/Message; (greylist, reflection, allowed)
+03-22 01:02:36.259  2958  3094 W com.detoxsampl: Accessing hidden field Landroid/os/MessageQueue;->mMessages:Landroid/os/Message; (greylist, reflection, allowed)
+03-22 01:02:36.259  2958  3094 W com.detoxsampl: Accessing hidden method Landroid/os/Message;->recycleUnchecked()V (greylist, reflection, allowed)
+03-22 01:02:36.261  2958  3571 D DetoxWSClient: At onOpen
+03-22 01:02:36.261  2958  3571 I DetoxWSClient: Sending out action 'login' (ID #0)
+03-22 01:02:36.261  2958  3571 I Detox   : Connected to server!
+03-22 01:02:36.266  2958  3571 D DetoxWSClient: Received action 'loginSuccess' (ID #0, params={"testerConnected":true,"appConnected":true})
+03-22 01:02:36.271  2958  3568 D AsyncStorageIR: Checking whether a custom IR for Async-Storage is required... (legacy=false)
+03-22 01:02:36.272  2958  3568 D DetoxRNHelpers: Native RN module resolution (class com.reactnativecommunity.asyncstorage.AsyncStorageModule): no such class
+03-22 01:02:36.272  2958  3568 D AsyncStorageIR: Checking whether a custom IR for Async-Storage is required... (legacy=true)
+03-22 01:02:36.273  2958  3568 D AsyncStorageIR: IR for Async-Storage is required! (legacy=true)
+03-22 01:02:36.276  2958  2958 D AsyncStorageIRLegacy: Async-storage is busy!
+03-22 01:02:36.282  2958  3568 I DetoxDispatcher: Done with action '_init'
+03-22 01:02:36.282  2958  3568 I DetoxDispatcher: Handling action 'isReady' (ID #-1000)...
+03-22 01:02:36.290  2958  2958 I Detox   : Wait is over: app is now idle!
+03-22 01:02:36.290  2958  3568 I DetoxWSClient: Sending out action 'ready' (ID #-1000)
+03-22 01:02:36.291  2958  3568 I DetoxDispatcher: Done with action 'isReady'
+03-22 01:02:36.291  2958  3568 I DetoxDispatcher: Handling action 'loginSuccess' (ID #0)...
+03-22 01:02:36.291  2958  3568 I DetoxDispatcher: Done with action 'loginSuccess'
+03-22 01:02:36.296  2958  3571 D DetoxWSClient: Received action 'isReady' (ID #-1000, params={})
+03-22 01:02:36.296  2958  3568 I DetoxDispatcher: Handling action 'isReady' (ID #-1000)...
+03-22 01:02:36.305  2958  2958 I Detox   : Wait is over: app is now idle!
+03-22 01:02:36.305  2958  3568 I DetoxWSClient: Sending out action 'ready' (ID #-1000)
+03-22 01:02:36.305  2958  3568 I DetoxDispatcher: Done with action 'isReady'
+03-22 01:02:36.375  2958  3571 D DetoxWSClient: Received action 'reactNativeReload' (ID #-1000, params={})
+03-22 01:02:36.375  2958  3568 I DetoxDispatcher: Handling action 'reactNativeReload' (ID #-1000)...
+03-22 01:02:36.381  2958  3568 I DetoxRNExt: Reloading React Native
+03-22 01:02:36.418  2958  2958 I TouchFilterInputStageHelper: [needTouchEventFilter] Displayid : 0
+03-22 01:02:36.422  2958  2958 D HandGripFilter: getdisplaysize, x : 1080 y : 2340
+03-22 01:02:36.625  2958  2958 W unknown:ReactNative: Packager connection already open, nooping.
+03-22 01:02:36.626  2958  3095 E unknown:ReactContextBaseJavaModule: Unhandled SoftException
+03-22 01:02:36.626  2958  3095 E unknown:ReactContextBaseJavaModule: java.lang.RuntimeException: Catalyst Instance has already disappeared: requested by DeviceInfo
+03-22 01:02:36.626  2958  3095 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.ReactContextBaseJavaModule.getReactApplicationContextIfActiveOrWarn(ReactContextBaseJavaModule.java:66)
+03-22 01:02:36.626  2958  3095 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.modules.deviceinfo.DeviceInfoModule.invalidate(DeviceInfoModule.java:114)
+03-22 01:02:36.626  2958  3095 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.ModuleHolder.destroy(ModuleHolder.java:110)
+03-22 01:02:36.626  2958  3095 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.NativeModuleRegistry.notifyJSInstanceDestroy(NativeModuleRegistry.java:108)
+03-22 01:02:36.626  2958  3095 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.CatalystInstanceImpl$1.run(CatalystInstanceImpl.java:368)
+03-22 01:02:36.626  2958  3095 E unknown:ReactContextBaseJavaModule: 	at android.os.Handler.handleCallback(Handler.java:938)
+03-22 01:02:36.626  2958  3095 E unknown:ReactContextBaseJavaModule: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+03-22 01:02:36.626  2958  3095 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.queue.MessageQueueThreadHandler.dispatchMessage(MessageQueueThreadHandler.java:27)
+03-22 01:02:36.626  2958  3095 E unknown:ReactContextBaseJavaModule: 	at androidx.test.espresso.base.Interrogator.loopAndInterrogate(Interrogator.java:14)
+03-22 01:02:36.626  2958  3095 E unknown:ReactContextBaseJavaModule: 	at androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler$2.run(LooperIdlingResourceInterrogationHandler.java:3)
+03-22 01:02:36.626  2958  3095 E unknown:ReactContextBaseJavaModule: 	at android.os.Handler.handleCallback(Handler.java:938)
+03-22 01:02:36.626  2958  3095 E unknown:ReactContextBaseJavaModule: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+03-22 01:02:36.626  2958  3095 E unknown:ReactContextBaseJavaModule: 	at android.os.Looper.loop(Looper.java:223)
+03-22 01:02:36.626  2958  3095 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$4.run(MessageQueueThreadImpl.java:226)
+03-22 01:02:36.626  2958  3095 E unknown:ReactContextBaseJavaModule: 	at java.lang.Thread.run(Thread.java:923)
+03-22 01:02:36.627  2958  3095 E unknown:ReactContextBaseJavaModule: Unhandled SoftException
+03-22 01:02:36.627  2958  3095 E unknown:ReactContextBaseJavaModule: java.lang.RuntimeException: Catalyst Instance has already disappeared: requested by AppState
+03-22 01:02:36.627  2958  3095 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.ReactContextBaseJavaModule.getReactApplicationContextIfActiveOrWarn(ReactContextBaseJavaModule.java:66)
+03-22 01:02:36.627  2958  3095 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.modules.appstate.AppStateModule.invalidate(AppStateModule.java:127)
+03-22 01:02:36.627  2958  3095 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.ModuleHolder.destroy(ModuleHolder.java:110)
+03-22 01:02:36.627  2958  3095 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.NativeModuleRegistry.notifyJSInstanceDestroy(NativeModuleRegistry.java:108)
+03-22 01:02:36.627  2958  3095 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.CatalystInstanceImpl$1.run(CatalystInstanceImpl.java:368)
+03-22 01:02:36.627  2958  3095 E unknown:ReactContextBaseJavaModule: 	at android.os.Handler.handleCallback(Handler.java:938)
+03-22 01:02:36.627  2958  3095 E unknown:ReactContextBaseJavaModule: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+03-22 01:02:36.627  2958  3095 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.queue.MessageQueueThreadHandler.dispatchMessage(MessageQueueThreadHandler.java:27)
+03-22 01:02:36.627  2958  3095 E unknown:ReactContextBaseJavaModule: 	at androidx.test.espresso.base.Interrogator.loopAndInterrogate(Interrogator.java:14)
+03-22 01:02:36.627  2958  3095 E unknown:ReactContextBaseJavaModule: 	at androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler$2.run(LooperIdlingResourceInterrogationHandler.java:3)
+03-22 01:02:36.627  2958  3095 E unknown:ReactContextBaseJavaModule: 	at android.os.Handler.handleCallback(Handler.java:938)
+03-22 01:02:36.627  2958  3095 E unknown:ReactContextBaseJavaModule: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+03-22 01:02:36.627  2958  3095 E unknown:ReactContextBaseJavaModule: 	at android.os.Looper.loop(Looper.java:223)
+03-22 01:02:36.627  2958  3095 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$4.run(MessageQueueThreadImpl.java:226)
+03-22 01:02:36.627  2958  3095 E unknown:ReactContextBaseJavaModule: 	at java.lang.Thread.run(Thread.java:923)
+03-22 01:02:36.627  2958  3095 E unknown:ReactContextBaseJavaModule: Unhandled SoftException
+03-22 01:02:36.627  2958  3095 E unknown:ReactContextBaseJavaModule: java.lang.RuntimeException: Catalyst Instance has already disappeared: requested by NativeAnimatedModule
+03-22 01:02:36.627  2958  3095 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.ReactContextBaseJavaModule.getReactApplicationContextIfActiveOrWarn(ReactContextBaseJavaModule.java:66)
+03-22 01:02:36.627  2958  3095 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.animated.NativeAnimatedModule.invalidate(NativeAnimatedModule.java:897)
+03-22 01:02:36.627  2958  3095 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.ModuleHolder.destroy(ModuleHolder.java:110)
+03-22 01:02:36.627  2958  3095 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.NativeModuleRegistry.notifyJSInstanceDestroy(NativeModuleRegistry.java:108)
+03-22 01:02:36.627  2958  3095 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.CatalystInstanceImpl$1.run(CatalystInstanceImpl.java:368)
+03-22 01:02:36.627  2958  3095 E unknown:ReactContextBaseJavaModule: 	at android.os.Handler.handleCallback(Handler.java:938)
+03-22 01:02:36.627  2958  3095 E unknown:ReactContextBaseJavaModule: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+03-22 01:02:36.627  2958  3095 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.queue.MessageQueueThreadHandler.dispatchMessage(MessageQueueThreadHandler.java:27)
+03-22 01:02:36.627  2958  3095 E unknown:ReactContextBaseJavaModule: 	at androidx.test.espresso.base.Interrogator.loopAndInterrogate(Interrogator.java:14)
+03-22 01:02:36.627  2958  3095 E unknown:ReactContextBaseJavaModule: 	at androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler$2.run(LooperIdlingResourceInterrogationHandler.java:3)
+03-22 01:02:36.627  2958  3095 E unknown:ReactContextBaseJavaModule: 	at android.os.Handler.handleCallback(Handler.java:938)
+03-22 01:02:36.627  2958  3095 E unknown:ReactContextBaseJavaModule: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+03-22 01:02:36.627  2958  3095 E unknown:ReactContextBaseJavaModule: 	at android.os.Looper.loop(Looper.java:223)
+03-22 01:02:36.627  2958  3095 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$4.run(MessageQueueThreadImpl.java:226)
+03-22 01:02:36.627  2958  3095 E unknown:ReactContextBaseJavaModule: 	at java.lang.Thread.run(Thread.java:923)
+03-22 01:02:36.628  2958  3095 E unknown:ReactContextBaseJavaModule: Unhandled SoftException
+03-22 01:02:36.628  2958  3095 E unknown:ReactContextBaseJavaModule: java.lang.RuntimeException: Catalyst Instance has already disappeared: requested by FrescoModule
+03-22 01:02:36.628  2958  3095 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.ReactContextBaseJavaModule.getReactApplicationContextIfActiveOrWarn(ReactContextBaseJavaModule.java:66)
+03-22 01:02:36.628  2958  3095 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.modules.fresco.FrescoModule.invalidate(FrescoModule.java:202)
+03-22 01:02:36.628  2958  3095 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.ModuleHolder.destroy(ModuleHolder.java:110)
+03-22 01:02:36.628  2958  3095 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.NativeModuleRegistry.notifyJSInstanceDestroy(NativeModuleRegistry.java:108)
+03-22 01:02:36.628  2958  3095 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.CatalystInstanceImpl$1.run(CatalystInstanceImpl.java:368)
+03-22 01:02:36.628  2958  3095 E unknown:ReactContextBaseJavaModule: 	at android.os.Handler.handleCallback(Handler.java:938)
+03-22 01:02:36.628  2958  3095 E unknown:ReactContextBaseJavaModule: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+03-22 01:02:36.628  2958  3095 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.queue.MessageQueueThreadHandler.dispatchMessage(MessageQueueThreadHandler.java:27)
+03-22 01:02:36.628  2958  3095 E unknown:ReactContextBaseJavaModule: 	at androidx.test.espresso.base.Interrogator.loopAndInterrogate(Interrogator.java:14)
+03-22 01:02:36.628  2958  3095 E unknown:ReactContextBaseJavaModule: 	at androidx.test.espresso.base.LooperIdlingResourceInterrogationHandler$2.run(LooperIdlingResourceInterrogationHandler.java:3)
+03-22 01:02:36.628  2958  3095 E unknown:ReactContextBaseJavaModule: 	at android.os.Handler.handleCallback(Handler.java:938)
+03-22 01:02:36.628  2958  3095 E unknown:ReactContextBaseJavaModule: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+03-22 01:02:36.628  2958  3095 E unknown:ReactContextBaseJavaModule: 	at android.os.Looper.loop(Looper.java:223)
+03-22 01:02:36.628  2958  3095 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$4.run(MessageQueueThreadImpl.java:226)
+03-22 01:02:36.628  2958  3095 E unknown:ReactContextBaseJavaModule: 	at java.lang.Thread.run(Thread.java:923)
+03-22 01:02:36.631  2958  2958 E unknown:ReactInstanceManager: destroyRootView called
+03-22 01:02:36.631  2958  2958 E unknown:ReactInstanceManager: destroyRootView called, unmountReactApplication
+03-22 01:02:36.652  2958  3625 W unknown:ReactContext: initializeMessageQueueThreads() is called.
+03-22 01:02:36.656  2958  3639 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.drawer.ReactDrawerLayoutManager
+03-22 01:02:36.659  2958  3639 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.uimanager.LayoutShadowNode
+03-22 01:02:36.661  2958  2958 W unknown:ReactNative: Packager connection already open, nooping.
+03-22 01:02:36.682  2958  3639 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactHorizontalScrollViewManager
+03-22 01:02:36.684  2958  3639 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactHorizontalScrollContainerViewManager
+03-22 01:02:36.685  2958  3639 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.progressbar.ReactProgressBarViewManager
+03-22 01:02:36.686  2958  3639 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.progressbar.ProgressBarShadowNode
+03-22 01:02:36.687  2958  3639 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactScrollViewManager
+03-22 01:02:36.689  2958  3639 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.slider.ReactSliderManager
+03-22 01:02:36.690  2958  3639 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.slider.ReactSliderManager$ReactSliderShadowNode
+03-22 01:02:36.691  2958  3639 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.switchview.ReactSwitchManager
+03-22 01:02:36.692  2958  3639 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.switchview.ReactSwitchManager$ReactSwitchShadowNode
+03-22 01:02:36.693  2958  3639 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.swiperefresh.SwipeRefreshLayoutManager
+03-22 01:02:36.694  2958  3639 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.frescosupport.FrescoBasedReactTextInlineImageViewManager
+03-22 01:02:36.695  2958  3639 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.frescosupport.FrescoBasedReactTextInlineImageShadowNode
+03-22 01:02:36.696  2958  3639 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.image.ReactImageManager
+03-22 01:02:36.698  2958  3639 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.modal.ReactModalHostManager
+03-22 01:02:36.699  2958  3639 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.modal.ModalHostShadowNode
+03-22 01:02:36.711  2958  3639 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactRawTextManager
+03-22 01:02:36.712  2958  3639 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactRawTextShadowNode
+03-22 01:02:36.713  2958  3639 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.textinput.ReactTextInputManager
+03-22 01:02:36.716  2958  3639 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.textinput.ReactTextInputShadowNode
+03-22 01:02:36.718  2958  3639 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactTextViewManager
+03-22 01:02:36.719  2958  3639 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactTextShadowNode
+03-22 01:02:36.720  2958  3639 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.view.ReactViewManager
+03-22 01:02:36.727  2958  3639 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactVirtualTextViewManager
+03-22 01:02:36.727  2958  3639 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactVirtualTextShadowNode
+03-22 01:02:36.728  2958  3639 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.unimplementedview.ReactUnimplementedViewManager
+03-22 01:02:36.729  2958  3639 W unknown:ReactContext: initializeMessageQueueThreads() is called.
+03-22 01:02:36.734  2958  2958 I DetoxRNLoading: Got new RN-context async'ly through listener
+03-22 01:02:36.734  2958  3568 I DetoxRNIdleRes: Setting up Espresso Idling Resources for React Native
+03-22 01:02:36.744  2958  3568 D AsyncStorageIR: Checking whether a custom IR for Async-Storage is required... (legacy=false)
+03-22 01:02:36.745  2958  3568 D DetoxRNHelpers: Native RN module resolution (class com.reactnativecommunity.asyncstorage.AsyncStorageModule): no such class
+03-22 01:02:36.745  2958  3568 D AsyncStorageIR: Checking whether a custom IR for Async-Storage is required... (legacy=true)
+03-22 01:02:36.753  2958  3568 D AsyncStorageIR: IR for Async-Storage is required! (legacy=true)
+03-22 01:02:36.770  2958  2958 D AsyncStorageIRLegacy: Async-storage is busy!
+03-22 01:02:36.772  2958  3568 I DetoxWSClient: Sending out action 'ready' (ID #-1000)
+03-22 01:02:36.774  2958  3568 I DetoxDispatcher: Done with action 'reactNativeReload'
+03-22 01:02:36.785  2958  3571 D DetoxWSClient: Received action 'invoke' (ID #1, params={"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["initializeRzp"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]})
+03-22 01:02:36.786  2958  3568 I DetoxDispatcher: Handling action 'invoke' (ID #1)...
+03-22 01:02:36.810  2958  3568 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForTestId, [initializeRzp]
+03-22 01:02:36.832  2958  3568 D Detox   : class androidx.test.espresso.Espresso, onView, [(view.getTag() is "initializeRzp" and view has effective visibility <VISIBLE>)]
+03-22 01:02:36.833  2958  3568 D Detox   : class com.wix.detox.espresso.DetoxViewActions, click, []
+03-22 01:02:36.835  2958  3568 W com.detoxsampl: Accessing hidden method Landroid/view/ViewConfiguration;->getDoubleTapMinTime()I (greylist, reflection, allowed)
+03-22 01:02:36.839  2958  3568 D Detox   : class com.wix.detox.espresso.EspressoDetox, perform, [androidx.test.espresso.ViewInteraction@c911f06, com.wix.detox.espresso.action.RNClickAction@5e239c7]
+03-22 01:02:37.099  2958  3637 I ReactNativeJS: Running "DetoxSample" with {"rootTag":11}
+03-22 01:02:37.387  2958  3208 E unknown:ReactContextBaseJavaModule: Unhandled SoftException
+03-22 01:02:37.387  2958  3208 E unknown:ReactContextBaseJavaModule: java.lang.RuntimeException: Catalyst Instance has already disappeared: requested by WebSocketModule
+03-22 01:02:37.387  2958  3208 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.ReactContextBaseJavaModule.getReactApplicationContextIfActiveOrWarn(ReactContextBaseJavaModule.java:66)
+03-22 01:02:37.387  2958  3208 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.modules.websocket.WebSocketModule.sendEvent(WebSocketModule.java:62)
+03-22 01:02:37.387  2958  3208 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.modules.websocket.WebSocketModule.access$100(WebSocketModule.java:40)
+03-22 01:02:37.387  2958  3208 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.modules.websocket.WebSocketModule$1.onMessage(WebSocketModule.java:190)
+03-22 01:02:37.387  2958  3208 E unknown:ReactContextBaseJavaModule: 	at okhttp3.internal.ws.RealWebSocket.onReadMessage(RealWebSocket.kt:333)
+03-22 01:02:37.387  2958  3208 E unknown:ReactContextBaseJavaModule: 	at okhttp3.internal.ws.WebSocketReader.readMessageFrame(WebSocketReader.kt:245)
+03-22 01:02:37.387  2958  3208 E unknown:ReactContextBaseJavaModule: 	at okhttp3.internal.ws.WebSocketReader.processNextFrame(WebSocketReader.kt:106)
+03-22 01:02:37.387  2958  3208 E unknown:ReactContextBaseJavaModule: 	at okhttp3.internal.ws.RealWebSocket.loopReader(RealWebSocket.kt:293)
+03-22 01:02:37.387  2958  3208 E unknown:ReactContextBaseJavaModule: 	at okhttp3.internal.ws.RealWebSocket$connect$1.onResponse(RealWebSocket.kt:195)
+03-22 01:02:37.387  2958  3208 E unknown:ReactContextBaseJavaModule: 	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+03-22 01:02:37.387  2958  3208 E unknown:ReactContextBaseJavaModule: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+03-22 01:02:37.387  2958  3208 E unknown:ReactContextBaseJavaModule: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+03-22 01:02:37.387  2958  3208 E unknown:ReactContextBaseJavaModule: 	at java.lang.Thread.run(Thread.java:923)
+03-22 01:02:37.389  2958  3208 I chatty  : uid=10486(com.detoxsample) alhost:8081/... identical 1 line
+03-22 01:02:37.390  2958  3208 E unknown:ReactContextBaseJavaModule: Unhandled SoftException
+03-22 01:02:37.390  2958  3208 E unknown:ReactContextBaseJavaModule: java.lang.RuntimeException: Catalyst Instance has already disappeared: requested by WebSocketModule
+03-22 01:02:37.390  2958  3208 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.bridge.ReactContextBaseJavaModule.getReactApplicationContextIfActiveOrWarn(ReactContextBaseJavaModule.java:66)
+03-22 01:02:37.390  2958  3208 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.modules.websocket.WebSocketModule.sendEvent(WebSocketModule.java:62)
+03-22 01:02:37.390  2958  3208 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.modules.websocket.WebSocketModule.access$100(WebSocketModule.java:40)
+03-22 01:02:37.390  2958  3208 E unknown:ReactContextBaseJavaModule: 	at com.facebook.react.modules.websocket.WebSocketModule$1.onMessage(WebSocketModule.java:190)
+03-22 01:02:37.390  2958  3208 E unknown:ReactContextBaseJavaModule: 	at okhttp3.internal.ws.RealWebSocket.onReadMessage(RealWebSocket.kt:333)
+03-22 01:02:37.390  2958  3208 E unknown:ReactContextBaseJavaModule: 	at okhttp3.internal.ws.WebSocketReader.readMessageFrame(WebSocketReader.kt:245)
+03-22 01:02:37.390  2958  3208 E unknown:ReactContextBaseJavaModule: 	at okhttp3.internal.ws.WebSocketReader.processNextFrame(WebSocketReader.kt:106)
+03-22 01:02:37.390  2958  3208 E unknown:ReactContextBaseJavaModule: 	at okhttp3.internal.ws.RealWebSocket.loopReader(RealWebSocket.kt:293)
+03-22 01:02:37.390  2958  3208 E unknown:ReactContextBaseJavaModule: 	at okhttp3.internal.ws.RealWebSocket$connect$1.onResponse(RealWebSocket.kt:195)
+03-22 01:02:37.390  2958  3208 E unknown:ReactContextBaseJavaModule: 	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:519)
+03-22 01:02:37.390  2958  3208 E unknown:ReactContextBaseJavaModule: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+03-22 01:02:37.390  2958  3208 E unknown:ReactContextBaseJavaModule: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+03-22 01:02:37.390  2958  3208 E unknown:ReactContextBaseJavaModule: 	at java.lang.Thread.run(Thread.java:923)
+03-22 01:02:37.447  2958  2958 W com.detoxsampl: Accessing hidden method Landroid/view/WindowManagerGlobal;->getInstance()Landroid/view/WindowManagerGlobal; (greylist, reflection, allowed)
+03-22 01:02:37.447  2958  2958 W com.detoxsampl: Accessing hidden field Landroid/view/WindowManagerGlobal;->mViews:Ljava/util/ArrayList; (greylist, reflection, allowed)
+03-22 01:02:37.447  2958  2958 W com.detoxsampl: Accessing hidden field Landroid/view/WindowManagerGlobal;->mParams:Ljava/util/ArrayList; (greylist, reflection, allowed)
+03-22 01:02:37.451  2958  2958 I ViewInteraction: Performing 'com.wix.detox.espresso.action.detoxsingletap@4c5e4c click' action on view (view.getTag() is "initializeRzp" and view has effective visibility <VISIBLE>)
+03-22 01:02:37.461  2958  2958 I ViewRootImpl: ViewRoot's Touch Event : ACTION_DOWN
+03-22 01:02:37.485  2958  2958 I ViewRootImpl: ViewRoot's Touch Event : ACTION_UP
+03-22 01:02:37.578  2958  2958 I TetheringManager: registerTetheringEventCallback:com.detoxsample
+03-22 01:02:39.221  2958  3568 I DetoxWSClient: Sending out action 'invokeResult' (ID #1)
+03-22 01:02:39.222  2958  3568 I DetoxDispatcher: Done with action 'invoke'
+03-22 01:02:39.231  2958  3571 D DetoxWSClient: Received action 'invoke' (ID #2, params={"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["Status changes"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]})
+03-22 01:02:39.232  2958  3568 I DetoxDispatcher: Handling action 'invoke' (ID #2)...
+03-22 01:02:39.236  2958  3568 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForText, [Status changes]
+03-22 01:02:39.236  2958  3568 D Detox   : class androidx.test.espresso.Espresso, onView, [(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Status changes" and view has effective visibility <VISIBLE>)]
+03-22 01:02:39.237  2958  3568 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForSufficientlyVisible, [75]
+03-22 01:02:39.238  2958  3568 D Detox   : class com.wix.detox.espresso.DetoxAssertion, assertMatcher, [androidx.test.espresso.ViewInteraction@ff65c22, (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)]
+03-22 01:02:39.243  2958  2958 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)}' assertion on view (an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Status changes" and view has effective visibility <VISIBLE>)
+03-22 01:02:39.244  2958  3568 I DetoxWSClient: Sending out action 'invokeResult' (ID #2)
+03-22 01:02:39.245  2958  3568 I DetoxDispatcher: Done with action 'invoke'
+03-22 01:02:39.252  2958  3571 D DetoxWSClient: Received action 'invoke' (ID #3, params={"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"waitForAssertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["status"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["Razorpay Initialized"]}},{"type":"Double","value":1}]})
+03-22 01:02:39.253  2958  3568 I DetoxDispatcher: Handling action 'invoke' (ID #3)...
+03-22 01:02:39.253  2958  3568 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForTestId, [status]
+03-22 01:02:39.254  2958  3568 D Detox   : class androidx.test.espresso.Espresso, onView, [(view.getTag() is "status" and view has effective visibility <VISIBLE>)]
+03-22 01:02:39.254  2958  3568 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForText, [Razorpay Initialized]
+03-22 01:02:39.254  2958  3568 D Detox   : class com.wix.detox.espresso.DetoxAssertion, waitForAssertMatcher, [androidx.test.espresso.ViewInteraction@43c6b3, (an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Razorpay Initialized" and view has effective visibility <VISIBLE>), 1.0]
+03-22 01:02:39.279  2958  2958 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Razorpay Initialized" and view has effective visibility <VISIBLE>)}' assertion on view (view.getTag() is "status" and view has effective visibility <VISIBLE>)
+03-22 01:02:39.318  2958  2958 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Razorpay Initialized" and view has effective visibility <VISIBLE>)}' assertion on view (view.getTag() is "status" and view has effective visibility <VISIBLE>)
+03-22 01:02:39.363  2958  2958 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Razorpay Initialized" and view has effective visibility <VISIBLE>)}' assertion on view (view.getTag() is "status" and view has effective visibility <VISIBLE>)
+03-22 01:02:39.413  2958  2958 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Razorpay Initialized" and view has effective visibility <VISIBLE>)}' assertion on view (view.getTag() is "status" and view has effective visibility <VISIBLE>)
+03-22 01:02:39.455  2958  2958 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Razorpay Initialized" and view has effective visibility <VISIBLE>)}' assertion on view (view.getTag() is "status" and view has effective visibility <VISIBLE>)
+03-22 01:02:39.507  2958  2958 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Razorpay Initialized" and view has effective visibility <VISIBLE>)}' assertion on view (view.getTag() is "status" and view has effective visibility <VISIBLE>)
+03-22 01:02:39.553  2958  2958 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Razorpay Initialized" and view has effective visibility <VISIBLE>)}' assertion on view (view.getTag() is "status" and view has effective visibility <VISIBLE>)
+03-22 01:02:39.592  2958  2958 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Razorpay Initialized" and view has effective visibility <VISIBLE>)}' assertion on view (view.getTag() is "status" and view has effective visibility <VISIBLE>)
+03-22 01:02:39.633  2958  2958 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Razorpay Initialized" and view has effective visibility <VISIBLE>)}' assertion on view (view.getTag() is "status" and view has effective visibility <VISIBLE>)
+03-22 01:02:39.676  2958  2958 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Razorpay Initialized" and view has effective visibility <VISIBLE>)}' assertion on view (view.getTag() is "status" and view has effective visibility <VISIBLE>)
+03-22 01:02:39.722  2958  2958 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Razorpay Initialized" and view has effective visibility <VISIBLE>)}' assertion on view (view.getTag() is "status" and view has effective visibility <VISIBLE>)
+03-22 01:02:39.761  2958  2958 I chatty  : uid=10486(com.detoxsample) identical 1 line
+03-22 01:02:39.795  2958  2958 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Razorpay Initialized" and view has effective visibility <VISIBLE>)}' assertion on view (view.getTag() is "status" and view has effective visibility <VISIBLE>)
+03-22 01:02:39.833  2958  2958 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Razorpay Initialized" and view has effective visibility <VISIBLE>)}' assertion on view (view.getTag() is "status" and view has effective visibility <VISIBLE>)
+03-22 01:02:39.865  2958  2958 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Razorpay Initialized" and view has effective visibility <VISIBLE>)}' assertion on view (view.getTag() is "status" and view has effective visibility <VISIBLE>)
+03-22 01:02:39.896  2958  2958 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Razorpay Initialized" and view has effective visibility <VISIBLE>)}' assertion on view (view.getTag() is "status" and view has effective visibility <VISIBLE>)
+03-22 01:02:39.928  2958  2958 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Razorpay Initialized" and view has effective visibility <VISIBLE>)}' assertion on view (view.getTag() is "status" and view has effective visibility <VISIBLE>)
+03-22 01:02:39.978  2958  2958 I chatty  : uid=10486(com.detoxsample) identical 1 line
+03-22 01:02:40.019  2958  2958 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Razorpay Initialized" and view has effective visibility <VISIBLE>)}' assertion on view (view.getTag() is "status" and view has effective visibility <VISIBLE>)
+03-22 01:02:40.064  2958  2958 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Razorpay Initialized" and view has effective visibility <VISIBLE>)}' assertion on view (view.getTag() is "status" and view has effective visibility <VISIBLE>)
+03-22 01:02:40.112  2958  2958 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Razorpay Initialized" and view has effective visibility <VISIBLE>)}' assertion on view (view.getTag() is "status" and view has effective visibility <VISIBLE>)
+03-22 01:02:40.155  2958  2958 I chatty  : uid=10486(com.detoxsample) identical 1 line
+03-22 01:02:40.201  2958  2958 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Razorpay Initialized" and view has effective visibility <VISIBLE>)}' assertion on view (view.getTag() is "status" and view has effective visibility <VISIBLE>)
+03-22 01:02:40.245  2958  2958 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Razorpay Initialized" and view has effective visibility <VISIBLE>)}' assertion on view (view.getTag() is "status" and view has effective visibility <VISIBLE>)
+03-22 01:02:40.286  2958  3568 I DetoxActionHandlers: Test exception
+03-22 01:02:40.286  2958  3568 I DetoxActionHandlers: java.lang.reflect.InvocationTargetException
+03-22 01:02:40.286  2958  3568 I DetoxActionHandlers: 	at java.lang.reflect.Method.invoke(Native Method)
+03-22 01:02:40.286  2958  3568 I DetoxActionHandlers: 	at org.apache.commons.lang3.reflect.MethodUtils.invokeStaticMethod(MethodUtils.java:443)
+03-22 01:02:40.286  2958  3568 I DetoxActionHandlers: 	at org.apache.commons.lang3.reflect.MethodUtils.invokeStaticMethod(MethodUtils.java:405)
+03-22 01:02:40.286  2958  3568 I DetoxActionHandlers: 	at com.wix.invoke.types.ClassTarget.execute(ClassTarget.java:23)
+03-22 01:02:40.286  2958  3568 I DetoxActionHandlers: 	at com.wix.invoke.types.Target.invoke(Target.java:59)
+03-22 01:02:40.286  2958  3568 I DetoxActionHandlers: 	at com.wix.invoke.MethodInvocation.invoke(MethodInvocation.java:35)
+03-22 01:02:40.286  2958  3568 I DetoxActionHandlers: 	at com.wix.invoke.MethodInvocation.invoke(MethodInvocation.java:26)
+03-22 01:02:40.286  2958  3568 I DetoxActionHandlers: 	at com.wix.invoke.MethodInvocation.invoke(MethodInvocation.java:20)
+03-22 01:02:40.286  2958  3568 I DetoxActionHandlers: 	at com.wix.detox.adapters.server.InvokeActionHandler.handle(DetoxActionHandlers.kt:54)
+03-22 01:02:40.286  2958  3568 I DetoxActionHandlers: 	at com.wix.detox.adapters.server.ActionsExecutor$executeAction$$inlined$let$lambda$1.run(DetoxActionsDispatcher.kt:64)
+03-22 01:02:40.286  2958  3568 I DetoxActionHandlers: 	at android.os.Handler.handleCallback(Handler.java:938)
+03-22 01:02:40.286  2958  3568 I DetoxActionHandlers: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+03-22 01:02:40.286  2958  3568 I DetoxActionHandlers: 	at android.os.Looper.loop(Looper.java:223)
+03-22 01:02:40.286  2958  3568 I DetoxActionHandlers: 	at com.wix.detox.adapters.server.ActionsExecutor$1.run(DetoxActionsDispatcher.kt:50)
+03-22 01:02:40.286  2958  3568 I DetoxActionHandlers: 	at java.lang.Thread.run(Thread.java:923)
+03-22 01:02:40.286  2958  3568 I DetoxActionHandlers: Caused by: com.wix.detox.common.DetoxErrors$DetoxRuntimeException: 1.0sec timeout expired without matching of given matcher: (an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Razorpay Initialized" and view has effective visibility <VISIBLE>)
+03-22 01:02:40.286  2958  3568 I DetoxActionHandlers: 	at com.wix.detox.espresso.DetoxAssertion.waitForAssertMatcher(DetoxAssertion.java:58)
+03-22 01:02:40.286  2958  3568 I DetoxActionHandlers: 	... 15 more
+03-22 01:02:40.286  2958  3568 I DetoxWSClient: Sending out action 'testFailed' (ID #3)
+03-22 01:02:40.289  2958  3568 I DetoxDispatcher: Done with action 'invoke'

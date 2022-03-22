@@ -1,0 +1,97 @@
+--------- beginning of main
+03-22 11:11:10.776  8730  8813 I DetoxWSClient: Sending out action 'invokeResult' (ID #4)
+03-22 11:11:10.777  8730  8813 I DetoxDispatcher: Done with action 'invoke'
+03-22 11:11:10.786  8730  8815 D DetoxWSClient: Received action 'invoke' (ID #5, params={"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["Status changes"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]})
+03-22 11:11:10.787  8730  8813 I DetoxDispatcher: Handling action 'invoke' (ID #5)...
+03-22 11:11:10.787  8730  8813 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForText, [Status changes]
+03-22 11:11:10.787  8730  8813 D Detox   : class androidx.test.espresso.Espresso, onView, [(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Status changes" and view has effective visibility <VISIBLE>)]
+03-22 11:11:10.788  8730  8813 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForSufficientlyVisible, [75]
+03-22 11:11:10.788  8730  8813 D Detox   : class com.wix.detox.espresso.DetoxAssertion, assertMatcher, [androidx.test.espresso.ViewInteraction@21b48ba, (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)]
+03-22 11:11:10.794  8730  8730 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)}' assertion on view (an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Status changes" and view has effective visibility <VISIBLE>)
+03-22 11:11:10.795  8730  8813 I DetoxWSClient: Sending out action 'invokeResult' (ID #5)
+03-22 11:11:10.796  8730  8813 I DetoxDispatcher: Done with action 'invoke'
+03-22 11:11:10.800  8730  8815 D DetoxWSClient: Received action 'invoke' (ID #6, params={"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["true"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]})
+03-22 11:11:10.801  8730  8813 I DetoxDispatcher: Handling action 'invoke' (ID #6)...
+03-22 11:11:10.801  8730  8813 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForText, [true]
+03-22 11:11:10.802  8730  8813 D Detox   : class androidx.test.espresso.Espresso, onView, [(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "true" and view has effective visibility <VISIBLE>)]
+03-22 11:11:10.802  8730  8813 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForSufficientlyVisible, [75]
+03-22 11:11:10.802  8730  8813 D Detox   : class com.wix.detox.espresso.DetoxAssertion, assertMatcher, [androidx.test.espresso.ViewInteraction@fa2d36b, (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)]
+03-22 11:11:10.807  8730  8730 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)}' assertion on view (an instance of android.widget.TextView and view.getText() with or without transformation to match: is "true" and view has effective visibility <VISIBLE>)
+03-22 11:11:10.808  8730  8813 I DetoxWSClient: Sending out action 'invokeResult' (ID #6)
+03-22 11:11:10.808  8730  8813 I DetoxDispatcher: Done with action 'invoke'
+03-22 11:11:10.909  8730  8815 D DetoxWSClient: Received action 'invoke' (ID #7, params={"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["isValidVpa-fail"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]})
+03-22 11:11:10.910  8730  8813 I DetoxDispatcher: Handling action 'invoke' (ID #7)...
+03-22 11:11:10.910  8730  8813 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForTestId, [isValidVpa-fail]
+03-22 11:11:10.910  8730  8813 D Detox   : class androidx.test.espresso.Espresso, onView, [(view.getTag() is "isValidVpa-fail" and view has effective visibility <VISIBLE>)]
+03-22 11:11:10.911  8730  8813 D Detox   : class com.wix.detox.espresso.DetoxViewActions, click, []
+03-22 11:11:10.911  8730  8813 D Detox   : class com.wix.detox.espresso.EspressoDetox, perform, [androidx.test.espresso.ViewInteraction@480cec8, com.wix.detox.espresso.action.RNClickAction@892b61]
+03-22 11:11:10.916  8730  8730 I ViewInteraction: Performing 'com.wix.detox.espresso.action.detoxsingletap@3a53686 click' action on view (view.getTag() is "isValidVpa-fail" and view has effective visibility <VISIBLE>)
+--------- beginning of system
+03-22 11:11:10.919  8730  8730 I ViewRootImpl: ViewRoot's Touch Event : ACTION_DOWN
+03-22 11:11:10.949  8730  8730 I ViewRootImpl: ViewRoot's Touch Event : ACTION_UP
+03-22 11:11:11.865  8730  8813 I DetoxWSClient: Sending out action 'invokeResult' (ID #7)
+03-22 11:11:11.865  8730  8813 I DetoxDispatcher: Done with action 'invoke'
+03-22 11:11:11.874  8730  8815 D DetoxWSClient: Received action 'invoke' (ID #8, params={"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["Status changes"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]})
+03-22 11:11:11.875  8730  8813 I DetoxDispatcher: Handling action 'invoke' (ID #8)...
+03-22 11:11:11.875  8730  8813 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForText, [Status changes]
+03-22 11:11:11.876  8730  8813 D Detox   : class androidx.test.espresso.Espresso, onView, [(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Status changes" and view has effective visibility <VISIBLE>)]
+03-22 11:11:11.876  8730  8813 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForSufficientlyVisible, [75]
+03-22 11:11:11.876  8730  8813 D Detox   : class com.wix.detox.espresso.DetoxAssertion, assertMatcher, [androidx.test.espresso.ViewInteraction@337546a, (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)]
+03-22 11:11:11.896  8730  8730 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)}' assertion on view (an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Status changes" and view has effective visibility <VISIBLE>)
+03-22 11:11:11.897  8730  8813 I DetoxWSClient: Sending out action 'invokeResult' (ID #8)
+03-22 11:11:11.897  8730  8813 I DetoxDispatcher: Done with action 'invoke'
+03-22 11:11:11.904  8730  8815 D DetoxWSClient: Received action 'invoke' (ID #9, params={"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["Invalid VPA"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]})
+03-22 11:11:11.904  8730  8813 I DetoxDispatcher: Handling action 'invoke' (ID #9)...
+03-22 11:11:11.905  8730  8813 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForText, [Invalid VPA]
+03-22 11:11:11.905  8730  8813 D Detox   : class androidx.test.espresso.Espresso, onView, [(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Invalid VPA" and view has effective visibility <VISIBLE>)]
+03-22 11:11:11.905  8730  8813 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForSufficientlyVisible, [75]
+03-22 11:11:11.906  8730  8813 D Detox   : class com.wix.detox.espresso.DetoxAssertion, assertMatcher, [androidx.test.espresso.ViewInteraction@e436d5b, (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)]
+03-22 11:11:11.930  8730  8730 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)}' assertion on view (an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Invalid VPA" and view has effective visibility <VISIBLE>)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: Test exception
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: java.lang.reflect.InvocationTargetException
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	at java.lang.reflect.Method.invoke(Native Method)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	at org.apache.commons.lang3.reflect.MethodUtils.invokeStaticMethod(MethodUtils.java:443)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	at org.apache.commons.lang3.reflect.MethodUtils.invokeStaticMethod(MethodUtils.java:405)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	at com.wix.invoke.types.ClassTarget.execute(ClassTarget.java:23)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	at com.wix.invoke.types.Target.invoke(Target.java:59)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	at com.wix.invoke.MethodInvocation.invoke(MethodInvocation.java:35)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	at com.wix.invoke.MethodInvocation.invoke(MethodInvocation.java:26)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	at com.wix.invoke.MethodInvocation.invoke(MethodInvocation.java:20)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	at com.wix.detox.adapters.server.InvokeActionHandler.handle(DetoxActionHandlers.kt:54)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	at com.wix.detox.adapters.server.ActionsExecutor$executeAction$$inlined$let$lambda$1.run(DetoxActionsDispatcher.kt:64)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	at android.os.Handler.handleCallback(Handler.java:938)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	at android.os.Looper.loop(Looper.java:223)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	at com.wix.detox.adapters.server.ActionsExecutor$1.run(DetoxActionsDispatcher.kt:50)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	at java.lang.Thread.run(Thread.java:923)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: Caused by: androidx.test.espresso.base.DefaultFailureHandler$AssertionFailedWithCauseError: '(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)' doesn't match the selected view.
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: Expected: (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers:      Got: was null
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	at dalvik.system.VMStack.getThreadStackTrace(Native Method)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	at java.lang.Thread.getStackTrace(Thread.java:1736)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	at androidx.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:12)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	at androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:7)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	at androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:5)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	at androidx.test.espresso.ViewInteraction.check(ViewInteraction.java:12)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	at com.wix.detox.espresso.DetoxAssertion.assertMatcher(DetoxAssertion.java:32)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	... 15 more
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: Caused by: junit.framework.AssertionFailedError: '(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)' doesn't match the selected view.
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: Expected: (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers:      Got: was null
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	at androidx.test.espresso.matcher.ViewMatchers.assertThat(ViewMatchers.java:16)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	at com.wix.detox.espresso.assertion.ViewAssertions$MatchesViewAssertion.check(ViewAssertions.java:52)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	at androidx.test.espresso.ViewInteraction$SingleExecutionViewAssertion.check(ViewInteraction.java:2)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:12)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	at androidx.test.espresso.ViewInteraction$2.call(ViewInteraction.java:1)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	at android.os.Handler.handleCallback(Handler.java:938)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	at android.os.Looper.loop(Looper.java:223)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	at android.app.ActivityThread.main(ActivityThread.java:7868)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	at java.lang.reflect.Method.invoke(Native Method)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+03-22 11:11:11.933  8730  8813 I DetoxActionHandlers: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:981)
+03-22 11:11:11.933  8730  8813 I DetoxWSClient: Sending out action 'testFailed' (ID #9)
+03-22 11:11:11.934  8730  8813 I DetoxDispatcher: Done with action 'invoke'

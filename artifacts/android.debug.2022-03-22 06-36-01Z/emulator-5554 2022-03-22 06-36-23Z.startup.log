@@ -1,0 +1,247 @@
+--------- beginning of main
+03-22 17:36:14.057 12198 12198 I com.detoxsampl: Late-enabling -Xcheck:jni
+03-22 17:36:14.108 12198 12198 W com.detoxsampl: Unexpected CPU variant for X86 using defaults: x86_64
+03-22 17:36:14.268 12198 12198 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10164; state: DISABLED
+--------- beginning of system
+03-22 17:36:14.293 12198 12198 W ActivityThread: Package uses different ABI(s) than its instrumentation: package[com.detoxsample]: x86_64, null instrumentation[com.detoxsample.test]: null, null
+03-22 17:36:14.768 12198 12198 V GraphicsEnvironment: ANGLE Developer option for 'com.detoxsample' set to: 'default'
+03-22 17:36:14.769 12198 12198 V GraphicsEnvironment: ANGLE GameManagerService for com.detoxsample: false
+03-22 17:36:14.771 12198 12198 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+03-22 17:36:14.792 12198 12198 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+03-22 17:36:14.804 12198 12198 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+03-22 17:36:15.150 12198 12198 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: true
+03-22 17:36:15.154 12198 12198 D NetworkSecurityConfig: Using Network Security Config from resource network_security_config debugBuild: true
+03-22 17:36:15.165 12198 12198 I MonitoringInstr: Instrumentation started!
+03-22 17:36:15.221 12198 12198 V TestEventClient: No service name argument was given (testDiscoveryService, testRunEventService or orchestratorService)
+03-22 17:36:15.234 12198 12198 D SoLoader: init start
+03-22 17:36:15.236 12198 12198 D SoLoader: adding system library source: /vendor/lib64
+03-22 17:36:15.238 12198 12198 D SoLoader: adding system library source: /system/lib64
+03-22 17:36:15.239 12198 12198 D SoLoader: adding application source: com.facebook.soloader.DirectorySoSource[root = /data/app/~~-4XMxgN4FBpwzWGCdOqP4A==/com.detoxsample-35ZzUvGTc-PLm_oUnPYn8g==/lib/x86_64 flags = 0]
+03-22 17:36:15.243 12198 12198 D SoLoader: adding backup source from : com.facebook.soloader.ApkSoSource[root = /data/data/com.detoxsample/lib-main flags = 1]
+03-22 17:36:15.244 12198 12198 D SoLoader: Preparing SO source: com.facebook.soloader.DirectorySoSource[root = /system/lib64 flags = 2]
+03-22 17:36:15.244 12198 12198 D SoLoader: Preparing SO source: com.facebook.soloader.DirectorySoSource[root = /vendor/lib64 flags = 2]
+03-22 17:36:15.244 12198 12198 D SoLoader: Preparing SO source: com.facebook.soloader.DirectorySoSource[root = /data/app/~~-4XMxgN4FBpwzWGCdOqP4A==/com.detoxsample-35ZzUvGTc-PLm_oUnPYn8g==/lib/x86_64 flags = 0]
+03-22 17:36:15.244 12198 12198 D SoLoader: Preparing SO source: com.facebook.soloader.ApkSoSource[root = /data/data/com.detoxsample/lib-main flags = 1]
+03-22 17:36:15.247 12198 12198 V fb-UnpackingSoSource: locked dso store /data/user/0/com.detoxsample/lib-main
+03-22 17:36:15.254 12198 12198 V fb-UnpackingSoSource: deps mismatch on deps store: regenerating
+03-22 17:36:15.254 12198 12198 V fb-UnpackingSoSource: so store dirty: regenerating
+03-22 17:36:15.399 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libbetter.so: deferring to libdir
+03-22 17:36:15.399 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libc++_shared.so: deferring to libdir
+03-22 17:36:15.399 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libevent-2.1.so: deferring to libdir
+03-22 17:36:15.400 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libevent_core-2.1.so: deferring to libdir
+03-22 17:36:15.403 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libevent_extra-2.1.so: deferring to libdir
+03-22 17:36:15.403 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libfabricjni.so: deferring to libdir
+03-22 17:36:15.404 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libfb.so: deferring to libdir
+03-22 17:36:15.405 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libfbjni.so: deferring to libdir
+03-22 17:36:15.407 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libflipper.so: deferring to libdir
+03-22 17:36:15.408 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libfolly_futures.so: deferring to libdir
+03-22 17:36:15.408 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libfolly_json.so: deferring to libdir
+03-22 17:36:15.409 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libglog.so: deferring to libdir
+03-22 17:36:15.410 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libglog_init.so: deferring to libdir
+03-22 17:36:15.410 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libimagepipeline.so: deferring to libdir
+03-22 17:36:15.410 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libjsc.so: deferring to libdir
+03-22 17:36:15.411 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libjscexecutor.so: deferring to libdir
+03-22 17:36:15.411 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libjsi.so: deferring to libdir
+03-22 17:36:15.411 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libjsijniprofiler.so: deferring to libdir
+03-22 17:36:15.411 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libjsinspector.so: deferring to libdir
+03-22 17:36:15.412 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/liblogger.so: deferring to libdir
+03-22 17:36:15.413 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libmapbufferjni.so: deferring to libdir
+03-22 17:36:15.414 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libnative-filters.so: deferring to libdir
+03-22 17:36:15.419 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libnative-imagetranscoder.so: deferring to libdir
+03-22 17:36:15.420 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_codegen_rncore.so: deferring to libdir
+03-22 17:36:15.420 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_debug.so: deferring to libdir
+03-22 17:36:15.420 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_nativemodule_core.so: deferring to libdir
+03-22 17:36:15.420 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_render_animations.so: deferring to libdir
+03-22 17:36:15.420 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_render_attributedstring.so: deferring to libdir
+03-22 17:36:15.423 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_render_componentregistry.so: deferring to libdir
+03-22 17:36:15.424 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_render_core.so: deferring to libdir
+03-22 17:36:15.425 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_render_debug.so: deferring to libdir
+03-22 17:36:15.425 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_render_graphics.so: deferring to libdir
+03-22 17:36:15.425 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_render_imagemanager.so: deferring to libdir
+03-22 17:36:15.425 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_render_leakchecker.so: deferring to libdir
+03-22 17:36:15.426 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_render_mapbuffer.so: deferring to libdir
+03-22 17:36:15.426 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_render_mounting.so: deferring to libdir
+03-22 17:36:15.427 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_render_runtimescheduler.so: deferring to libdir
+03-22 17:36:15.428 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_render_scheduler.so: deferring to libdir
+03-22 17:36:15.429 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_render_telemetry.so: deferring to libdir
+03-22 17:36:15.430 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_render_templateprocessor.so: deferring to libdir
+03-22 17:36:15.430 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_render_textlayoutmanager.so: deferring to libdir
+03-22 17:36:15.431 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_render_uimanager.so: deferring to libdir
+03-22 17:36:15.432 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libreact_utils.so: deferring to libdir
+03-22 17:36:15.432 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libreactconfig.so: deferring to libdir
+03-22 17:36:15.433 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libreactnativeblob.so: deferring to libdir
+03-22 17:36:15.433 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libreactnativejni.so: deferring to libdir
+03-22 17:36:15.433 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libreactnativeutilsjni.so: deferring to libdir
+03-22 17:36:15.435 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libreactperfloggerjni.so: deferring to libdir
+03-22 17:36:15.435 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/librrc_image.so: deferring to libdir
+03-22 17:36:15.437 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/librrc_modal.so: deferring to libdir
+03-22 17:36:15.437 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/librrc_progressbar.so: deferring to libdir
+03-22 17:36:15.438 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/librrc_root.so: deferring to libdir
+03-22 17:36:15.439 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/librrc_scrollview.so: deferring to libdir
+03-22 17:36:15.440 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/librrc_slider.so: deferring to libdir
+03-22 17:36:15.440 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/librrc_switch.so: deferring to libdir
+03-22 17:36:15.441 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/librrc_text.so: deferring to libdir
+03-22 17:36:15.442 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/librrc_textinput.so: deferring to libdir
+03-22 17:36:15.442 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/librrc_unimplementedview.so: deferring to libdir
+03-22 17:36:15.444 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/librrc_view.so: deferring to libdir
+03-22 17:36:15.444 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libturbomodulejsijni.so: deferring to libdir
+03-22 17:36:15.444 12198 12198 D ApkSoSource: not allowing consideration of lib/x86_64/libyoga.so: deferring to libdir
+03-22 17:36:15.448 12198 12198 V fb-UnpackingSoSource: regenerating DSO store com.facebook.soloader.ApkSoSource
+03-22 17:36:15.449 12198 12198 V fb-UnpackingSoSource: Finished regenerating DSO store com.facebook.soloader.ApkSoSource
+03-22 17:36:15.452 12198 12198 V fb-UnpackingSoSource: starting syncer worker
+03-22 17:36:15.479 12198 12198 V fb-UnpackingSoSource: releasing dso store lock for /data/user/0/com.detoxsample/lib-main (from syncer thread)
+03-22 17:36:15.482 12198 12198 V fb-UnpackingSoSource: not releasing dso store lock for /data/user/0/com.detoxsample/lib-main (syncer thread started)
+03-22 17:36:15.482 12198 12198 D SoLoader: init finish: 4 SO sources prepared
+03-22 17:36:15.482 12198 12198 D SoLoader: init exiting
+03-22 17:36:15.533 12198 12198 D SoLoader: init exiting
+03-22 17:36:15.534 12198 12198 D SoLoader: About to load: libjscexecutor.so
+03-22 17:36:15.537 12198 12198 D SoLoader: libjscexecutor.so not found on /data/data/com.detoxsample/lib-main
+03-22 17:36:15.537 12198 12198 D SoLoader: libjscexecutor.so found on /data/app/~~-4XMxgN4FBpwzWGCdOqP4A==/com.detoxsample-35ZzUvGTc-PLm_oUnPYn8g==/lib/x86_64
+03-22 17:36:15.537 12198 12198 D SoLoader: Not resolving dependencies for libjscexecutor.so
+03-22 17:36:15.553 12198 12198 D JavaScriptCore.Version: 250230.2.1
+03-22 17:36:15.554 12198 12198 D SoLoader: Loaded: libjscexecutor.so
+03-22 17:36:15.566 12198 12198 D SoLoader: init exiting
+03-22 17:36:16.453 12198 12262 D SoLoader: About to load: libfbjni.so
+03-22 17:36:16.474 12198 12262 D SoLoader: libfbjni.so not found on /data/data/com.detoxsample/lib-main
+03-22 17:36:16.475 12198 12262 D SoLoader: libfbjni.so found on /data/app/~~-4XMxgN4FBpwzWGCdOqP4A==/com.detoxsample-35ZzUvGTc-PLm_oUnPYn8g==/lib/x86_64
+03-22 17:36:16.475 12198 12262 D SoLoader: Not resolving dependencies for libfbjni.so
+03-22 17:36:16.479 12198 12262 D SoLoader: Loaded: libfbjni.so
+03-22 17:36:16.480 12198 12262 D SoLoader: About to load: libflipper.so
+03-22 17:36:16.481 12198 12262 D SoLoader: libflipper.so not found on /data/data/com.detoxsample/lib-main
+03-22 17:36:16.481 12198 12262 D SoLoader: libflipper.so found on /data/app/~~-4XMxgN4FBpwzWGCdOqP4A==/com.detoxsample-35ZzUvGTc-PLm_oUnPYn8g==/lib/x86_64
+03-22 17:36:16.482 12198 12262 D SoLoader: Not resolving dependencies for libflipper.so
+03-22 17:36:16.494 12198 12262 D SoLoader: Loaded: libflipper.so
+03-22 17:36:16.550 12198 12198 W com.detoxsampl: Accessing hidden field Landroid/view/View;->mKeyedTags:Landroid/util/SparseArray; (unsupported, reflection, allowed)
+03-22 17:36:16.550 12198 12198 W com.detoxsampl: Accessing hidden field Landroid/view/View;->mListenerInfo:Landroid/view/View$ListenerInfo; (unsupported, reflection, allowed)
+03-22 17:36:16.551 12198 12198 W com.detoxsampl: Accessing hidden field Landroid/view/View$ListenerInfo;->mOnClickListener:Landroid/view/View$OnClickListener; (unsupported, reflection, allowed)
+03-22 17:36:16.588 12198 12198 I flipper : flipper: FlipperClient::addPlugin Inspector
+03-22 17:36:16.590 12198 12198 I flipper : flipper: FlipperClient::addPlugin React
+03-22 17:36:16.600 12198 12198 I flipper : flipper: FlipperClient::addPlugin Databases
+03-22 17:36:16.603 12198 12198 I flipper : flipper: FlipperClient::addPlugin Preferences
+03-22 17:36:16.604 12198 12198 I flipper : flipper: FlipperClient::addPlugin CrashReporter
+03-22 17:36:16.613 12198 12198 I flipper : flipper: FlipperClient::addPlugin Network
+03-22 17:36:16.645 12198 12230 I UsageTrackerFacilitator: Usage tracking enabled
+03-22 17:36:16.654 12198 12230 I TestRequestBuilder: Scanning classpath to find tests in paths [/data/app/~~mSbDZR3v21-EN70vHLGybw==/com.detoxsample.test-JrgU_KJZXo6w7W8DIzuPVw==/base.apk]
+03-22 17:36:16.656 12198 12230 W com.detoxsampl: Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+03-22 17:36:17.502 12198 12230 D TestExecutor: Adding listener androidx.test.internal.runner.listener.LogRunListener
+03-22 17:36:17.503 12198 12230 D TestExecutor: Adding listener androidx.test.internal.runner.listener.InstrumentationResultPrinter
+03-22 17:36:17.503 12198 12230 D TestExecutor: Adding listener androidx.test.internal.runner.listener.ActivityFinisherRunListener
+03-22 17:36:17.505 12198 12230 I TestRunner: run started: 1 tests
+03-22 17:36:17.513 12198 12230 I TestRunner: started: runDetoxTests(com.detoxsample.DetoxTest)
+03-22 17:36:17.574 12198 12230 D EventInjectionStrategy: Creating injection strategy with input manager.
+03-22 17:36:17.574 12198 12230 W com.detoxsampl: Accessing hidden method Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager; (unsupported, reflection, allowed)
+03-22 17:36:17.574 12198 12230 W com.detoxsampl: Accessing hidden method Landroid/hardware/input/InputManager;->injectInputEvent(Landroid/view/InputEvent;I)Z (unsupported, reflection, allowed)
+03-22 17:36:17.575 12198 12230 W com.detoxsampl: Accessing hidden field Landroid/hardware/input/InputManager;->INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH:I (unsupported, reflection, allowed)
+03-22 17:36:17.601 12198 12230 W com.detoxsampl: Accessing hidden field Ljava/lang/reflect/Field;->accessFlags:I (unsupported, reflection, allowed)
+03-22 17:36:17.605 12198 12266 D SoLoader: About to load: libreactnativejni.so
+03-22 17:36:17.605 12198 12266 D SoLoader: libreactnativejni.so not found on /data/data/com.detoxsample/lib-main
+03-22 17:36:17.605 12198 12266 D SoLoader: libreactnativejni.so found on /data/app/~~-4XMxgN4FBpwzWGCdOqP4A==/com.detoxsample-35ZzUvGTc-PLm_oUnPYn8g==/lib/x86_64
+03-22 17:36:17.605 12198 12266 D SoLoader: Not resolving dependencies for libreactnativejni.so
+03-22 17:36:17.608 12198 12266 D SoLoader: Loaded: libreactnativejni.so
+03-22 17:36:17.768 12198 12283 D libEGL  : loaded /vendor/lib64/egl/libEGL_emulation.so
+03-22 17:36:17.781 12198 12283 D libEGL  : loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+03-22 17:36:17.791 12198 12283 D libEGL  : loaded /vendor/lib64/egl/libGLESv2_emulation.so
+03-22 17:36:17.924 12198 12198 D LifecycleMonitor: Lifecycle status change: com.detoxsample.MainActivity@95c1cf5 in: PRE_ON_CREATE
+03-22 17:36:18.154 12198 12198 W com.detoxsampl: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (unsupported, reflection, allowed)
+03-22 17:36:18.155 12198 12198 W com.detoxsampl: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
+03-22 17:36:18.186 12198 12198 D LifecycleMonitor: Lifecycle status change: com.detoxsample.MainActivity@95c1cf5 in: CREATED
+03-22 17:36:18.192 12198 12198 D LifecycleMonitor: Lifecycle status change: com.detoxsample.MainActivity@95c1cf5 in: STARTED
+03-22 17:36:18.198 12198 12198 D LifecycleMonitor: Lifecycle status change: com.detoxsample.MainActivity@95c1cf5 in: RESUMED
+03-22 17:36:18.246 12198 12198 W unknown:ReactNative: Packager connection already open, nooping.
+03-22 17:36:18.316 12198 12281 D HostConnection: createUnique: call
+03-22 17:36:18.318 12198 12281 D HostConnection: HostConnection::get() New Host Connection established 0x73a0edf0b590, tid 12281
+03-22 17:36:18.329 12198 12281 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_YUV_Cache ANDROID_EMU_async_unmap_buffer ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_sync_buffer_data GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_async_frame_commands ANDROID_EMU_gles_max_version_3_0 
+03-22 17:36:18.335 12198 12281 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+03-22 17:36:18.336 12198 12281 W OpenGLRenderer: Failed to initialize 101010-2 format, error = EGL_SUCCESS
+03-22 17:36:18.339 12198 12281 D EGL_emulation: eglCreateContext: 0x73a0edf0bf50: maj 3 min 0 rcv 3
+03-22 17:36:18.343 12198 12281 D EGL_emulation: eglMakeCurrent: 0x73a0edf0bf50: ver 3 0 (tinfo 0x73a3073d2080) (first time)
+03-22 17:36:18.362 12198 12281 I Gralloc4: mapper 4.x is not supported
+03-22 17:36:18.368 12198 12281 D HostConnection: createUnique: call
+03-22 17:36:18.369 12198 12281 D HostConnection: HostConnection::get() New Host Connection established 0x73a0edf0ad50, tid 12281
+03-22 17:36:18.369 12198 12281 D goldfish-address-space: allocate: Ask for block of size 0x100
+03-22 17:36:18.371 12198 12281 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3e3ffe000 size 0x2000
+03-22 17:36:18.373 12198 12281 W Gralloc4: allocator 4.x is not supported
+03-22 17:36:18.391 12198 12281 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_YUV_Cache ANDROID_EMU_async_unmap_buffer ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_sync_buffer_data GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_async_frame_commands ANDROID_EMU_gles_max_version_3_0 
+03-22 17:36:18.969 12198 12230 I Detox   : Detox server connection details: url=ws://localhost:63987, sessionId=d97645c1-1615-d920-2663-f4204ee4cf06
+03-22 17:36:19.000 12198 12293 I DetoxDispatcher: Handling action '_init' (ID #0)...
+03-22 17:36:19.000 12198 12293 I Detox   : Connecting to server...
+03-22 17:36:19.000 12198 12293 I DetoxWSClient: At connectToServer
+03-22 17:36:19.041 12198 12295 D DetoxWSClient: At onOpen
+03-22 17:36:19.043 12198 12295 I DetoxWSClient: Sending out action 'login' (ID #0)
+03-22 17:36:19.052 12198 12295 I Detox   : Connected to server!
+03-22 17:36:19.060 12198 12295 D DetoxWSClient: Received action 'loginSuccess' (ID #0, params={"testerConnected":true,"appConnected":true})
+03-22 17:36:19.066 12198 12295 D DetoxWSClient: Received action 'isReady' (ID #-1000, params={})
+03-22 17:36:19.071 12198 12292 W unknown:ReactContext: initializeMessageQueueThreads() is called.
+03-22 17:36:19.108 12198 12198 W unknown:ReactNative: Packager connection already open, nooping.
+03-22 17:36:19.227 12198 12300 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.drawer.ReactDrawerLayoutManager
+03-22 17:36:19.237 12198 12300 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.uimanager.LayoutShadowNode
+03-22 17:36:19.242 12198 12300 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactHorizontalScrollViewManager
+03-22 17:36:19.248 12198 12300 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactHorizontalScrollContainerViewManager
+03-22 17:36:19.252 12198 12300 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.progressbar.ReactProgressBarViewManager
+03-22 17:36:19.257 12198 12300 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.progressbar.ProgressBarShadowNode
+03-22 17:36:19.261 12198 12300 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactScrollViewManager
+03-22 17:36:19.266 12198 12300 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.slider.ReactSliderManager
+03-22 17:36:19.269 12198 12300 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.slider.ReactSliderManager$ReactSliderShadowNode
+03-22 17:36:19.271 12198 12300 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.switchview.ReactSwitchManager
+03-22 17:36:19.275 12198 12300 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.switchview.ReactSwitchManager$ReactSwitchShadowNode
+03-22 17:36:19.277 12198 12300 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.swiperefresh.SwipeRefreshLayoutManager
+03-22 17:36:19.280 12198 12300 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.frescosupport.FrescoBasedReactTextInlineImageViewManager
+03-22 17:36:19.281 12198 12300 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.frescosupport.FrescoBasedReactTextInlineImageShadowNode
+03-22 17:36:19.290 12198 12300 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.image.ReactImageManager
+03-22 17:36:19.295 12198 12300 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.modal.ReactModalHostManager
+03-22 17:36:19.299 12198 12300 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.modal.ModalHostShadowNode
+03-22 17:36:19.301 12198 12300 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactRawTextManager
+03-22 17:36:19.303 12198 12300 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactRawTextShadowNode
+03-22 17:36:19.305 12198 12300 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.textinput.ReactTextInputManager
+03-22 17:36:19.313 12198 12300 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.textinput.ReactTextInputShadowNode
+03-22 17:36:19.318 12198 12300 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactTextViewManager
+03-22 17:36:19.321 12198 12300 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactTextShadowNode
+03-22 17:36:19.323 12198 12300 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.view.ReactViewManager
+03-22 17:36:19.325 12198 12300 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactVirtualTextViewManager
+03-22 17:36:19.326 12198 12300 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactVirtualTextShadowNode
+03-22 17:36:19.328 12198 12300 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.unimplementedview.ReactUnimplementedViewManager
+03-22 17:36:19.358 12198 12300 W unknown:ReactContext: initializeMessageQueueThreads() is called.
+03-22 17:36:19.374 12198 12300 D SoLoader: About to load: libyoga.so
+03-22 17:36:19.375 12198 12300 D SoLoader: libyoga.so not found on /data/data/com.detoxsample/lib-main
+03-22 17:36:19.376 12198 12300 D SoLoader: libyoga.so found on /data/app/~~-4XMxgN4FBpwzWGCdOqP4A==/com.detoxsample-35ZzUvGTc-PLm_oUnPYn8g==/lib/x86_64
+03-22 17:36:19.376 12198 12300 D SoLoader: Not resolving dependencies for libyoga.so
+03-22 17:36:19.380 12198 12300 D SoLoader: Loaded: libyoga.so
+03-22 17:36:19.406 12198 12300 D SoLoader: About to load: libreactnativeblob.so
+03-22 17:36:19.407 12198 12198 I DetoxRNLoading: Got new RN-context async'ly through listener
+03-22 17:36:19.408 12198 12300 D SoLoader: libreactnativeblob.so not found on /data/data/com.detoxsample/lib-main
+03-22 17:36:19.410 12198 12300 D SoLoader: libreactnativeblob.so found on /data/app/~~-4XMxgN4FBpwzWGCdOqP4A==/com.detoxsample-35ZzUvGTc-PLm_oUnPYn8g==/lib/x86_64
+03-22 17:36:19.411 12198 12300 D SoLoader: Not resolving dependencies for libreactnativeblob.so
+03-22 17:36:19.415 12198 12293 I DetoxRNIdleRes: Setting up Espresso Idling Resources for React Native
+03-22 17:36:19.417 12198 12300 D SoLoader: Loaded: libreactnativeblob.so
+03-22 17:36:19.464 12198 12293 D AsyncStorageIR: Checking whether a custom IR for Async-Storage is required... (legacy=false)
+03-22 17:36:19.467 12198 12293 D DetoxRNHelpers: Native RN module resolution (class com.reactnativecommunity.asyncstorage.AsyncStorageModule): no such class
+03-22 17:36:19.467 12198 12293 D AsyncStorageIR: Checking whether a custom IR for Async-Storage is required... (legacy=true)
+03-22 17:36:19.473 12198 12293 D AsyncStorageIR: IR for Async-Storage is required! (legacy=true)
+03-22 17:36:19.482 12198 12198 D AsyncStorageIRLegacy: Async-storage is busy!
+03-22 17:36:19.519 12198 12293 I DetoxDispatcher: Done with action '_init'
+03-22 17:36:19.520 12198 12293 I DetoxDispatcher: Handling action 'isReady' (ID #-1000)...
+03-22 17:36:19.542 12198 12198 W com.detoxsampl: Accessing hidden method Landroid/os/MessageQueue;->next()Landroid/os/Message; (unsupported, reflection, allowed)
+03-22 17:36:19.543 12198 12198 W com.detoxsampl: Accessing hidden field Landroid/os/MessageQueue;->mMessages:Landroid/os/Message; (unsupported, reflection, allowed)
+03-22 17:36:19.545 12198 12198 W com.detoxsampl: Accessing hidden method Landroid/os/Message;->recycleUnchecked()V (unsupported, reflection, allowed)
+03-22 17:36:19.630 12198 12300 I flipper : flipper: FlipperClient::addPlugin Fresco
+03-22 17:36:19.664 12198 12300 I WebViewFactory: Loading com.google.android.webview version 91.0.4472.114 (code 447211487)
+03-22 17:36:19.915 12198 12300 W com.detoxsampl: Accessing hidden method Landroid/os/Trace;->isTagEnabled(J)Z (unsupported, reflection, allowed)
+03-22 17:36:19.915 12198 12300 W com.detoxsampl: Accessing hidden method Landroid/os/Trace;->traceBegin(JLjava/lang/String;)V (unsupported, reflection, allowed)
+03-22 17:36:19.915 12198 12300 W com.detoxsampl: Accessing hidden method Landroid/os/Trace;->traceEnd(J)V (unsupported, reflection, allowed)
+03-22 17:36:19.915 12198 12300 W com.detoxsampl: Accessing hidden method Landroid/os/Trace;->asyncTraceBegin(JLjava/lang/String;I)V (unsupported, reflection, allowed)
+03-22 17:36:19.916 12198 12300 W com.detoxsampl: Accessing hidden method Landroid/os/Trace;->asyncTraceEnd(JLjava/lang/String;I)V (unsupported, reflection, allowed)
+03-22 17:36:19.977 12198 12300 I cr_LibraryLoader: Loaded native library version number "91.0.4472.114"
+03-22 17:36:19.980 12198 12300 I cr_CachingUmaRecorder: Flushed 4 samples from 4 histograms.
+03-22 17:36:19.996 12198 12299 I ReactNativeJS: Running "DetoxSample" with {"rootTag":1}
+03-22 17:36:20.393 12198 12198 D CompatibilityChangeReporter: Compat change id reported: 171228096; UID 10164; state: ENABLED
+03-22 17:36:20.396 12198 12198 W com.detoxsampl: Accessing hidden field Landroid/widget/ScrollView;->mScroller:Landroid/widget/OverScroller; (unsupported, reflection, allowed)
+03-22 17:36:20.430 12198 12281 D EGL_emulation: app_time_stats: avg=639.17ms min=190.60ms max=1481.88ms count=3
+03-22 17:36:20.437 12198 12198 I Detox   : Wait is over: app is now idle!
+03-22 17:36:20.438 12198 12293 I DetoxWSClient: Sending out action 'ready' (ID #-1000)
+03-22 17:36:20.440 12198 12293 I DetoxDispatcher: Done with action 'isReady'
+03-22 17:36:20.440 12198 12293 I DetoxDispatcher: Handling action 'loginSuccess' (ID #0)...
+03-22 17:36:20.440 12198 12293 I DetoxDispatcher: Done with action 'loginSuccess'
+03-22 17:36:20.440 12198 12293 I DetoxDispatcher: Handling action 'isReady' (ID #-1000)...
+03-22 17:36:20.474 12198 12198 I Detox   : Wait is over: app is now idle!
+03-22 17:36:20.475 12198 12293 I DetoxWSClient: Sending out action 'ready' (ID #-1000)
+03-22 17:36:20.475 12198 12293 I DetoxDispatcher: Done with action 'isReady'

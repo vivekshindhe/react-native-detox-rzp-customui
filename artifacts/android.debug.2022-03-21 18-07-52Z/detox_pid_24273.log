@@ -1,0 +1,509 @@
+Mar 21 23:37:54 detox[24273] TRACE: [DETOX_CREATE] created a Detox instance with config:
+{
+  appsConfig: {
+    default: {
+      type: 'android.apk',
+      binaryPath: 'android/app/build/outputs/apk/debug/app-debug.apk',
+      build: 'cd android && ./gradlew assembleDebug assembleAndroidTest -DtestBuildType=debug && cd ..'
+    }
+  },
+  artifactsConfig: {
+    rootDir: 'artifacts/android.debug.2022-03-21 18-07-52Z',
+    plugins: {
+      log: {
+        enabled: true,
+        keepOnlyFailedTestsArtifacts: false
+      },
+      screenshot: {
+        enabled: true,
+        shouldTakeAutomaticSnapshots: false,
+        keepOnlyFailedTestsArtifacts: false
+      },
+      video: {
+        enabled: false,
+        keepOnlyFailedTestsArtifacts: false
+      },
+      instruments: {
+        enabled: false,
+        keepOnlyFailedTestsArtifacts: false
+      },
+      timeline: {
+        enabled: false
+      },
+      uiHierarchy: {
+        enabled: false,
+        keepOnlyFailedTestsArtifacts: false
+      }
+    },
+    pathBuilder: ArtifactPathBuilder {
+      _rootDir: 'artifacts/android.debug.2022-03-21 18-07-52Z'
+    }
+  },
+  behaviorConfig: {
+    init: {
+      reinstallApp: true,
+      exposeGlobals: true
+    },
+    cleanup: {
+      shutdownDevice: false
+    },
+    launchApp: 'auto'
+  },
+  cliConfig: {
+    recordLogs: 'all',
+    configuration: 'android.debug',
+    useCustomLogger: true
+  },
+  configurationName: 'android.debug',
+  deviceConfig: {
+    type: 'android.attached',
+    device: {
+      adbName: 'LMG850EMW1f87e52c'
+    }
+  },
+  runnerConfig: {
+    testRunner: 'jest',
+    runnerConfig: 'e2e/config.json',
+    specs: 'e2e',
+    skipLegacyWorkersInjection: false
+  },
+  sessionConfig: {
+    autoStart: true,
+    sessionId: 'b9ba7b38-8751-00e5-e1f9-b1c598e6d019',
+    debugSynchronization: 10000
+  }
+}
+Mar 21 23:37:54 detox[24273] DEBUG: [WSS_CREATE] Detox server listening on localhost:62505...
+Mar 21 23:37:54 detox[24273] DEBUG: [WSS_CONNECTION, #62506] registered a new connection.
+Mar 21 23:37:54 detox[24273] TRACE: [WS_OPEN] opened web socket to: ws://localhost:62505
+Mar 21 23:37:54 detox[24273] TRACE: [WS_SEND] {"type":"login","params":{"sessionId":"b9ba7b38-8751-00e5-e1f9-b1c598e6d019","role":"tester"},"messageId":0}
+Mar 21 23:37:54 detox[24273] TRACE: [WSS_GET_FROM, #62506] {"type":"login","params":{"sessionId":"b9ba7b38-8751-00e5-e1f9-b1c598e6d019","role":"tester"},"messageId":0}
+Mar 21 23:37:54 detox[24273] TRACE: [SESSION_CREATED] created session b9ba7b38-8751-00e5-e1f9-b1c598e6d019
+Mar 21 23:37:54 detox[24273] TRACE: [WSS_SEND_TO, #tester] {"type":"loginSuccess","params":{"testerConnected":true,"appConnected":false},"messageId":0}
+Mar 21 23:37:54 detox[24273] TRACE: [SESSION_JOINED] tester joined session b9ba7b38-8751-00e5-e1f9-b1c598e6d019
+Mar 21 23:37:54 detox[24273] TRACE: [WS_MESSAGE] {"type":"loginSuccess","params":{"testerConnected":true,"appConnected":false},"messageId":0}
+ 
+Mar 21 23:37:54 detox[24273] DEBUG: [EXEC_CMD, #0] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb"  devices
+Mar 21 23:37:54 detox[24273] DEBUG: [EXEC_SUCCESS, #0] List of devices attached
+LMG850EMW1f87e52c	device
+
+
+Mar 21 23:37:54 detox[24273] DEBUG: [DEVICE_LOOKUP] Found a matching & free device LMG850EMW1f87e52c
+Mar 21 23:37:54 detox[24273] DEBUG: [EXEC_CMD, #1] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s LMG850EMW1f87e52c shell "getprop ro.build.version.sdk"
+Mar 21 23:37:54 detox[24273] TRACE: [EXEC_SUCCESS, #1] 30
+
+Mar 21 23:37:54 detox[24273] DEBUG: [EXEC_CMD, #2] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s LMG850EMW1f87e52c shell "dumpsys power | grep \"^[ ]*m[UW].*=\""
+Mar 21 23:37:54 detox[24273] TRACE: [EXEC_SUCCESS, #2]   mWakefulnessRaw=Asleep
+  mWakefulnessChanging=false
+  mWakeLockSummary=0x0
+  mUserActivitySummary=0x0
+  mWakeUpWhenPluggedOrUnpluggedConfig=true
+  mWakeUpWhenPluggedOrUnpluggedInTheaterModeConfig=false
+  mUserActivityTimeoutOverrideFromWindowManager=10000
+  mUserInactiveOverrideFromWindowManager=false
+  mUserId=0
+  mWakefulness=Asleep
+  mWakefulnessChanging=false
+  mWakeLockSummary=0x0
+  mUserActivitySummary=0x0
+
+Mar 21 23:37:54 detox[24273] DEBUG: [EXEC_CMD, #3] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s LMG850EMW1f87e52c shell "input keyevent KEYCODE_POWER"
+Mar 21 23:37:55 detox[24273] TRACE: [EXEC_SUCCESS, #3] 
+Mar 21 23:37:55 detox[24273] DEBUG: [EXEC_CMD, #4] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s LMG850EMW1f87e52c shell "input keyevent KEYCODE_MENU"
+Mar 21 23:37:56 detox[24273] TRACE: [EXEC_SUCCESS, #4] 
+Mar 21 23:37:56 detox[24273] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onBootDevice({ deviceId: 'LMG850EMW1f87e52c', type: 'device', coldBoot: false })
+Mar 21 23:37:56 detox[24273] DEBUG: [EXEC_CMD, #5] "/Users/vivek.shindhe/Library/Android/sdk/build-tools/31.0.0/aapt" dump badging "/Users/vivek.shindhe/RazorpayProjects/testing_projects/DetoxSample/android/app/build/outputs/apk/debug/app-debug.apk"
+Mar 21 23:37:56 detox[24273] TRACE: [EXEC_SUCCESS, #5] package: name='com.detoxsample' versionCode='1' versionName='1.0' compileSdkVersion='30' compileSdkVersionCodename='11'
+sdkVersion:'21'
+targetSdkVersion:'30'
+uses-permission: name='android.permission.SYSTEM_ALERT_WINDOW'
+uses-permission: name='android.permission.INTERNET'
+uses-permission: name='android.permission.ACCESS_WIFI_STATE'
+uses-permission: name='android.permission.ACCESS_NETWORK_STATE'
+application-label:'DetoxSample'
+application-label-af:'DetoxSample'
+application-label-am:'DetoxSample'
+application-label-ar:'DetoxSample'
+application-label-as:'DetoxSample'
+application-label-az:'DetoxSample'
+application-label-be:'DetoxSample'
+application-label-bg:'DetoxSample'
+application-label-bn:'DetoxSample'
+application-label-bs:'DetoxSample'
+application-label-ca:'DetoxSample'
+application-label-cs:'DetoxSample'
+application-label-da:'DetoxSample'
+application-label-de:'DetoxSample'
+application-label-el:'DetoxSample'
+application-label-en-AU:'DetoxSample'
+application-label-en-CA:'DetoxSample'
+application-label-en-GB:'DetoxSample'
+application-label-en-IN:'DetoxSample'
+application-label-en-SG:'DetoxSample'
+application-label-en-XC:'DetoxSample'
+application-label-es:'DetoxSample'
+application-label-es-419:'DetoxSample'
+application-label-es-US:'DetoxSample'
+application-label-et:'DetoxSample'
+application-label-eu:'DetoxSample'
+application-label-fa:'DetoxSample'
+application-label-fi:'DetoxSample'
+application-label-fil:'DetoxSample'
+application-label-fr:'DetoxSample'
+application-label-fr-CA:'DetoxSample'
+application-label-gl:'DetoxSample'
+application-label-gu:'DetoxSample'
+application-label-hi:'DetoxSample'
+application-label-hr:'DetoxSample'
+application-label-hu:'DetoxSample'
+application-label-hy:'DetoxSample'
+application-label-id:'DetoxSample'
+application-label-in:'DetoxSample'
+application-label-is:'DetoxSample'
+application-label-it:'DetoxSample'
+application-label-iw:'DetoxSample'
+application-label-ja:'DetoxSample'
+application-label-ka:'DetoxSample'
+application-label-kk:'DetoxSample'
+application-label-km:'DetoxSample'
+application-label-kn:'DetoxSample'
+application-label-ko:'DetoxSample'
+application-label-ky:'DetoxSample'
+application-label-lo:'DetoxSample'
+application-label-lt:'DetoxSample'
+application-label-lv:'DetoxSample'
+application-label-mk:'DetoxSample'
+application-label-ml:'DetoxSample'
+application-label-mn:'DetoxSample'
+application-label-mr:'DetoxSample'
+application-label-ms:'DetoxSample'
+application-label-my:'DetoxSample'
+application-label-nb:'DetoxSample'
+application-label-ne:'DetoxSample'
+application-label-nl:'DetoxSample'
+application-label-or:'DetoxSample'
+application-label-pa:'DetoxSample'
+application-label-pl:'DetoxSample'
+application-label-pt:'DetoxSample'
+application-label-pt-BR:'DetoxSample'
+application-label-pt-PT:'DetoxSample'
+application-label-ro:'DetoxSample'
+application-label-ru:'DetoxSample'
+application-label-si:'DetoxSample'
+application-label-sk:'DetoxSample'
+application-label-sl:'DetoxSample'
+application-label-sq:'DetoxSample'
+application-label-sr:'DetoxSample'
+application-label-sr-Latn:'DetoxSample'
+application-label-sv:'DetoxSample'
+application-label-sw:'DetoxSample'
+application-label-ta:'DetoxSample'
+application-label-te:'DetoxSample'
+application-label-th:'DetoxSample'
+application-label-tl:'DetoxSample'
+application-label-tr:'DetoxSample'
+application-label-uk:'DetoxSample'
+application-label-ur:'DetoxSample'
+application-label-uz:'DetoxSample'
+application-label-vi:'DetoxSample'
+application-label-zh-CN:'DetoxSample'
+application-label-zh-HK:'DetoxSample'
+application-label-zh-TW:'DetoxSample'
+application-label-zu:'DetoxSample'
+application-icon-120:'res/mipmap-mdpi-v4/ic_launcher.png'
+application-icon-160:'res/mipmap-mdpi-v4/ic_launcher.png'
+application-icon-240:'res/mipmap-hdpi-v4/ic_launcher.png'
+application-icon-320:'res/mipmap-xhdpi-v4/ic_launcher.png'
+application-icon-480:'res/mipmap-xxhdpi-v4/ic_launcher.png'
+application-icon-640:'res/mipmap-xxxhdpi-v4/ic_launcher.png'
+application-icon-65534:'res/mipmap-mdpi-v4/ic_launcher.png'
+application: label='DetoxSample' icon='res/mipmap-mdpi-v4/ic_launcher.png'
+application-debuggable
+launchable-activity: name='com.detoxsample.MainActivity'  label='DetoxSample' icon=''
+uses-library-not-required:'org.apache.http.legacy'
+feature-group: label=''
+  uses-gl-es: '0x20000'
+  uses-feature: name='android.hardware.faketouch'
+  uses-implied-feature: name='android.hardware.faketouch' reason='default feature for all apps'
+  uses-feature: name='android.hardware.wifi'
+  uses-implied-feature: name='android.hardware.wifi' reason='requested android.permission.ACCESS_WIFI_STATE permission'
+main
+other-activities
+other-receivers
+other-services
+supports-screens: 'small' 'normal' 'large' 'xlarge'
+supports-any-density: 'true'
+locales: '--_--' 'af' 'am' 'ar' 'as' 'az' 'be' 'bg' 'bn' 'bs' 'ca' 'cs' 'da' 'de' 'el' 'en-AU' 'en-CA' 'en-GB' 'en-IN' 'en-SG' 'en-XC' 'es' 'es-419' 'es-US' 'et' 'eu' 'fa' 'fi' 'fil' 'fr' 'fr-CA' 'gl' 'gu' 'hi' 'hr' 'hu' 'hy' 'id' 'in' 'is' 'it' 'iw' 'ja' 'ka' 'kk' 'km' 'kn' 'ko' 'ky' 'lo' 'lt' 'lv' 'mk' 'ml' 'mn' 'mr' 'ms' 'my' 'nb' 'ne' 'nl' 'or' 'pa' 'pl' 'pt' 'pt-BR' 'pt-PT' 'ro' 'ru' 'si' 'sk' 'sl' 'sq' 'sr' 'sr-Latn' 'sv' 'sw' 'ta' 'te' 'th' 'tl' 'tr' 'uk' 'ur' 'uz' 'vi' 'zh-CN' 'zh-HK' 'zh-TW' 'zu'
+densities: '120' '160' '240' '320' '480' '640' '65534'
+native-code: 'arm64-v8a' 'armeabi-v7a' 'x86' 'x86_64'
+
+Mar 21 23:37:56 detox[24273] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onBeforeTerminateApp({ deviceId: 'LMG850EMW1f87e52c', bundleId: 'com.detoxsample' })
+Mar 21 23:37:56 detox[24273] DEBUG: [EXEC_CMD, #6] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s LMG850EMW1f87e52c shell "am force-stop com.detoxsample"
+Mar 21 23:37:56 detox[24273] TRACE: [EXEC_SUCCESS, #6] 
+Mar 21 23:37:56 detox[24273] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onTerminateApp({ deviceId: 'LMG850EMW1f87e52c', bundleId: 'com.detoxsample' })
+Mar 21 23:37:56 detox[24273] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onBeforeUninstallApp({ deviceId: 'LMG850EMW1f87e52c', bundleId: 'com.detoxsample' })
+Mar 21 23:37:56 detox[24273] DEBUG: [EXEC_CMD, #7] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s LMG850EMW1f87e52c shell "pm list packages com.detoxsample"
+Mar 21 23:37:56 detox[24273] TRACE: [EXEC_SUCCESS, #7] package:com.detoxsample.test
+package:com.detoxsample
+
+Mar 21 23:37:56 detox[24273] DEBUG: [EXEC_CMD, #8] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s LMG850EMW1f87e52c uninstall com.detoxsample
+Mar 21 23:37:57 detox[24273] TRACE: [EXEC_SUCCESS, #8] Success
+
+Mar 21 23:37:57 detox[24273] DEBUG: [EXEC_CMD, #9] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s LMG850EMW1f87e52c shell "pm list packages com.detoxsample.test"
+Mar 21 23:37:57 detox[24273] TRACE: [EXEC_SUCCESS, #9] package:com.detoxsample.test
+
+Mar 21 23:37:57 detox[24273] DEBUG: [EXEC_CMD, #10] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s LMG850EMW1f87e52c uninstall com.detoxsample.test
+Mar 21 23:37:58 detox[24273] TRACE: [EXEC_SUCCESS, #10] Success
+
+Mar 21 23:37:58 detox[24273] DEBUG: [EXEC_CMD, #11] "/Users/vivek.shindhe/Library/Android/sdk/build-tools/31.0.0/aapt" dump xmlstrings "/Users/vivek.shindhe/RazorpayProjects/testing_projects/DetoxSample/android/app/build/outputs/apk/debug/app-debug.apk" AndroidManifest.xml
+Mar 21 23:37:58 detox[24273] TRACE: [EXEC_SUCCESS, #11] String pool of 82 unique UTF-16 non-sorted strings, 82 entries and 0 styles using 3644 bytes:
+String #0: theme
+String #1: label
+String #2: icon
+String #3: name
+String #4: permission
+String #5: debuggable
+String #6: exported
+String #7: excludeFromRecents
+String #8: launchMode
+String #9: configChanges
+String #10: value
+String #11: mimeType
+String #12: scheme
+String #13: host
+String #14: minSdkVersion
+String #15: versionCode
+String #16: versionName
+String #17: windowSoftInputMode
+String #18: targetSdkVersion
+String #19: allowBackup
+String #20: glEsVersion
+String #21: required
+String #22: usesCleartextTraffic
+String #23: networkSecurityConfig
+String #24: roundIcon
+String #25: compileSdkVersion
+String #26: compileSdkVersionCodename
+String #27: appComponentFactory
+String #28: *
+String #29: */*
+String #30: 1.0
+String #31: 11
+String #32: action
+String #33: activity
+String #34: android
+String #35: android.intent.action.MAIN
+String #36: android.intent.action.SEND
+String #37: android.intent.action.VIEW
+String #38: android.intent.category.BROWSABLE
+String #39: android.intent.category.LAUNCHER
+String #40: android.permission.ACCESS_NETWORK_STATE
+String #41: android.permission.ACCESS_WIFI_STATE
+String #42: android.permission.INTERNET
+String #43: android.permission.SYSTEM_ALERT_WINDOW
+String #44: androidx.core.app.CoreComponentFactory
+String #45: application
+String #46: category
+String #47: com.detoxsample
+String #48: com.detoxsample.MainActivity
+String #49: com.detoxsample.MainApplication
+String #50: com.facebook.react.devsupport.DevSettingsActivity
+String #51: com.google.android.gms.auth.api.signin.RevocationBoundService
+String #52: com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+String #53: com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION
+String #54: com.google.android.gms.common.api.GoogleApiActivity
+String #55: com.google.android.gms.version
+String #56: com.razorpay.CheckoutActivity
+String #57: com.razorpay.RzpGpayMerged
+String #58: com.razorpay.RzpTokenReceiver
+String #59: com.razorpay.plugin.googlepay_all
+String #60: data
+String #61: http://schemas.android.com/apk/res/android
+String #62: intent
+String #63: intent-filter
+String #64: io.rzp
+String #65: manifest
+String #66: meta-data
+String #67: org.apache.http.legacy
+String #68: package
+String #69: pay
+String #70: platformBuildVersionCode
+String #71: platformBuildVersionName
+String #72: queries
+String #73: receiver
+String #74: rzp.device_token.share
+String #75: rzp.io
+String #76: service
+String #77: upi
+String #78: uses-feature
+String #79: uses-library
+String #80: uses-permission
+String #81: uses-sdk
+
+Mar 21 23:37:58 detox[24273] DEBUG: [EXEC_CMD, #12] "/Users/vivek.shindhe/Library/Android/sdk/build-tools/31.0.0/aapt" dump xmlstrings "/Users/vivek.shindhe/RazorpayProjects/testing_projects/DetoxSample/android/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk" AndroidManifest.xml
+Mar 21 23:37:58 detox[24273] TRACE: [EXEC_SUCCESS, #12] String pool of 41 unique UTF-16 non-sorted strings, 41 entries and 0 styles using 2032 bytes:
+String #0: theme
+String #1: label
+String #2: name
+String #3: debuggable
+String #4: exported
+String #5: targetPackage
+String #6: handleProfiling
+String #7: functionalTest
+String #8: minSdkVersion
+String #9: targetSdkVersion
+String #10: compileSdkVersion
+String #11: compileSdkVersionCodename
+String #12: 11
+String #13: Tests for com.detoxsample
+String #14: action
+String #15: activity
+String #16: android
+String #17: android.intent.action.MAIN
+String #18: android.permission.REORDER_TASKS
+String #19: android.test.runner
+String #20: androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity
+String #21: androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity
+String #22: androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity
+String #23: androidx.test.orchestrator
+String #24: androidx.test.runner.AndroidJUnitRunner
+String #25: androidx.test.services
+String #26: application
+String #27: com.detoxsample
+String #28: com.detoxsample.test
+String #29: com.google.android.apps.common.testing.services
+String #30: http://schemas.android.com/apk/res/android
+String #31: instrumentation
+String #32: intent-filter
+String #33: manifest
+String #34: package
+String #35: platformBuildVersionCode
+String #36: platformBuildVersionName
+String #37: queries
+String #38: uses-library
+String #39: uses-permission
+String #40: uses-sdk
+
+Mar 21 23:37:58 detox[24273] DEBUG: [SPAWN_CMD, #13, cpid=24292] /Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb -s LMG850EMW1f87e52c install -r -g -t /Users/vivek.shindhe/RazorpayProjects/testing_projects/DetoxSample/android/app/build/outputs/apk/debug/app-debug.apk
+Mar 21 23:38:01 detox[24273] TRACE: [SPAWN_STDOUT, #13, cpid=24292] Performing Streamed Install
+Success
+
+Mar 21 23:38:01 detox[24273] DEBUG: [SPAWN_END, #13, cpid=24292] /Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb -s LMG850EMW1f87e52c install -r -g -t /Users/vivek.shindhe/RazorpayProjects/testing_projects/DetoxSample/android/app/build/outputs/apk/debug/app-debug.apk exited with code #0
+Mar 21 23:38:01 detox[24273] DEBUG: [SPAWN_CMD, #14, cpid=24294] /Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb -s LMG850EMW1f87e52c install -r -g -t /Users/vivek.shindhe/RazorpayProjects/testing_projects/DetoxSample/android/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
+Mar 21 23:38:03 detox[24273] TRACE: [SPAWN_STDOUT, #14, cpid=24294] Performing Streamed Install
+Success
+
+Mar 21 23:38:03 detox[24273] DEBUG: [SPAWN_END, #14, cpid=24294] /Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb -s LMG850EMW1f87e52c install -r -g -t /Users/vivek.shindhe/RazorpayProjects/testing_projects/DetoxSample/android/app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk exited with code #0
+Mar 21 23:38:03 ROOT_DESCRIBE_BLOCK[24273] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onRunDescribeStart({ name: 'ROOT_DESCRIBE_BLOCK' })
+Mar 21 23:38:03 Example[24273] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onRunDescribeStart({ name: 'Example' })
+Mar 21 23:38:03 detox[24273] INFO:  [97mExample[39m is assigned to [94mAttachedDevice:LMG850EMW1f87e52c[39m
+Mar 21 23:38:03 detox[24273] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onBeforeTerminateApp({ deviceId: 'LMG850EMW1f87e52c', bundleId: 'com.detoxsample' })
+Mar 21 23:38:03 detox[24273] DEBUG: [EXEC_CMD, #15] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s LMG850EMW1f87e52c shell "am force-stop com.detoxsample"
+Mar 21 23:38:03 detox[24273] TRACE: [EXEC_SUCCESS, #15] 
+Mar 21 23:38:03 detox[24273] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onTerminateApp({ deviceId: 'LMG850EMW1f87e52c', bundleId: 'com.detoxsample' })
+Mar 21 23:38:03 detox[24273] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onBeforeLaunchApp({
+  deviceId: 'LMG850EMW1f87e52c',
+  bundleId: 'com.detoxsample',
+  launchArgs: {
+    detoxServer: 'ws://localhost:62505',
+    detoxSessionId: 'b9ba7b38-8751-00e5-e1f9-b1c598e6d019'
+  }
+})
+Mar 21 23:38:03 detox[24273] DEBUG: [EXEC_CMD, #16] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s LMG850EMW1f87e52c shell "date +\"%m-%d %T.000\""
+Mar 21 23:38:03 detox[24273] TRACE: [EXEC_SUCCESS, #16] 03-21 23:38:03.000
+
+Mar 21 23:38:03 detox[24273] DEBUG: [EXEC_CMD, #17] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s LMG850EMW1f87e52c reverse tcp:62505 tcp:62505
+Mar 21 23:38:03 detox[24273] TRACE: [EXEC_SUCCESS, #17] 62505
+
+Mar 21 23:38:03 detox[24273] DEBUG: [EXEC_CMD, #18] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s LMG850EMW1f87e52c shell "pm list instrumentation"
+Mar 21 23:38:03 detox[24273] TRACE: [EXEC_SUCCESS, #18] instrumentation:com.detoxsample.test/androidx.test.runner.AndroidJUnitRunner (target=com.detoxsample)
+instrumentation:com.lge.cic.eden.service/android.test.InstrumentationTestRunner (target=com.lge.cic.eden.service)
+instrumentation:com.microsoft.office.word/android.test.InstrumentationTestRunner (target=com.microsoft.office.msohttp.tests)
+instrumentation:com.razorpay.customcheckoutrzpsample.test/androidx.test.runner.AndroidJUnitRunner (target=com.razorpay.customcheckoutrzpsample)
+
+Mar 21 23:38:03 detox[24273] DEBUG: [SPAWN_CMD, #19, cpid=24299] /Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb -s LMG850EMW1f87e52c shell am instrument -w -r -e detoxServer ws://localhost:62505 -e detoxSessionId b9ba7b38-8751-00e5-e1f9-b1c598e6d019 -e debug false com.detoxsample.test/androidx.test.runner.AndroidJUnitRunner
+Mar 21 23:38:04 detox[24273] DEBUG: [EXEC_CMD, #20] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s LMG850EMW1f87e52c shell "ps | grep \"com\.detoxsample$\""
+Mar 21 23:38:04 detox[24273] TRACE: [EXEC_SUCCESS, #20] u0_a445       12207  22728 16040996 85032 0                   0 R com.detoxsample
+
+Mar 21 23:38:04 detox[12207] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onLaunchApp({
+  deviceId: 'LMG850EMW1f87e52c',
+  bundleId: 'com.detoxsample',
+  launchArgs: {
+    detoxServer: 'ws://localhost:62505',
+    detoxSessionId: 'b9ba7b38-8751-00e5-e1f9-b1c598e6d019'
+  },
+  pid: 12207
+})
+Mar 21 23:38:04 detox[24273] TRACE: [ARTIFACT_START] starting ADBLogcatRecording
+Mar 21 23:38:04 detox[24273] DEBUG: [SPAWN_CMD, #21, cpid=24301] /Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb -s LMG850EMW1f87e52c shell "logcat -T \"03-21 23:38:03.000\" --pid=12207 -f /sdcard/233754382_0.log"
+Mar 21 23:38:04 detox[24273] DEBUG: [EXEC_CMD, #22] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s LMG850EMW1f87e52c shell du /sdcard/233754382_0.log
+Mar 21 23:38:04 detox[24273] TRACE: [EXEC_SUCCESS, #22] 0	/sdcard/233754382_0.log
+
+Mar 21 23:38:06 detox[24273] TRACE: [SPAWN_STDOUT, #19, cpid=24299] INSTRUMENTATION_RESULT: stream=
+
+Time: 0
+
+OK (0 tests)
+
+
+INSTRUMENTATION_CODE: -1
+
+Mar 21 23:38:06 detox[24273] DEBUG: [SPAWN_END, #19, cpid=24299] /Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb -s LMG850EMW1f87e52c shell am instrument -w -r -e detoxServer ws://localhost:62505 -e detoxSessionId b9ba7b38-8751-00e5-e1f9-b1c598e6d019 -e debug false com.detoxsample.test/androidx.test.runner.AndroidJUnitRunner exited with code #0
+Mar 21 23:38:06 detox[24273] DEBUG: [EXEC_CMD, #23] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s LMG850EMW1f87e52c reverse --remove tcp:62505
+Mar 21 23:38:06 detox[24273] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onHookFailure({
+  error: DetoxRuntimeError: Failed to run application on the device
+  
+  HINT: Most likely, your tests have timed out and called detox.cleanup() while it was waiting for "ready" message (over WebSocket) from the instrumentation process.
+      at _callee$ (/Users/vivek.shindhe/RazorpayProjects/testing_projects/DetoxSample/e2e/firstTest.e2e.js:3:18)
+      at tryCatch (/Users/vivek.shindhe/RazorpayProjects/testing_projects/DetoxSample/node_modules/regenerator-runtime/runtime.js:63:40)
+      at Generator.invoke [as _invoke] (/Users/vivek.shindhe/RazorpayProjects/testing_projects/DetoxSample/node_modules/regenerator-runtime/runtime.js:294:22)
+      at Generator.next (/Users/vivek.shindhe/RazorpayProjects/testing_projects/DetoxSample/node_modules/regenerator-runtime/runtime.js:119:21)
+      at tryCatch (/Users/vivek.shindhe/RazorpayProjects/testing_projects/DetoxSample/node_modules/regenerator-runtime/runtime.js:63:40)
+      at invoke (/Users/vivek.shindhe/RazorpayProjects/testing_projects/DetoxSample/node_modules/regenerator-runtime/runtime.js:155:20)
+      at /Users/vivek.shindhe/RazorpayProjects/testing_projects/DetoxSample/node_modules/regenerator-runtime/runtime.js:190:11
+      at new Promise (<anonymous>)
+      at callInvokeWithMethodAndArg (/Users/vivek.shindhe/RazorpayProjects/testing_projects/DetoxSample/node_modules/regenerator-runtime/runtime.js:189:16)
+      at AsyncIterator.enqueue (/Users/vivek.shindhe/RazorpayProjects/testing_projects/DetoxSample/node_modules/regenerator-runtime/runtime.js:212:13)
+      at AsyncIterator.next (/Users/vivek.shindhe/RazorpayProjects/testing_projects/DetoxSample/node_modules/regenerator-runtime/runtime.js:119:21)
+      at Object.<anonymous>.exports.async (/Users/vivek.shindhe/RazorpayProjects/testing_projects/DetoxSample/node_modules/regenerator-runtime/runtime.js:239:14)
+      at _callee (/Users/vivek.shindhe/RazorpayProjects/testing_projects/DetoxSample/e2e/firstTest.e2e.js:2:13)
+      at Promise.then.completed (/Users/vivek.shindhe/RazorpayProjects/testing_projects/DetoxSample/node_modules/jest-circus/build/utils.js:391:28),
+  hook: 'beforeAll'
+})
+Mar 21 23:38:06 detox[24273] INFO:  [1m[37mExample: [39m[22m[90mshould have welcome screen[39m
+Mar 21 23:38:06 detox[24273] INFO:  [1m[37mExample: [39m[22m[90mshould have welcome screen[39m[90m [[31mFAIL[90m][39m
+Mar 21 23:38:06 Example[24273] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onRunDescribeFinish({ name: 'Example' })
+Mar 21 23:38:06 ROOT_DESCRIBE_BLOCK[24273] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onRunDescribeFinish({ name: 'ROOT_DESCRIBE_BLOCK' })
+Mar 21 23:38:06 detox[24273] TRACE: [ARTIFACTS_LIFECYCLE] artifactsManager.onBeforeCleanup()
+Mar 21 23:38:06 detox[24273] TRACE: [EXEC_SUCCESS, #23] 
+Mar 21 23:38:06 detox[24273] TRACE: [ARTIFACT_SAVE] saving ADBLogcatRecording to: artifacts/android.debug.2022-03-21 18-07-52Z/LMG850EMW1f87e52c 2022-03-21 18-08-06Z.startup.log
+Mar 21 23:38:06 detox[24273] TRACE: [ARTIFACT_STOP] stopping ADBLogcatRecording
+Mar 21 23:38:06 detox[24273] DEBUG: [EXEC_CMD, #24] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s LMG850EMW1f87e52c shell "date +\"%m-%d %T.000\""
+Mar 21 23:38:06 detox[24273] TRACE: [EXEC_SUCCESS, #24] 03-21 23:38:06.000
+
+Mar 21 23:38:06 detox[24301] TRACE: [SPAWN_KILL] sending SIGINT to: /Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb -s LMG850EMW1f87e52c shell logcat -T "03-21 23:38:03.000" --pid=12207 -f /sdcard/233754382_0.log
+Mar 21 23:38:06 detox[24273] DEBUG: [SPAWN_END, #21, cpid=24301] /Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb -s LMG850EMW1f87e52c shell "logcat -T \"03-21 23:38:03.000\" --pid=12207 -f /sdcard/233754382_0.log" terminated with SIGINT
+Mar 21 23:38:06 detox[24273] DEBUG: [EXEC_CMD, #25] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s LMG850EMW1f87e52c pull "/sdcard/233754382_0.log" "artifacts/android.debug.2022-03-21 18-07-52Z/LMG850EMW1f87e52c 2022-03-21 18-08-06Z.startup.log"
+Mar 21 23:38:06 detox[24273] TRACE: [EXEC_SUCCESS, #25] /sdcard/233754382_0.log: 1 file pulled, 0 skipped. 3.7 MB/s (17527 bytes in 0.005s)
+
+Mar 21 23:38:06 detox[24273] DEBUG: [EXEC_CMD, #26] "/Users/vivek.shindhe/Library/Android/sdk/platform-tools/adb" -s LMG850EMW1f87e52c shell "rm  \"/sdcard/233754382_0.log\""
+Mar 21 23:38:06 detox[24273] TRACE: [EXEC_SUCCESS, #26] 
+Mar 21 23:38:06 detox[24273] TRACE: [ARTIFACT_START] starting FileArtifact
+Mar 21 23:38:06 detox[24273] TRACE: [ARTIFACT_STOP] stopping FileArtifact
+Mar 21 23:38:06 detox[24273] TRACE: [ARTIFACT_SAVE] saving FileArtifact to: artifacts/android.debug.2022-03-21 18-07-52Z/detox_pid_24273.json.log { append: true }
+Mar 21 23:38:06 detox[24273] TRACE: [ARTIFACT_START] starting FileArtifact
+Mar 21 23:38:06 detox[24273] TRACE: [ARTIFACT_STOP] stopping FileArtifact
+Mar 21 23:38:06 detox[24273] TRACE: [ARTIFACT_SAVE] saving FileArtifact to: artifacts/android.debug.2022-03-21 18-07-52Z/detox_pid_24273.log { append: true }
+Mar 21 23:38:06 detox[24273] DEBUG: [MOVE_FILE] moving "/private/var/folders/gr/3jbywwxx66x6q68_04cm6twh0000gq/T/761f6a91-9f84-4024-bcf5-f5dd2709fbb8.detox.log" to artifacts/android.debug.2022-03-21 18-07-52Z/detox_pid_24273.json.log
+Mar 21 23:38:06 detox[24273] DEBUG: [MOVE_FILE] moving "/private/var/folders/gr/3jbywwxx66x6q68_04cm6twh0000gq/T/1640b392-c21f-45e4-ad1d-63bac8a18a2d.detox.log" to artifacts/android.debug.2022-03-21 18-07-52Z/detox_pid_24273.log
+Mar 21 23:38:06 detox[24273] ERROR: [APP_UNREACHABLE] Detox can't seem to connect to the test app(s)!
+
+HINT: 
+
+The test app might have crashed prematurely, or has had trouble setting up the connection.
+Refer to our troubleshooting guide, for full details: https://wix.github.io/Detox/docs/troubleshooting/running-tests#tests-execution-hangs 
+
+
+
+Mar 21 23:38:06 detox[24273] DEBUG: [WSS_CLOSE] Detox server has been closed gracefully
+Mar 21 23:38:06 detox[24273] TRACE: [SESSION_TORN] tester exited session b9ba7b38-8751-00e5-e1f9-b1c598e6d019

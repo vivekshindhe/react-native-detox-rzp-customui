@@ -1,0 +1,153 @@
+--------- beginning of main
+03-22 17:25:44.211 10374 10437 I DetoxWSClient: Sending out action 'invokeResult' (ID #5)
+03-22 17:25:44.212 10374 10437 I DetoxDispatcher: Done with action 'invoke'
+03-22 17:25:44.219 10374 10439 D DetoxWSClient: Received action 'invoke' (ID #6, params={"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["Card Validity : true"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]})
+03-22 17:25:44.219 10374 10437 I DetoxDispatcher: Handling action 'invoke' (ID #6)...
+03-22 17:25:44.220 10374 10437 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForText, [Card Validity : true]
+03-22 17:25:44.220 10374 10437 D Detox   : class androidx.test.espresso.Espresso, onView, [(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Card Validity : true" and view has effective visibility <VISIBLE>)]
+03-22 17:25:44.221 10374 10437 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForSufficientlyVisible, [75]
+03-22 17:25:44.221 10374 10437 D Detox   : class com.wix.detox.espresso.DetoxAssertion, assertMatcher, [androidx.test.espresso.ViewInteraction@80a6b28, (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)]
+03-22 17:25:44.226 10374 10374 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)}' assertion on view (an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Card Validity : true" and view has effective visibility <VISIBLE>)
+03-22 17:25:44.232 10374 10437 I DetoxWSClient: Sending out action 'invokeResult' (ID #6)
+03-22 17:25:44.233 10374 10437 I DetoxDispatcher: Done with action 'invoke'
+03-22 17:25:44.240 10374 10439 D DetoxWSClient: Received action 'invoke' (ID #7, params={"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["GET CARD NETWORK"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]})
+03-22 17:25:44.240 10374 10437 I DetoxDispatcher: Handling action 'invoke' (ID #7)...
+03-22 17:25:44.241 10374 10437 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForText, [GET CARD NETWORK]
+03-22 17:25:44.241 10374 10437 D Detox   : class androidx.test.espresso.Espresso, onView, [(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "GET CARD NETWORK" and view has effective visibility <VISIBLE>)]
+03-22 17:25:44.242 10374 10437 D Detox   : class com.wix.detox.espresso.DetoxViewActions, click, []
+03-22 17:25:44.242 10374 10437 D Detox   : class com.wix.detox.espresso.EspressoDetox, perform, [androidx.test.espresso.ViewInteraction@2060041, com.wix.detox.espresso.action.RNClickAction@3e819e6]
+03-22 17:25:44.248 10374 10374 I ViewInteraction: Performing 'com.wix.detox.espresso.action.detoxsingletap@f9b4b27 click' action on view (an instance of android.widget.TextView and view.getText() with or without transformation to match: is "GET CARD NETWORK" and view has effective visibility <VISIBLE>)
+03-22 17:25:44.302 10374 10442 I ReactNativeJS: visa
+03-22 17:25:44.633 10374 10426 D EGL_emulation: app_time_stats: avg=17.94ms min=2.46ms max=90.88ms count=51
+03-22 17:25:44.708 10374 10437 I DetoxWSClient: Sending out action 'invokeResult' (ID #7)
+03-22 17:25:44.708 10374 10437 I DetoxDispatcher: Done with action 'invoke'
+03-22 17:25:44.715 10374 10439 D DetoxWSClient: Received action 'invoke' (ID #8, params={"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxAssertion"},"method":"assertMatcher","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForText","args":["Card Network : visa"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForSufficientlyVisible","args":[{"type":"Integer","value":75}]}}]})
+03-22 17:25:44.717 10374 10437 I DetoxDispatcher: Handling action 'invoke' (ID #8)...
+03-22 17:25:44.718 10374 10437 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForText, [Card Network : visa]
+03-22 17:25:44.719 10374 10437 D Detox   : class androidx.test.espresso.Espresso, onView, [(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Card Network : visa" and view has effective visibility <VISIBLE>)]
+03-22 17:25:44.719 10374 10437 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForSufficientlyVisible, [75]
+03-22 17:25:44.720 10374 10437 D Detox   : class com.wix.detox.espresso.DetoxAssertion, assertMatcher, [androidx.test.espresso.ViewInteraction@3557740, (view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)]
+03-22 17:25:44.725 10374 10374 I ViewInteraction: Checking 'MatchesViewAssertion(Detox){viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() covers at least <75> percent of the view's area)}' assertion on view (an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Card Network : visa" and view has effective visibility <VISIBLE>)
+03-22 17:25:44.727 10374 10437 I DetoxWSClient: Sending out action 'invokeResult' (ID #8)
+03-22 17:25:44.729 10374 10437 I DetoxDispatcher: Done with action 'invoke'
+03-22 17:25:44.800 10374 10439 D DetoxWSClient: Received action 'invoke' (ID #9, params={"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["cards"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxViewActions"},"method":"click","args":[]}}]})
+03-22 17:25:44.801 10374 10437 I DetoxDispatcher: Handling action 'invoke' (ID #9)...
+03-22 17:25:44.805 10374 10437 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForTestId, [cards]
+03-22 17:25:44.806 10374 10437 D Detox   : class androidx.test.espresso.Espresso, onView, [(view.getTag() is "cards" and view has effective visibility <VISIBLE>)]
+03-22 17:25:44.808 10374 10437 D Detox   : class com.wix.detox.espresso.DetoxViewActions, click, []
+03-22 17:25:44.809 10374 10437 D Detox   : class com.wix.detox.espresso.EspressoDetox, perform, [androidx.test.espresso.ViewInteraction@1397679, com.wix.detox.espresso.action.RNClickAction@2267fbe]
+03-22 17:25:44.823 10374 10374 I ViewInteraction: Performing 'com.wix.detox.espresso.action.detoxsingletap@44781f click' action on view (view.getTag() is "cards" and view has effective visibility <VISIBLE>)
+03-22 17:25:44.988 10374 10374 I Detox   : AnimatedModule is busy.
+03-22 17:25:44.996 10374 10374 I Detox   : AnimatedModule is busy.
+03-22 17:25:45.011 10374 10374 I Detox   : AnimatedModule is busy.
+03-22 17:25:45.029 10374 10374 I Detox   : AnimatedModule is busy.
+03-22 17:25:45.049 10374 10374 I Detox   : AnimatedModule is busy.
+03-22 17:25:45.062 10374 10374 I Detox   : AnimatedModule is busy.
+03-22 17:25:45.080 10374 10374 I Detox   : AnimatedModule is busy.
+03-22 17:25:45.096 10374 10374 I Detox   : AnimatedModule is busy.
+03-22 17:25:45.112 10374 10374 I Detox   : AnimatedModule is busy.
+03-22 17:25:45.130 10374 10374 I Detox   : AnimatedModule is busy.
+03-22 17:25:45.146 10374 10374 I Detox   : AnimatedModule is busy.
+03-22 17:25:45.162 10374 10374 I Detox   : AnimatedModule is busy.
+03-22 17:25:45.179 10374 10374 I Detox   : AnimatedModule is busy.
+03-22 17:25:45.582 10374 10437 I DetoxWSClient: Sending out action 'invokeResult' (ID #9)
+03-22 17:25:45.583 10374 10437 I DetoxDispatcher: Done with action 'invoke'
+03-22 17:25:45.589 10374 10439 D DetoxWSClient: Received action 'invoke' (ID #10, params={"target":{"type":"Class","value":"com.wix.detox.espresso.EspressoDetox"},"method":"perform","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.Espresso"},"method":"onView","args":[{"type":"Invocation","value":{"target":{"type":"Class","value":"com.wix.detox.espresso.DetoxMatcher"},"method":"matcherForTestId","args":["cardNumber"]}}]}},{"type":"Invocation","value":{"target":{"type":"Class","value":"androidx.test.espresso.action.ViewActions"},"method":"replaceText","args":["4111111111111111"]}}]})
+03-22 17:25:45.590 10374 10437 I DetoxDispatcher: Handling action 'invoke' (ID #10)...
+03-22 17:25:45.590 10374 10437 D Detox   : class com.wix.detox.espresso.DetoxMatcher, matcherForTestId, [cardNumber]
+03-22 17:25:45.590 10374 10437 D Detox   : class androidx.test.espresso.Espresso, onView, [(view.getTag() is "cardNumber" and view has effective visibility <VISIBLE>)]
+03-22 17:25:45.590 10374 10437 D Detox   : class androidx.test.espresso.action.ViewActions, replaceText, [4111111111111111]
+03-22 17:25:45.591 10374 10437 D Detox   : class com.wix.detox.espresso.EspressoDetox, perform, [androidx.test.espresso.ViewInteraction@1d20135, androidx.test.espresso.action.ReplaceTextAction@6c6d9ca]
+03-22 17:25:45.612 10374 10437 I DetoxActionHandlers: Test exception
+03-22 17:25:45.612 10374 10437 I DetoxActionHandlers: java.lang.reflect.InvocationTargetException
+03-22 17:25:45.612 10374 10437 I DetoxActionHandlers: 	at java.lang.reflect.Method.invoke(Native Method)
+03-22 17:25:45.612 10374 10437 I DetoxActionHandlers: 	at org.apache.commons.lang3.reflect.MethodUtils.invokeStaticMethod(MethodUtils.java:443)
+03-22 17:25:45.612 10374 10437 I DetoxActionHandlers: 	at org.apache.commons.lang3.reflect.MethodUtils.invokeStaticMethod(MethodUtils.java:405)
+03-22 17:25:45.612 10374 10437 I DetoxActionHandlers: 	at com.wix.invoke.types.ClassTarget.execute(ClassTarget.java:23)
+03-22 17:25:45.612 10374 10437 I DetoxActionHandlers: 	at com.wix.invoke.types.Target.invoke(Target.java:59)
+03-22 17:25:45.612 10374 10437 I DetoxActionHandlers: 	at com.wix.invoke.MethodInvocation.invoke(MethodInvocation.java:35)
+03-22 17:25:45.612 10374 10437 I DetoxActionHandlers: 	at com.wix.invoke.MethodInvocation.invoke(MethodInvocation.java:26)
+03-22 17:25:45.612 10374 10437 I DetoxActionHandlers: 	at com.wix.invoke.MethodInvocation.invoke(MethodInvocation.java:20)
+03-22 17:25:45.612 10374 10437 I DetoxActionHandlers: 	at com.wix.detox.adapters.server.InvokeActionHandler.handle(DetoxActionHandlers.kt:54)
+03-22 17:25:45.612 10374 10437 I DetoxActionHandlers: 	at com.wix.detox.adapters.server.ActionsExecutor$executeAction$$inlined$let$lambda$1.run(DetoxActionsDispatcher.kt:64)
+03-22 17:25:45.612 10374 10437 I DetoxActionHandlers: 	at android.os.Handler.handleCallback(Handler.java:938)
+03-22 17:25:45.612 10374 10437 I DetoxActionHandlers: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+03-22 17:25:45.612 10374 10437 I DetoxActionHandlers: 	at android.os.Looper.loopOnce(Looper.java:201)
+03-22 17:25:45.612 10374 10437 I DetoxActionHandlers: 	at android.os.Looper.loop(Looper.java:288)
+03-22 17:25:45.612 10374 10437 I DetoxActionHandlers: 	at com.wix.detox.adapters.server.ActionsExecutor$1.run(DetoxActionsDispatcher.kt:50)
+03-22 17:25:45.612 10374 10437 I DetoxActionHandlers: 	at java.lang.Thread.run(Thread.java:920)
+03-22 17:25:45.612 10374 10437 I DetoxActionHandlers: Caused by: androidx.test.espresso.NoMatchingViewException: No views in hierarchy found matching: (view.getTag() is "cardNumber" and view has effective visibility <VISIBLE>)
+03-22 17:25:45.612 10374 10437 I DetoxActionHandlers: 
+03-22 17:25:45.612 10374 10437 I DetoxActionHandlers: View Hierarchy:
+03-22 17:25:45.612 10374 10437 I DetoxActionHandlers: +>DecorView{id=-1, visibility=VISIBLE, width=1080, height=1920, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params={(0,0)(fillxfill) sim={adjust=resize} ty=BASE_APPLICATION wanim=0x10302fe
+03-22 17:25:45.612 10374 10437 I DetoxActionHandlers:   fl=LAYOUT_IN_SCREEN FORCE_NOT_FULLSCREEN LAYOUT_INSET_DECOR SPLIT_TOUCH HARDWARE_ACCELERATED DRAWS_SYSTEM_BAR_BACKGROUNDS
+03-22 17:25:45.612 10374 10437 I DetoxActionHandlers:   pfl=NO_MOVE_ANIMATION FORCE_DRAW_STATUS_BAR_BACKGROUND FIT_INSETS_CONTROLLED
+03-22 17:25:45.612 10374 10437 I DetoxActionHandlers:   bhv=DEFAULT
+03-22 17:25:45.612 10374 10437 I DetoxActionHandlers:   fitSides=}, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3} 
+03-22 17:25:45.612 10374 10437 I DetoxActionHandlers: |
+03-22 17:25:45.612 10374 10437 I DetoxActionHandlers: +->LinearLayout{id=-1, visibility=VISIBLE, width=1080, height=1878, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@a81a70f, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+03-22 17:25:45.612 10374 10437 I DetoxActionHandlers: |
+03-22 17:25:45.612 10374 10437 I DetoxActionHandlers: +-->ViewStub{id=16908723, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@eb4e39c, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} 
+03-22 17:25:45.612 10374 10437 I DetoxActionHandlers: |
+03-22 17:25:45.612 10374 10437 I DetoxActionHandlers: +-->FrameLayout{id=-1, visibility=VISIBLE, width=1080, height=1815, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@db1497a, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=63.0, child-count=1} 
+03-22 17:25:45.612 10374 10437 I DetoxActionHandlers: |
+03-22 17:25:45.612 10374 10437 I DetoxActionHandlers: +--->ActionBarOverlayLayout{id=2131230827, res-name=decor_content_parent, visibility=VISIBLE, width=1080, height=1815, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@7e4b321, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+03-22 17:25:45.612 10374 10437 I DetoxActionHandlers: |
+03-22 17:25:45.613 10374 10437 I DetoxActionHandlers: +---->ContentFrameLayout{id=16908290, res-name=content, visibility=VISIBLE, width=1080, height=1668, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.appcompat.widget.ActionBarOverlayLayout$LayoutParams@77a8346, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=147.0, child-count=1} 
+03-22 17:25:45.613 10374 10437 I DetoxActionHandlers: |
+03-22 17:25:45.613 10374 10437 I DetoxActionHandlers: +----->ReactRootView{id=1, visibility=VISIBLE, width=1080, height=1668, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@6600a34, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} 
+03-22 17:25:45.613 10374 10437 I DetoxActionHandlers: |
+03-22 17:25:45.613 10374 10437 I DetoxActionHandlers: +------>ReactScrollView{id=87, visibility=VISIBLE, width=1080, height=917, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@44b8dd2, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1} 
+03-22 17:25:45.613 10374 10437 I DetoxActionHandlers: |
+03-22 17:25:45.613 10374 10437 I DetoxActionHandlers: +------->ReactViewGroup{id=85, visibility=VISIBLE, width=1080, height=917, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@bcd8ea3, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=7} 
+03-22 17:25:45.613 10374 10437 I DetoxActionHandlers: |
+03-22 17:25:45.613 10374 10437 I DetoxActionHandlers: +-------->ReactTextView{id=99, visibility=VISIBLE, width=1080, height=51, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@c1fa559, tag=isRzpInit, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=Razorpay Initialized, input-type=0, ime-target=false, has-links=false} 
+03-22 17:25:45.613 10374 10437 I DetoxActionHandlers: |
+03-22 17:25:45.613 10374 10437 I DetoxActionHandlers: +-------->ReactViewGroup{id=9, visibility=VISIBLE, width=514, height=263, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@9b0b51e, tag=initRazorpay, root-is-layout-requested=false, has-input-connection=false, x=13.0, y=64.0, child-count=1} 
+03-22 17:25:45.613 10374 10437 I DetoxActionHandlers: |
+03-22 17:25:45.613 10374 10437 I DetoxActionHandlers: +--------->ReactTextView{id=7, visibility=VISIBLE, width=389, height=65, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@aa071ff, tag=null, root-is-layout-requested=false, has-input-connection=false, x=62.0, y=99.0, text=Initialize Razorpay, input-type=0, ime-target=false, has-links=false} 
+03-22 17:25:45.613 10374 10437 I DetoxActionHandlers: |
+03-22 17:25:45.613 10374 10437 I DetoxActionHandlers: +-------->ReactViewGroup{id=19, visibility=VISIBLE, width=514, height=263, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@3466bcc, tag=cards, root-is-layout-requested=false, has-input-connection=false, x=553.0, y=64.0, child-count=1} 
+03-22 17:25:45.613 10374 10437 I DetoxActionHandlers: |
+03-22 17:25:45.613 10374 10437 I DetoxActionHandlers: +--------->ReactTextView{id=17, visibility=VISIBLE, width=125, height=65, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@59c3e15, tag=null, root-is-layout-requested=false, has-input-connection=false, x=194.0, y=99.0, text=Cards, input-type=0, ime-target=false, has-links=false} 
+03-22 17:25:45.613 10374 10437 I DetoxActionHandlers: |
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: +-------->ReactViewGroup{id=35, visibility=VISIBLE, width=514, height=262, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@7af052a, tag=null, root-is-layout-requested=false, has-input-connection=false, x=13.0, y=353.0, child-count=1} 
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: |
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: +--------->ReactTextView{id=33, visibility=VISIBLE, width=260, height=65, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@1942f1b, tag=null, root-is-layout-requested=false, has-input-connection=false, x=127.0, y=99.0, text=Net Banking, input-type=0, ime-target=false, has-links=false} 
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: |
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: +-------->ReactViewGroup{id=45, visibility=VISIBLE, width=514, height=262, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@c5478b8, tag=null, root-is-layout-requested=false, has-input-connection=false, x=553.0, y=353.0, child-count=1} 
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: |
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: +--------->ReactTextView{id=43, visibility=VISIBLE, width=210, height=65, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@30fa691, tag=null, root-is-layout-requested=false, has-input-connection=false, x=152.0, y=99.0, text=UPI Intent, input-type=0, ime-target=false, has-links=false} 
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: |
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: +-------->ReactViewGroup{id=63, visibility=VISIBLE, width=514, height=262, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@79049f6, tag=null, root-is-layout-requested=false, has-input-connection=false, x=13.0, y=642.0, child-count=1} 
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: |
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: +--------->ReactTextView{id=59, visibility=VISIBLE, width=234, height=65, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@93ca1f7, tag=null, root-is-layout-requested=false, has-input-connection=false, x=140.0, y=99.0, text=UPI Collect, input-type=0, ime-target=false, has-links=false} 
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: |
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: +-------->ReactViewGroup{id=73, visibility=VISIBLE, width=514, height=262, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@4346864, tag=null, root-is-layout-requested=false, has-input-connection=false, x=553.0, y=642.0, child-count=1} 
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: |
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: +--------->ReactTextView{id=69, visibility=VISIBLE, width=134, height=65, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.view.ViewGroup$LayoutParams@3771acd, tag=null, root-is-layout-requested=false, has-input-connection=false, x=190.0, y=99.0, text=Wallet, input-type=0, ime-target=false, has-links=false} 
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: |
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: +---->ActionBarContainer{id=2131230767, res-name=action_bar_container, visibility=VISIBLE, width=1080, height=147, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.appcompat.widget.ActionBarOverlayLayout$LayoutParams@801a6d0, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: |
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: +----->Toolbar{id=2131230765, res-name=action_bar, visibility=VISIBLE, width=1080, height=147, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@a3fd8ef, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2} 
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: |
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: +------>AppCompatTextView{id=-1, visibility=VISIBLE, width=316, height=71, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.appcompat.widget.Toolbar$LayoutParams@9225ffc, tag=null, root-is-layout-requested=false, has-input-connection=false, x=42.0, y=38.0, text=DetoxSample, input-type=0, ime-target=false, has-links=false} 
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: |
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: +------>ActionMenuView{id=-1, visibility=VISIBLE, width=0, height=147, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.appcompat.widget.Toolbar$LayoutParams@5c9d685, tag=null, root-is-layout-requested=false, has-input-connection=false, x=1080.0, y=0.0, child-count=0} 
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: |
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: +----->ActionBarContextView{id=2131230773, res-name=action_context_bar, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@62b0cda, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=0} 
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: |
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: +->View{id=16908336, res-name=navigationBarBackground, visibility=VISIBLE, width=1080, height=42, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@8db150b, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=1878.0} 
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: |
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: +->View{id=16908335, res-name=statusBarBackground, visibility=VISIBLE, width=1080, height=63, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@7337fe8, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0} 
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: 	at dalvik.system.VMStack.getThreadStackTrace(Native Method)
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: 	at java.lang.Thread.getStackTrace(Thread.java:1724)
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: 	at androidx.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:12)
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: 	at androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:7)
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: 	at androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:8)
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: 	at androidx.test.espresso.ViewInteraction.desugaredPerform(ViewInteraction.java:11)
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: 	at androidx.test.espresso.ViewInteraction.perform(ViewInteraction.java:4)
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: 	at com.wix.detox.espresso.EspressoDetox.perform(EspressoDetox.java:35)
+03-22 17:25:45.614 10374 10437 I DetoxActionHandlers: 	... 16 more
+03-22 17:25:45.615 10374 10437 I DetoxWSClient: Sending out action 'testFailed' (ID #10)
+03-22 17:25:45.618 10374 10437 I DetoxDispatcher: Done with action 'invoke'
